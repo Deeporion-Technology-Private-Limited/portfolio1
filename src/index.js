@@ -1,14 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter } from "react-router-dom";
+// import { I18nextProvider } from 'react-i18next';
+// import i18next from 'i18next'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// i18next.init({
+//   lang : 'eng',
+//   resources : {
+//     eng :{
+//       translation: {
+//         'key' : "English"
+
+//       }
+//     },
+//     hindi : {
+//       translation: {
+//         'key' : "Hindi"
+//       }
+//     }
+//   }
+// })
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <I18nextProvider i18next={i18next}>
+  <BrowserRouter>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </BrowserRouter>
+  // </I18nextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

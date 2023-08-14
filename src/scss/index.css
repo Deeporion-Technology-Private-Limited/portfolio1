@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.form-label {
+  text-align: start;
+}
+
+.login-button {
+  width: 100%;
+}
+.login-button:hover {
+  background-color: rgb(90, 156, 13) !important;
+}
+
+.forgot-remember {
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.center-column {
+  box-shadow: 5px 15px 30px 5px;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+
+.signup-link {
+  margin-bottom: 3rem;
+}
+
+.h-tag {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */

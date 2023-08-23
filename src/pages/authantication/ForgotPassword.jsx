@@ -3,11 +3,28 @@ import Form from "react-bootstrap/Form";
 import { Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { common } from "../../configJson /common";
+import { useFormik } from "formik";
+import * as Yup from "yup"
+
+const initialValues = {
+  email: ""
+};
+
+const forgotSchema = Yup.object({
+    email: Yup.string().email().required("Please enter a valid email address")
+})
 
 export default function ForgotPassword() {
+  const {values, errors, touched ,handleBlur, handleChange, handleSubmit} = useFormik({
+    initialValues: initialValues,
+    validationSchema: forgotSchema,
+    onSubmit: (values) => {
+      console.log("Forgot password", values);
+    },
+  });
   return (
     <>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <div>
           <Row>
             {/* {t('key')} */}
@@ -23,7 +40,12 @@ export default function ForgotPassword() {
                   type="email"
                   placeholder="user@deeporion.com"
                   size="lg"
+                  name="email"
+                  value={values.email}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
                 />
+                { errors.email && touched.email ? (<Form.Label className="label-error">*{errors.email}</Form.Label>): null }
               </Form.Group>
               <br />
               <Button className="login-button" type="submit">

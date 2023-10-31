@@ -6,6 +6,7 @@ import { TbBulbFilled } from "react-icons/tb";
 import { HiPresentationChartBar } from "react-icons/hi";
 import { AiFillEye } from "react-icons/ai";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import PenetrationTesting from "./PenetrationTesting";
 const Homebanner = () => {
   const ideas_data = [
     {
@@ -68,22 +69,27 @@ const Homebanner = () => {
           </div>
         </div>
       </div>
-      <div className="home_ideas">
-        {ideas_data.map((data) => (
-          <div className="idea_body">
-            <div className="ideas_icon">{data.icon}</div>
-            <div>
-              <p className="ideas_heading">{data.heading}</p>
-            </div>
-            <div className="ideas_description">{data.description}</div>
+      <div className="home_ideas_container">
+        <div className="home_ideas">
+          {ideas_data.map((data) => (
+            <div className="idea_body">
+              <div className="ideas_icon">{data.icon}</div>
+              <div>
+                <p className="ideas_heading">{data.heading}</p>
+              </div>
+              <div className="ideas_description">{data.description}</div>
 
-            <div>
-              <button className="read_more_btn">
-                {data.btn} <BsFillArrowRightCircleFill />
-              </button>
+              <div>
+                <button className="read_more_btn">
+                  {data.btn} <BsFillArrowRightCircleFill />
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+      </div>
+      <div>
+        <PenetrationTesting />
       </div>
     </div>
   );

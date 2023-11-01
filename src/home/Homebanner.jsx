@@ -7,6 +7,7 @@ import { HiPresentationChartBar } from "react-icons/hi";
 import { AiFillEye } from "react-icons/ai";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import PenetrationTesting from "./PenetrationTesting";
+import WhyPenetration from "./WhyPenetration";
 const Homebanner = () => {
   const ideas_data = [
     {
@@ -90,6 +91,9 @@ const Homebanner = () => {
       </div>
       <div>
         <PenetrationTesting />
+      </div>
+      <div>
+        <WhyPenetration />
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
+import Blogs from "../pages/Blogs";
 import OurServices from "../pages/OurServices";
 import AboutUs from "../pages/AboutUs";
 import Contact from "../pages/Contactus";
@@ -17,11 +18,13 @@ export const RouteLayout = () => {
       component: Home,
       name: "home",
     },
+
     {
-      path: "/login",
-      component: Login,
-      name: "login",
+      path: "/blogs",
+      component: Blogs,
+      name: "blogs",
     },
+
     {
       path: "/services",
       component: OurServices,
@@ -44,6 +47,12 @@ export const RouteLayout = () => {
       path: "*",
       component: Page404, // Add 404 component
       name: "404Page",
+    },
+
+    {
+      path: "/login",
+      component: Login,
+      name: "login",
     },
   ];
 

@@ -3,7 +3,7 @@
 .home_banner {
   width: 100%;
   height: 800px;
-  background-image: url(../images/Image\ \(4\).png);
+  background-image: url(../images/Image4.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -67,10 +67,17 @@
   align-items: center;
   border-radius: 8px;
   color: var(--white);
+  background: var(
+    --gradient,
+    linear-gradient(89deg, #c9442d 0.55%, #893e97 91.24%)
+  );
+  border: 1px solid transparent;
+}
+
+.get_started_btn:hover {
   background: linear-gradient(var(--black), var(--black)) padding-box,
     linear-gradient(to right, #c9442d, #893e97) border-box;
   border-radius: 8px;
-  border: 1px solid transparent;
 }
 
 .work_btn {
@@ -82,6 +89,7 @@
   align-items: center;
   gap: 8px;
 }
+
 .home_ideas_container {
   width: 100vw;
   display: flex;
@@ -163,6 +171,7 @@
   color: var(--white);
   font-size: 60px;
 }
+
 .supportive_text_container {
   display: flex;
   justify-content: center;
@@ -194,8 +203,6 @@
   width: 40vw;
   display: flex;
   justify-content: center;
-}
-.penetration_flex {
 }
 
 .penetration_icon {
@@ -230,4 +237,142 @@
   align-items: flex-start;
   margin-bottom: 40px;
   gap: 10px;
+}
+
+/*  penetration Benefit CSS */
+.benefits_box {
+  width: 100%;
+  height: 1685px;
+  background-image: url(../images/Image5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  object-fit: contain;
+  object-position: center;
+  overflow-x: hidden;
+}
+
+/* why Penetration CSS  */
+
+.why_penetration_container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why_penetration_box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65vw;
+  justify-content: center;
+}
+
+.why_penetration_content {
+  max-width: 400px;
+  min-width: 200px;
+  height: 137px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(var(--black), var(--black)) padding-box,
+    linear-gradient(to right, #c9442d, #893e97) border-box;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  margin: 25px;
+}
+
+.why_penetration_content_h1 {
+  color: var(--white);
+  width: 374px;
+  font-size: 60px;
+  line-height: 60px;
+  white-space: wrap;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  bottom: 60px;
+}
+.card_cover {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.card_cover2 {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+}
+
+.scene {
+  width: 55vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.scene2 {
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  position: relative;
+  width: 374px;
+  height: 200px;
+  color: white;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(0.5turn);
+}
+
+.card__face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  backface-visibility: hidden;
+  transition: 1s ease-in-out;
+  -webkit-box-reflect: below 0
+    linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+}
+
+.why_penetration_content_back {
+  max-width: 374px;
+  min-width: 200px;
+  height: 137px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(var(--black), var(--black)) padding-box,
+    linear-gradient(to right, #c9442d, #893e97) border-box;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  margin: 25px;
+}
+
+.why_penetration_content_back {
+  background: linear-gradient(180deg, #c9442d -28.1%, #893e97 118.25%);
+  width: 345px;
+  height: 137px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin: 25px;
+}
+
+.card__face--back {
+  transform: rotateY(0.5turn);
 }

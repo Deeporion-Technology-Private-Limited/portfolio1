@@ -8,6 +8,8 @@ import { AiFillEye } from "react-icons/ai";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import PenetrationTesting from "./PenetrationTesting";
 import WhyPenetration from "./WhyPenetration";
+import LatestBlogs from "./LatestBlogs";
+import PenetrationBenefits from "./PenetrationBenefits";
 const Homebanner = () => {
   const ideas_data = [
     {
@@ -93,8 +95,12 @@ const Homebanner = () => {
         <PenetrationTesting />
       </div>
       <div>
+        <PenetrationBenefits />
+      </div>
+      <div>
         <WhyPenetration />
       </div>
+      <LatestBlogs />
     </div>
   );
 };

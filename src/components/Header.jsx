@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, NavLink } from "react-router-dom";
 import vigilops from "../images/Vigilops.png";
 import "./style.css";
 
@@ -13,30 +13,50 @@ const Header = () => {
         <div>
           <ul className="header_links">
             <li>
-              <Link to="/" className="header_links_li">
+              <NavLink
+                to="/"
+                className="header_links_li "
+                activeClassName="active"
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/about" className="header_links_li">
+              <NavLink
+                to="/about"
+                className="header_links_li "
+                activeClassName="active"
+              >
                 About Us
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/blogs" className="header_links_li">
+              <NavLink
+                to="/blogs"
+                className="header_links_li "
+                activeClassName="active"
+              >
                 Blogs
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/services" className="header_links_li">
+              <NavLink
+                to="/services"
+                className="header_links_li "
+                activeClassName="active"
+              >
                 Our Service
-              </Link>
+              </NavLink>
               s
             </li>
             <li>
-              <Link to="/contact" className="header_links_li">
+              <NavLink
+                to="/contact"
+                className="header_links_li "
+                activeClassName="active"
+              >
                 Contact Us
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { AiFillPieChart } from "react-icons/ai";
 import { BiChip } from "react-icons/bi";
 import {
@@ -9,8 +9,32 @@ import { HiMiniComputerDesktop } from "react-icons/hi2";
 import "./home.css";
 
 const WhyPenetration = () => {
+  const triggerRef = useRef();
+  const [isTriggered, setIsTriggered] = useState(false);
+
+  const handleScroll = () => {
+    if (triggerRef.current) {
+      const elementTop = triggerRef.current.getBoundingClientRect().top;
+      const viewportHeight = window.innerHeight;
+
+      if (elementTop < viewportHeight) {
+        setIsTriggered(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div>
+    <div
+      className={`scroll-trigger ${isTriggered ? "animate" : ""}`}
+      ref={triggerRef}
+    >
       <div className="card_cover">
         <div class="scene">
           <div class="card">
@@ -54,7 +78,6 @@ const WhyPenetration = () => {
           </div>
         </div>
       </div>
-
       <div className="card_cover2">
         <div class="scene2">
           <div class="card">

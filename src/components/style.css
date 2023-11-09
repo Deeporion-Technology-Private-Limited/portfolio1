@@ -6,6 +6,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  z-index: 5;
+  top: 0;
 }
 
 .header_links {
@@ -22,6 +25,21 @@
   font-weight: 700;
   list-style-type: none;
   text-decoration: none;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid transparent;
+}
+
+.header_links_li:hover {
+  color: var(--orange);
+}
+
+.active {
+  border-top: 5px solid red;
+  border-radius: 6px;
+  width: max-content;
 }
 
 .header_btn {

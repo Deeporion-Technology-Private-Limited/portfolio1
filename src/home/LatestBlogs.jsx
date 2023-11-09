@@ -11,6 +11,27 @@ import img4 from "../images/Frame 160.png";
 import img5 from "../images/Frame 159.png";
 import Avatar from "../images/Avatar.png";
 const LatestBlogs = () => {
+  const triggerRef = useRef();
+  const [isTriggered, setIsTriggered] = useState(false);
+
+  const handleScrollElement = () => {
+    if (triggerRef.current) {
+      const elementTop = triggerRef.current.getBoundingClientRect().top;
+      const viewportHeight = window.innerHeight;
+
+      if (elementTop < viewportHeight) {
+        setIsTriggered(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollElement);
+    return () => {
+      window.removeEventListener("scroll", handleScrollElement);
+    };
+  }, []);
+
   const sliderRef = useRef(null);
   const scrollAmount = 100;
   const [isLeftButtonDisabled, setIsLeftButtonDisabled] = useState(true);
@@ -84,7 +105,10 @@ const LatestBlogs = () => {
   }, []);
 
   return (
-    <div>
+    <div
+      className={`scroll-trigger ${isTriggered ? "animate" : ""}`}
+      ref={triggerRef}
+    >
       <div className="penetration_container">
         <h1> Latest Blogs</h1>
         <div className="supportive_text_container">
@@ -109,15 +133,17 @@ const LatestBlogs = () => {
         )}
         <div className="images-container" ref={sliderRef}>
           {images.map((image) => {
+            const overlayClass =
+              image.id % 2 === 1 ? "overlay" : "overlay_bottom";
             return (
-              <div className="container">
+              <div className="latest_container">
                 <img
                   className="image"
                   alt="sliderImage"
                   key={image?.id}
                   src={image?.url}
                 />
-                <div class="overlay">
+                <div className={overlayClass}>
                   <div class="text">{image.content}</div>
                   <div className="avatar_container">
                     <div className="avatar">

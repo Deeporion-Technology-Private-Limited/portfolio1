@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import frame from "../images/Frame.png";
 import { AiFillPieChart } from "react-icons/ai";
 import { BiChip } from "react-icons/bi";
@@ -8,6 +8,26 @@ import {
 } from "react-icons/hi";
 import { HiMiniComputerDesktop } from "react-icons/hi2";
 const PenetrationTesting = () => {
+  const triggerRef = useRef();
+  const [isTriggered, setIsTriggered] = useState(false);
+
+  const handleScroll = () => {
+    if (triggerRef.current) {
+      const elementTop = triggerRef.current.getBoundingClientRect().top;
+      const viewportHeight = window.innerHeight;
+
+      if (elementTop < viewportHeight) {
+        setIsTriggered(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const data = [
     {
       icon: <AiFillPieChart />,
@@ -38,7 +58,12 @@ const PenetrationTesting = () => {
 
   return (
     <div>
-      <div className="penetration_container">
+      <div
+        className={`penetration_container heading scroll-trigger ${
+          isTriggered ? "animate" : ""
+        }`}
+        ref={triggerRef}
+      >
         <h1>Penetration testing stages</h1>
         <div className="supportive_text_container">
           <p className="supportive_text">

@@ -118,8 +118,11 @@ const AboutTeam = () => {
         </div>
         <div className="about_choose_box">
           {team.map((data) => (
-            <div>
-              <img src={data.image} alt="" />
+            <div className="box">
+              <div className="thumbnail ">
+                <div>The hovered text!</div>
+                <img src={data.image} alt="" />
+              </div>
             </div>
           ))}
         </div>
@@ -142,11 +145,11 @@ const AboutTeam = () => {
                     className="about_titile"
                   >
                     {item.title}
-                    {activeIndex === index ? (
-                      <IoIosArrowDown />
-                    ) : (
-                      <IoIosArrowUp />
-                    )}
+                    <IoIosArrowDown
+                      className={`arrow ${
+                        activeIndex === index ? "down" : "up"
+                      }`}
+                    />
                   </div>
                   {activeIndex === index && (
                     <div>

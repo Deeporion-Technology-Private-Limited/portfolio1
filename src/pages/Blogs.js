@@ -1,9 +1,14 @@
 import React from "react";
+import BlogsBanner from "../Blogs/BlogsBanner";
 
 const Blogs = () => {
-  return <div>
-    blogs
-  </div>;
+  return (
+    <div>
+      <div>
+        <BlogsBanner />
+      </div>
+    </div>
+  );
 };
 
 export default Blogs;

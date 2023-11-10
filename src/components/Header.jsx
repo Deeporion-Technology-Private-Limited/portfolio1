@@ -47,7 +47,6 @@ const Header = () => {
               >
                 Our Service
               </NavLink>
-              s
             </li>
             <li>
               <NavLink

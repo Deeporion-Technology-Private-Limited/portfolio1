@@ -11,8 +11,9 @@ body {
   --grey: #9ca3af;
   --lightGrey: #d1d5db;
   --darkGrey: #5f5f5f;
+  --darkerGrey: #6a6a6a;
+  --textGrey: #a8a8a8;
   --lightBlack: #1e2834;
   --orange: #c9442d;
   --purple: #893e97;
-  --darkerGrey: #6a6a6a;
 }

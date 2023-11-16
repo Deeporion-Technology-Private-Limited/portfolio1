@@ -10,6 +10,7 @@ import AuthGuard from "../pages/authantication/AuthGuard";
 import Dashboard from "../pages/PrivatePages/Dashboard";
 import Page404 from "../components/NoPage";
 import Layout from "../components/Layout";
+import BlogDescription from "../Blogs/BlogDescription";
 
 export const RouteLayout = () => {
   const unprotectedRoutes = [
@@ -23,6 +24,12 @@ export const RouteLayout = () => {
       path: "/blogs",
       component: Blogs,
       name: "blogs",
+    },
+
+    {
+      path: "/blogDescription",
+      component: BlogDescription,
+      name: "blogDescription",
     },
 
     {

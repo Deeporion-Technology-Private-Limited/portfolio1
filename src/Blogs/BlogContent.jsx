@@ -4,8 +4,9 @@ import img2 from "../images/Rectangle 43.png";
 import img3 from "../images/Rectangle41.png";
 import { GoArrowDownRight } from "react-icons/go";
 import "./blogs.css";
-
+import { useNavigate } from "react-router-dom";
 const BlogContent = () => {
+  const navigate = useNavigate();
   const data = [
     {
       img: img1,
@@ -61,8 +62,15 @@ const BlogContent = () => {
             <div className=" blog_container">
               <img src={item.img} alt="" />
               <div>
-                {item.heading}
-                {item.btn}
+                <div className="blog_heading">{item.heading}</div>
+              </div>
+              <div className="blog_btn_box">
+                <div
+                  className="blog_btn"
+                  onClick={() => navigate("/blogDescription")}
+                >
+                  {item.btn}
+                </div>
               </div>
             </div>
           ))}

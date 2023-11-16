@@ -1,4 +1,24 @@
+/* Blog Banner CSS*/
+
+.bold_heading_blog {
+  color: var(--white);
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: 70.5px;
+  text-align: center;
+}
+
+.blog_get_started_btn {
+  display: flex;
+  justify-content: center;
+}
+
+/* Blog Content CSS  */
+
 .blog_box {
+  margin-top: 125px;
   color: var(--white);
   display: flex;
   flex-wrap: wrap;
@@ -7,6 +27,7 @@
   align-items: center;
   gap: 25px;
 }
+
 .blog_wrapper {
   width: 67vw;
   display: flex;
@@ -28,4 +49,80 @@
 .blog_container img {
   width: 366px;
   height: 331px;
+}
+
+.blog_heading {
+  width: 366px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.blog_btn_box {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blog_btn {
+  font-size: 24px;
+  text-align: end;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 13.001px 13.001px 12.999px 12.999px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--primary-color-1, #c9442d);
+}
+
+.blog_btn:hover {
+  transform: rotate(-45deg);
+  background: var(--purple);
+}
+
+/*  Blog Description CSS */
+
+.blog_description_wrapper {
+  margin-top: 85px;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog_description_wrapper p,
+ul li {
+  color: var(--textGrey);
+  line-height: 28px;
+}
+
+.blog_description_wrapper h4 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.blog_description_wrapper ul {
+  padding: 0;
+}
+
+.blog_description_container {
+  width: 83vw;
+}
+
+.blog_back_btn {
+  border: none;
+  background: transparent;
+  color: var(--orange);
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.blog_desp_img {
+  width: 83vw;
+}
+
+.blog_bullets {
+  list-style: disc;
 }

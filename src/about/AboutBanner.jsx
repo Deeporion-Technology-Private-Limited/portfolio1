@@ -1,10 +1,13 @@
-import React from "react";
+import React, { Suspense } from "react";
+// import React from "react";
 import "../home/home.css";
 import "./about.css";
 import ChooseUs from "./ChooseUs";
 import AboutTeam from "./AboutTeam";
+import { useTranslation } from "react-i18next";
 
 const Aboutbanner = () => {
+  const { t } = useTranslation();
   const ideas_data = [
     {
       id: 1,
@@ -30,9 +33,7 @@ const Aboutbanner = () => {
           <div className="home_container">
             <div className="home_content">
               <div className="front_content">
-                <p className="bold_heading">
-                  Best Solution to Secure Your Data Identity
-                </p>
+                <p className="bold_heading">{t("Hello")}</p>
                 <h4 className="sub_heading_home">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Sint, consequatur sequi. Blanditiis nostrum deserunt vero.

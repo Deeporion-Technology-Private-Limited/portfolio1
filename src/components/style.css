@@ -58,13 +58,13 @@
     linear-gradient(89deg, #c9442d 0.55%, #893e97 91.24%)
   );
   border: 1px solid transparent;
-  transition: 3s;
 }
 
 .header_btn:hover {
   background: linear-gradient(var(--black), var(--black)) padding-box,
     linear-gradient(to right, #c9442d, #893e97) border-box;
   border-radius: 8px;
+  transition: 3s;
 }
 
 /* Footer  Css*/

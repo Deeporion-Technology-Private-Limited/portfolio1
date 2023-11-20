@@ -80,6 +80,7 @@
 .blog_btn:hover {
   transform: rotate(-45deg);
   background: var(--purple);
+  transition: 1s;
 }
 
 /*  Blog Description CSS */
@@ -123,6 +124,83 @@ ul li {
   width: 83vw;
 }
 
+.blog_desp_heading {
+  font-size: 40px;
+  text-align: left;
+}
+
 .blog_bullets {
   list-style: disc;
+}
+
+/* Blog Comment CSS */
+
+.blog_comment_container {
+  width: 83vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog_comment_box input {
+  border-radius: 18px;
+  padding: 20px 419px 20px 30px;
+  border: 1px solid #717171;
+  background: var(--black);
+}
+
+/* blog Carousel Css */
+
+.images-container_desp {
+  display: flex;
+  max-width: 65vw;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  transition: scroll 0.3s ease-in-out;
+}
+
+.latest_container_desp {
+  padding: 22px 22px 20px 22px;
+  border-radius: 28px;
+  border: 1px solid #6a6a6a;
+  height: 350px;
+  margin-left: 25px;
+}
+
+.text_desp {
+  font-size: 18px;
+  width: 321px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 22px 0;
+}
+
+.nav-btn_desp {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+  background-color: var(--purple);
+  border-radius: 50%;
+  height: 46px;
+  width: 46px;
+  margin: 5px;
+  color: var(--white);
+  font-size: 22px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_btn_left_desp {
+  position: absolute;
+  left: 11%;
+  z-index: 9;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+.nav_btn_right_desp {
+  position: absolute;
+  right: 11%;
+  z-index: 9;
 }

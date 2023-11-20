@@ -13,47 +13,27 @@ const Header = () => {
         <div>
           <ul className="header_links">
             <li>
-              <NavLink
-                to="/"
-                className="header_links_li "
-                activeClassName="active"
-              >
+              <NavLink to="/" className="header_links_li ">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/about"
-                className="header_links_li "
-                activeClassName="active"
-              >
+              <NavLink to="/about" className="header_links_li ">
                 About Us
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/blogs"
-                className="header_links_li "
-                activeClassName="active"
-              >
+              <NavLink to="/blogs" className="header_links_li ">
                 Blogs
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/services"
-                className="header_links_li "
-                activeClassName="active"
-              >
+              <NavLink to="/services" className="header_links_li ">
                 Our Service
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/contact"
-                className="header_links_li "
-                activeClassName="active"
-              >
+              <NavLink to="/contact" className="header_links_li ">
                 Contact Us
               </NavLink>
             </li>

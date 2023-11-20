@@ -36,15 +36,15 @@ const WhyPenetration = () => {
       ref={triggerRef}
     >
       <div className="card_cover">
-        <div class="scene">
-          <div class="card">
-            <div class="card__face card__face--front">
+        <div className="scene">
+          <div className="card">
+            <div className="card__face card__face--front">
               <div className="why_penetration_content">
                 <AiFillPieChart className="penetration_icon" />
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
-            <div class="card__face card__face--back">
+            <div className="card__face card__face--back">
               <div className="why_penetration_content_back">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -59,14 +59,14 @@ const WhyPenetration = () => {
               Why Penetration testing ?
             </h1>
           </div>
-          <div class="card">
-            <div class="card__face card__face--front">
+          <div className="card">
+            <div className="card__face card__face--front">
               <div className="why_penetration_content">
                 <HiMiniComputerDesktop className="penetration_icon" />
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
-            <div class="card__face card__face--back">
+            <div className="card__face card__face--back">
               <div className="why_penetration_content_back">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -79,15 +79,15 @@ const WhyPenetration = () => {
         </div>
       </div>
       <div className="card_cover2">
-        <div class="scene2">
-          <div class="card">
-            <div class="card__face card__face--front">
+        <div className="scene2">
+          <div className="card">
+            <div className="card__face card__face--front">
               <div className="why_penetration_content">
                 <BiChip className="penetration_icon" />
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
-            <div class="card__face card__face--back">
+            <div className="card__face card__face--back">
               <div className="why_penetration_content_back">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -97,14 +97,14 @@ const WhyPenetration = () => {
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card__face card__face--front">
+          <div className="card">
+            <div className="card__face card__face--front">
               <div className="why_penetration_content">
                 <HiPresentationChartBar className="penetration_icon" />
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
-            <div class="card__face card__face--back">
+            <div className="card__face card__face--back">
               <div className="why_penetration_content_back">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

@@ -2,6 +2,8 @@ import React from "react";
 import "./blogs.css";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import img1 from "../images/img7.png";
+import BlogComment from "./BlogComment";
+import BlogCarousel from "./BlogCarousel";
 
 const BlogDescription = () => {
   return (
@@ -16,7 +18,9 @@ const BlogDescription = () => {
           <img src={img1} alt="" className="blog_desp_img" />
         </div>
         <div>
-          <h1>4 Cyber Security take away from China’s largest data breach</h1>
+          <h1 className="blog_desp_heading">
+            4 Cyber Security take away from China’s largest data breach
+          </h1>
           <p>
             The applications of AR are vast and diverse. From entertainment and
             gaming, where users can see virtual characters in their
@@ -119,7 +123,6 @@ const BlogDescription = () => {
               </li>
             </ul>
           </div>
-
           <div>
             <h4>Follow an established framework.</h4>
             <ul>
@@ -154,7 +157,6 @@ const BlogDescription = () => {
               </li>
             </ul>
           </div>
-
           <div>
             <h4>Focus on incremental improvements.</h4>
             <ul>
@@ -174,6 +176,12 @@ const BlogDescription = () => {
               </li>
             </ul>
           </div>
+        </div>
+        <div>
+          <BlogComment />
+        </div>
+        <div>
+          <BlogCarousel />
         </div>
       </div>
     </div>

@@ -1,0 +1,117 @@
+/* ContactUs Content CSS */
+
+.contact_wrapper {
+  width: 100vw;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content_container {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  color: var(--white);
+}
+
+.contact_content_wrapper {
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 16px;
+  border-radius: 28px;
+  background: #1c2330;
+  padding: 29px 181px 29px 29px;
+  color: var(--white);
+}
+
+.contact_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--purple);
+  font-size: 26px;
+  height: 26px;
+  width: 26px;
+  border-radius: 16px;
+  border: 1px solid var(--Primary-color-2, #893e97);
+  padding: 19px 17px;
+  background: rgba(137, 62, 151, 0.15);
+}
+
+.contact_heading h4 {
+  font-weight: 400;
+}
+
+.contact_content:hover {
+  background-color: var(--purple);
+  transform: translateY(-50px);
+  transition: 3s;
+}
+
+.contact_content:hover .contact_icon {
+  background-color: var(--white);
+}
+
+.person_info_box {
+  width: 1280px;
+  padding: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 110px;
+  border-radius: 28px;
+  box-shadow: 0px 0px 25px 0px rgba(151, 71, 255, 0.12);
+}
+
+.person_name,
+.person_detail {
+  width: 72vw;
+  display: flex;
+  gap: 56px;
+}
+
+.person_name input,
+.person_detail input {
+  border-radius: 18px;
+  border: 1px solid var(--darkGrey);
+  background: #111927;
+  padding: 20px 413px 20px 30px;
+  margin-bottom: 30px;
+}
+
+.person_text textarea {
+  border-radius: 18px;
+  border: 1px solid var(--darkGrey);
+  background: #111927;
+  height: 132px;
+  padding: 20px 1017px 86px 30px;
+}
+
+.submit_btn {
+  display: flex;
+  width: 128px;
+  height: 48px;
+  padding: 12px 37px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(137, 62, 151, 0.6);
+  border: none;
+  color: var(--white);
+  margin-top: 30px;
+}

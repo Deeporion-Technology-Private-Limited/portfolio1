@@ -144,7 +144,7 @@ const LatestBlogs = () => {
                   src={image?.url}
                 />
                 <div className={overlayClass}>
-                  <div class="text">{image.content}</div>
+                  <div className="text">{image.content}</div>
                   <div className="avatar_container">
                     <div className="avatar">
                       <img src={image.avatar} alt="" />

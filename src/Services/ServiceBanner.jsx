@@ -1,8 +1,7 @@
 import React from "react";
-import "./blogs.css";
-import BlogContent from "./BlogContent";
+import ServiceContent from "./ServiceContent";
 
-const BlogsBanner = () => {
+const ServiceBanner = () => {
   return (
     <div>
       <div className="about_banner">
@@ -10,7 +9,7 @@ const BlogsBanner = () => {
           <div className="home_container">
             <div className="home_content">
               <div className="front_content">
-                <p className="bold_heading_blog">Our Latest Blogs</p>
+                <p className="bold_heading_blog">Lorem ipsum dolor</p>
                 <h4 className="sub_heading_home">
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -26,10 +25,10 @@ const BlogsBanner = () => {
         </div>
       </div>
       <div>
-        <BlogContent />
+        <ServiceContent />
       </div>
     </div>
   );
 };
 
-export default BlogsBanner;
+export default ServiceBanner;

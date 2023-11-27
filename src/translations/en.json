@@ -65,7 +65,6 @@
   "bluehost": "Bluehost",
   "stock": "Stock Photos",
   "legal": "LEGAL",
-  "privacy_policy": "Privacy Policy",
   "terms": "Terms & Conditions",
   "eula": "EULA",
   "copyright": "© 2021 Themesberg, Inc. All rights reserved.",
@@ -127,5 +126,15 @@
   "ai": "Ai consulting services",
   "ai_consulting": "AI consulting services for cyber security and information technology. We help organizations of all sizes to adopt AI to improve their security posture, reduce risk, and increase efficiency.AI can identify and respond to cyber threats more quickly and effectively than traditional methods. It can also be used to improve the efficiency of your cyber security operations.CyberSecOp can help you to adopt AI to improve your cyber security posture. We have a team of experienced AI experts who can help you assess your current We have a team of experienced AI experts who can help you assess your current ",
   "financial": "Protection from financial damage",
-  "financial_damage": "Cyber Security offers financial security against damage caused by cyber incidents. This includes expenses for investigations, credit monitoring services and potential legal responsibilities, among other costs associated with data breaches.offers financial security against damage caused by cyber incidents. This includes expenses for investigations, credit monitoring services and potential legal responsibilities, among other costs associated with data breaches."
+  "financial_damage": "Cyber Security offers financial security against damage caused by cyber incidents. This includes expenses for investigations, credit monitoring services and potential legal responsibilities, among other costs associated with data breaches.offers financial security against damage caused by cyber incidents. This includes expenses for investigations, credit monitoring services and potential legal responsibilities, among other costs associated with data breaches.",
+  "infrastructure": "Analysis of IT Infrastructure",
+  "endpoints": "A pen test allows an in-depth analysis of your IT infrastructure and your ability to defend your applications, systems, networks, endpoints, and users from external and internal attempts to cause disruption and data losses or gain unauthorized access to protected assets.",
+  "partnership": "Protects Clients and Partnerships",
+  "security_breach": "A security breach can significantly affect your organization, clients, partners, and other third parties. However, if you schedule penetration tests regularly and take the necessary actions and prevention steps needed to ensure data and system security, you build trust and confidence.",
+  "damage": "Protection from Financial Damage",
+  "single_breach": "A single breach of your company’s security system can lead to millions of dollars in damages. Security faults and associated disruptions in the performance of your network, applications, and services can cause debilitating financial harm to your organization.",
+  "reputation": "Protects Company Image and Reputation",
+  "build": "You build an excellent company reputation and public reputation after years of consistency, hard work, and a lot of investment. However, all your hard work can change overnight due to a single security breach. Irrespective of the breach’s cost and whether you resolve it quickly.",
+  "compliance": "Compliance with Regulation and Security Certification ",
+  "penalties": "The complete records of a pen tests can help you evade substantial penalties for non-compliance. It also allows you to illustrate ongoing due diligence by maintaining the required security controls, also need competent pen testers with the right tools to conduct these tests."
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet, Link, NavLink } from "react-router-dom";
 import vigilops from "../images/Vigilops.png";
 import "./style.css";
+import GoToTop from "./GoToTop";
 
 const Header = () => {
   return (
@@ -44,6 +45,7 @@ const Header = () => {
         </div>
       </div>
       <Outlet />
+      <GoToTop />
     </div>
   );
 };

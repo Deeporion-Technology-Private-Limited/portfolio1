@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useRef, useState } from "react";
 // import React from "react";
 import "../home/home.css";
 import "./about.css";
@@ -8,6 +8,27 @@ import { useTranslation } from "react-i18next";
 
 const Aboutbanner = () => {
   const { t } = useTranslation();
+  const triggerRef = useRef();
+  const [isTriggered, setIsTriggered] = useState(false);
+
+  const handleScroll = () => {
+    if (triggerRef.current) {
+      const elementTop = triggerRef.current.getBoundingClientRect().top;
+      const viewportHeight = window.innerHeight;
+
+      if (elementTop < viewportHeight) {
+        setIsTriggered(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const ideas_data = [
     {
       id: 1,
@@ -30,12 +51,15 @@ const Aboutbanner = () => {
     <div>
       <div className="about_banner">
         <div className="about_backdrop">
-          <div className="home_container">
-            <div className="home_content">
-              <div className="front_content">
-                <p className="bold_heading">{t("best_soluction")}</p>
-                <h4 className="sub_heading_home">{t("lorem_vero")}</h4>
-              </div>
+          <div className="home_content">
+            <div
+              className={`front_content heading scroll-trigger ${
+                isTriggered ? "animate" : ""
+              }`}
+              ref={triggerRef}
+            >
+              <p className="bold_heading">{t("best_soluction")}</p>
+              <h4 className="sub_heading_home">{t("lorem_vero")}</h4>
             </div>
           </div>
         </div>

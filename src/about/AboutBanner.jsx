@@ -12,17 +12,17 @@ const Aboutbanner = () => {
     {
       id: 1,
       heading: "20+",
-      description: " Years of Experience",
+      description: t("years_of_experience"),
     },
     {
       id: 2,
       heading: "1800+",
-      description: " Projects Completed",
+      description: t("projects_completed"),
     },
     {
       id: 3,
       heading: "1700+",
-      description: "Satisfied Clients",
+      description: t("satisfied_clients"),
     },
   ];
 
@@ -33,11 +33,8 @@ const Aboutbanner = () => {
           <div className="home_container">
             <div className="home_content">
               <div className="front_content">
-                <p className="bold_heading">{t("Hello")}</p>
-                <h4 className="sub_heading_home">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Sint, consequatur sequi. Blanditiis nostrum deserunt vero.
-                </h4>
+                <p className="bold_heading">{t("best_soluction")}</p>
+                <h4 className="sub_heading_home">{t("lorem_vero")}</h4>
               </div>
             </div>
           </div>

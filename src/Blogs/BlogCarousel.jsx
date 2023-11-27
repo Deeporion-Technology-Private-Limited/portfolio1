@@ -7,8 +7,10 @@ import {
   MdOutlineKeyboardArrowLeft,
 } from "react-icons/md";
 import "./blogs.css";
+import { useTranslation } from "react-i18next";
 
 const BlogCarousel = () => {
+  const { t } = useTranslation();
   const triggerRef = useRef();
   const [isTriggered, setIsTriggered] = useState(false);
 
@@ -31,7 +33,7 @@ const BlogCarousel = () => {
   }, []);
 
   const sliderRef = useRef(null);
-  const scrollAmount = 100;
+  const scrollAmount = 400;
   const [isLeftButtonDisabled, setIsLeftButtonDisabled] = useState(true);
   const [isRightButtonDisabled, setIsRightButtonDisabled] = useState(false);
 
@@ -39,27 +41,27 @@ const BlogCarousel = () => {
     {
       id: 1,
       url: img1,
-      content: "4 Cyber Security take away from China’s largest data breach",
+      content: t("4_cyber"),
     },
     {
       id: 2,
       url: img2,
-      content: "4 Cyber Security take away from China’s largest data breach",
+      content: t("4_cyber"),
     },
     {
       id: 3,
       url: img3,
-      content: "4 Cyber Security take away from China’s largest data breach",
+      content: t("4_cyber"),
     },
     {
       id: 4,
       url: img1,
-      content: "4 Cyber Security take away from China’s largest data breach",
+      content: t("4_cyber"),
     },
     {
       id: 5,
       url: img2,
-      content: "4 Cyber Security take away from China’s largest data breach",
+      content: t("4_cyber"),
     },
   ];
 
@@ -89,7 +91,7 @@ const BlogCarousel = () => {
         ref={triggerRef}
       >
         <div className="penetration_container">
-          <h1>Latest posts</h1>
+          <h1>{t("latest_posts")}</h1>
         </div>
         <div className="latest_App">
           <button

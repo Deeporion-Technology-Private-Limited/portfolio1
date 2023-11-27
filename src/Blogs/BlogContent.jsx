@@ -5,52 +5,54 @@ import img3 from "../images/Rectangle41.png";
 import { GoArrowDownRight } from "react-icons/go";
 import "./blogs.css";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 const BlogContent = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const data = [
     {
       img: img1,
-      heading: " 4 Cyber Security take away from China’s largest data breach",
+      heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
       img: img2,
-      heading: " 4 Cyber Security take away from China’s largest data breach",
+      heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
       img: img3,
-      heading: "4 Cyber Security take away from China’s largest data breach ",
+      heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
       img: img1,
-      heading: " 4 Cyber Security take away from China’s largest data breach",
+      heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
       img: img2,
-      heading: "4 Cyber Security take away from China’s largest data breach ",
+      heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
       img: img3,
-      heading: "4 Cyber Security take away from China’s largest data breach ",
+      heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
       img: img1,
-      heading: " 4 Cyber Security take away from China’s largest data breach",
+      heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
       img: img2,
-      heading: "4 Cyber Security take away from China’s largest data breach ",
+      heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
       img: img3,
-      heading: "4 Cyber Security take away from China’s largest data breach ",
+      heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
   ];

@@ -7,7 +7,10 @@ import {
   HiOutlineDocumentReport,
 } from "react-icons/hi";
 import { HiMiniComputerDesktop } from "react-icons/hi2";
+import { useTranslation } from "react-i18next";
 const PenetrationTesting = () => {
+  const { t } = useTranslation();
+
   const triggerRef = useRef();
   const [isTriggered, setIsTriggered] = useState(false);
 
@@ -31,28 +34,28 @@ const PenetrationTesting = () => {
   const data = [
     {
       icon: <AiFillPieChart />,
-      heading: "Planning and reconnaissance",
-      desp: "Defining the scope and goals of a test, including the systems to be addressed and the testing methods to be used.",
+      heading: t("planning_and_reconnaissance"),
+      desp: t("define_the_scope"),
     },
     {
       icon: <BiChip />,
-      heading: "Scanning",
-      desp: "The next step is to understand how the target application will respond to various intrusion attempts. This is typically done using static and dynamic analysis.",
+      heading: t("scanning"),
+      desp: t("the_next_step"),
     },
     {
       icon: <HiPresentationChartBar />,
-      heading: "Gaining Access",
-      desp: "This stage uses web application attacks, such as cross-site scripting, SQL injection and backdoors, to uncover a target’s vulnerabilities.",
+      heading: t("gaining_access"),
+      desp: t("attack"),
     },
     {
       icon: <HiMiniComputerDesktop />,
-      heading: "Maintaining access",
-      desp: "The goal of this stage is to see if the vulnerability can be used to achieve a persistent presence in the exploited system long enough for a bad actor to gain in-depth access.",
+      heading: t("maintaining_access"),
+      desp: t("the_goal_of_this_stage"),
     },
     {
       icon: <HiOutlineDocumentReport />,
-      heading: "Analysis",
-      desp: "This information is analyzed by security personnel to help configure an enterprise’s WAF settings and other application security solutions to patch vulnerabilities and protect against future attacks.",
+      heading: t("analysis"),
+      desp: t("security_personnel"),
     },
   ];
 
@@ -64,13 +67,9 @@ const PenetrationTesting = () => {
         }`}
         ref={triggerRef}
       >
-        <h1>Penetration testing stages</h1>
+        <h1>{t("penetration_testing_stages")}</h1>
         <div className="supportive_text_container">
-          <p className="supportive_text">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud”
-          </p>
+          <p className="supportive_text">{t("lorem_ipsum")}</p>
         </div>
       </div>
       <div className="penetration_desp_info">

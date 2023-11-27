@@ -10,7 +10,9 @@ import img3 from "../images/Frame 163.png";
 import img4 from "../images/Frame 160.png";
 import img5 from "../images/Frame 159.png";
 import Avatar from "../images/Avatar.png";
+import { useTranslation } from "react-i18next";
 const LatestBlogs = () => {
+  const { t } = useTranslation();
   const triggerRef = useRef();
   const [isTriggered, setIsTriggered] = useState(false);
 
@@ -33,7 +35,7 @@ const LatestBlogs = () => {
   }, []);
 
   const sliderRef = useRef(null);
-  const scrollAmount = 100;
+  const scrollAmount = 300;
   const [isLeftButtonDisabled, setIsLeftButtonDisabled] = useState(true);
   const [isRightButtonDisabled, setIsRightButtonDisabled] = useState(false);
 
@@ -41,46 +43,41 @@ const LatestBlogs = () => {
     {
       id: 1,
       url: img1,
-      content:
-        "Elevate Your Cybersecurity with Imperva Cloud WAF: More Than Just a Checkbox",
+      content: t("elevate"),
       avatar: Avatar,
-      name: "Bonnie Green",
+      name: t("bonnie"),
       status: "Sept 19, 2023 | 2 min Read",
     },
     {
       id: 2,
       url: img2,
-      content:
-        "Elevate Your Cybersecurity with Imperva Cloud WAF: More Than Just a Checkbox",
+      content: t("elevate"),
       avatar: Avatar,
-      name: "Bonnie Green",
+      name: t("bonnie"),
       status: "Sept 19, 2023 | 2 min Read",
     },
     {
       id: 3,
       url: img3,
-      content:
-        "Elevate Your Cybersecurity with Imperva Cloud WAF: More Than Just a Checkbox",
+      content: t("elevate"),
       avatar: Avatar,
-      name: "Bonnie Green",
+      name: t("bonnie"),
       status: "Sept 19, 2023 | 2 min Read",
     },
     {
       id: 4,
       url: img4,
-      content:
-        "Elevate Your Cybersecurity with Imperva Cloud WAF: More Than Just a Checkbox",
+      content: t("elevate"),
       avatar: Avatar,
-      name: "Bonnie Green",
+      name: t("bonnie"),
       status: "Sept 19, 2023 | 2 min Read",
     },
     {
       id: 5,
       url: img5,
-      content:
-        "Elevate Your Cybersecurity with Imperva Cloud WAF: More Than Just a Checkbox",
+      content: t("elevate"),
       avatar: Avatar,
-      name: "Bonnie Green",
+      name: t("bonnie"),
       status: "Sept 19, 2023 | 2 min Read",
     },
   ];
@@ -110,13 +107,9 @@ const LatestBlogs = () => {
       ref={triggerRef}
     >
       <div className="penetration_container">
-        <h1> Latest Blogs</h1>
+        <h1>{t("latest_blogs")}</h1>
         <div className="supportive_text_container">
-          <p className="supportive_text">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud”
-          </p>
+          <p className="supportive_text">{t("lorem_ipsum")}</p>
         </div>
       </div>
       <div className="latest_App">

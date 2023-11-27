@@ -4,8 +4,10 @@ import { AiOutlineEye, AiOutlineDollar } from "react-icons/ai";
 import { IoCloudDoneOutline } from "react-icons/io5";
 import { BsCheckCircle } from "react-icons/bs";
 import { RiShieldStarLine } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
 
 const ChooseUs = () => {
+  const { t } = useTranslation();
   const triggerRef = useRef();
   const [isTriggered, setIsTriggered] = useState(false);
 
@@ -30,33 +32,33 @@ const ChooseUs = () => {
   const reasons = [
     {
       icon: <MdDevices />,
-      heading: "Multi Platform",
-      desp: "Lorem ipsum dolor sit amet consectetur. Eget quam dui velit fermentum. Tincidunt est lacus nec vitae turpis amet natoque. Ipsum aliquet gravida phasellus diam in elit suspendisse. Tincidunt est lacus nec vitae turpis amet natoque. Ipsum aliquet gravida phasellus diam in elit dolor sit amet consectetur. ",
+      heading: t("multi_platform"),
+      desp: t("lorem_consectetur"),
     },
     {
       icon: <AiOutlineEye />,
-      heading: "Great Visibility",
-      desp: "Lorem ipsum dolor sit amet consectetur. Eget quam dui velit fermentum. Tincidunt est lacus nec vitae turpis amet natoque. Ipsum aliquet gravida phasellus diam in elit suspendisse. Tincidunt est lacus nec vitae turpis amet natoque. Ipsum aliquet gravida phasellus diam in elit dolor sit amet consectetur. ",
+      heading: t("great"),
+      desp: t("lorem_consectetur"),
     },
     {
       icon: <IoCloudDoneOutline />,
-      heading: "Cloud System",
-      desp: "Lorem ipsum dolor sit amet consectetur. Eget quam dui velit fermentum. Tincidunt est lacus nec vitae turpis amet natoque. Ipsum aliquet gravida phasellus diam in elit suspendisse. Tincidunt est lacus nec vitae turpis amet natoque. Ipsum aliquet gravida phasellus diam in elit dolor sit amet consectetur. ",
+      heading: t("cloud"),
+      desp: t("lorem_consectetur"),
     },
     {
       icon: <BsCheckCircle />,
-      heading: "A++ Certified",
-      desp: "Lorem ipsum dolor sit amet consectetur. Eget quam dui velit fermentum. Tincidunt est lacus nec vitae turpis amet natoque. Ipsum aliquet gravida phasellus diam in elit suspendisse. Tincidunt est lacus nec vitae turpis amet natoque. Ipsum aliquet gravida phasellus diam in elit dolor sit amet consectetur. ",
+      heading: t('A++"'),
+      desp: t("lorem_consectetur"),
     },
     {
       icon: <RiShieldStarLine />,
-      heading: "High Security",
-      desp: "Lorem ipsum dolor sit amet consectetur. Eget quam dui velit fermentum. Tincidunt est lacus nec vitae turpis amet natoque. Ipsum aliquet gravida phasellus diam in elit suspendisse. Tincidunt est lacus nec vitae turpis amet natoque. Ipsum aliquet gravida phasellus diam in elit dolor sit amet consectetur. ",
+      heading: t("high_security"),
+      desp: t("lorem_consectetur"),
     },
     {
       icon: <AiOutlineDollar />,
-      heading: "Best Budget",
-      desp: "Lorem ipsum dolor sit amet consectetur. Eget quam dui velit fermentum. Tincidunt est lacus nec vitae turpis amet natoque. Ipsum aliquet gravida phasellus diam in elit suspendisse. Tincidunt est lacus nec vitae turpis amet natoque. Ipsum aliquet gravida phasellus diam in elit dolor sit amet consectetur. ",
+      heading: t("best_budget"),
+      desp: t("lorem_consectetur"),
     },
   ];
 
@@ -68,13 +70,9 @@ const ChooseUs = () => {
         }`}
         ref={triggerRef}
       >
-        <h1>Why Choose Us</h1>
+        <h1>{t("why_choose_us")}</h1>
         <div className="supportive_text_container">
-          <p className="supportive_text">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud”
-          </p>
+          <p className="supportive_text">{t("lorem_ipsum")}</p>
         </div>
         <div className="about_choose_box">
           {reasons.map((data) => (

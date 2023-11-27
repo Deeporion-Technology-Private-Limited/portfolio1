@@ -1,11 +1,14 @@
 import React from "react";
 import "./blogs.css";
+import { useTranslation } from "react-i18next";
 
 const BlogComment = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="person_info_box">
-        <h4>Leave a Comment</h4>
+        <h4>{t("leave_a_comment")}</h4>
         <div className="person_name">
           <input type="text" placeholder="Full Name" />
           <input type="text" placeholder="Email" />
@@ -20,7 +23,7 @@ const BlogComment = () => {
           ></textarea>
         </div>
         <div>
-          <button className="submit_btn">submit</button>
+          <button className="submit_btn">{t("submit")}</button>
         </div>
       </div>
     </div>

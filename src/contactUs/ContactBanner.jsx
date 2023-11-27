@@ -1,7 +1,9 @@
 import React from "react";
 import "./contactUs.css";
 import ContactContent from "./ContactContent";
+import { useTranslation } from "react-i18next";
 const ContactBanner = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="about_banner">
@@ -10,15 +12,13 @@ const ContactBanner = () => {
             <div className="home_content">
               <div className="front_content">
                 <p className="bold_heading_blog">
-                  We are here to support your business{" "}
+                  {t("we_are_here_to_support")}
                 </p>
-                <h4 className="sub_heading_home">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud”
-                </h4>
+                <h4 className="sub_heading_home">{t("lorem_ipsum")}</h4>
                 <div className="blog_get_started_btn">
-                  <button className="get_started_btn">Get started</button>
+                  <button className="get_started_btn">
+                    {t("get_started")}
+                  </button>
                 </div>
               </div>
             </div>

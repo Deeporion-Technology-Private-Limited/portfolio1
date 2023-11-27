@@ -1,11 +1,11 @@
 /* service Content */
-.jj {
+.service_info {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.cc {
+.service_info_box {
   height: 530px;
 }
 
@@ -15,6 +15,11 @@
   align-items: center;
   margin-bottom: 20px;
   gap: 25px;
+}
+
+.service_wrapper h3 {
+  color: var(--white);
+  margin: 10px 0;
 }
 
 .service_wrapper p {

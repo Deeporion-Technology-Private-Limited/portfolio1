@@ -7,8 +7,10 @@ import {
 } from "react-icons/hi";
 import { HiMiniComputerDesktop } from "react-icons/hi2";
 import "./home.css";
+import { useTranslation } from "react-i18next";
 
 const WhyPenetration = () => {
+  const { t } = useTranslation();
   const triggerRef = useRef();
   const [isTriggered, setIsTriggered] = useState(false);
 
@@ -41,38 +43,30 @@ const WhyPenetration = () => {
             <div className="card__face card__face--front">
               <div className="why_penetration_content">
                 <AiFillPieChart className="penetration_icon" />
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>{t("lorem_amet")}</p>
               </div>
             </div>
             <div className="card__face card__face--back">
               <div className="why_penetration_content_back">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt labore et dolore magna aliqua. Ut
-                  enim ad minim veniam, quis nostrud.
-                </p>
+                <p>{t("lorem_ipsum")}</p>
               </div>
             </div>
           </div>
           <div>
             <h1 className="why_penetration_content_h1 card__face--front">
-              Why Penetration testing ?
+              {t("why_Penetration_testing")}
             </h1>
           </div>
           <div className="card">
             <div className="card__face card__face--front">
               <div className="why_penetration_content">
                 <HiMiniComputerDesktop className="penetration_icon" />
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>{t("lorem_ipsum_dolor")}</p>
               </div>
             </div>
             <div className="card__face card__face--back">
               <div className="why_penetration_content_back">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt labore et dolore magna aliqua. Ut
-                  enim ad minim veniam, quis nostrud.
-                </p>
+                <p>{t("lorem_ipsum")}</p>
               </div>
             </div>
           </div>
@@ -84,16 +78,12 @@ const WhyPenetration = () => {
             <div className="card__face card__face--front">
               <div className="why_penetration_content">
                 <BiChip className="penetration_icon" />
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>{t("lorem_ipsum_dolor")}</p>
               </div>
             </div>
             <div className="card__face card__face--back">
               <div className="why_penetration_content_back">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt labore et dolore magna aliqua. Ut
-                  enim ad minim veniam, quis nostrud.
-                </p>
+                <p>{t("lorem_ipsum")}</p>
               </div>
             </div>
           </div>
@@ -101,16 +91,12 @@ const WhyPenetration = () => {
             <div className="card__face card__face--front">
               <div className="why_penetration_content">
                 <HiPresentationChartBar className="penetration_icon" />
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>{t("lorem_ipsum_dolor")}</p>
               </div>
             </div>
             <div className="card__face card__face--back">
               <div className="why_penetration_content_back">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt labore et dolore magna aliqua. Ut
-                  enim ad minim veniam, quis nostrud.
-                </p>
+                <p>{t("lorem_ipsum")}</p>
               </div>
             </div>
           </div>

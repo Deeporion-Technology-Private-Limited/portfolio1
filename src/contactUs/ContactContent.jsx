@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useTransition } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
 import { IoLocationSharp } from "react-icons/io5";
 import "./contactUs.css";
+import { useTranslation } from "react-i18next";
 
 const ContactContent = () => {
+  const { t } = useTranslation();
   const data = [
     {
       icon: <FaPhone />,
@@ -26,7 +28,7 @@ const ContactContent = () => {
     <div className="contact_wrapper">
       <div className="contact_container">
         <div>
-          <h1>Let’s Get in Touch</h1>
+          <h1>{t("lets_get_in_touch")}</h1>
         </div>
         <div className="contact_content_wrapper">
           {data.map((item) => (
@@ -63,7 +65,7 @@ const ContactContent = () => {
             ></textarea>
           </div>
           <div>
-            <button className="submit_btn">submit</button>
+            <button className="submit_btn">{t("submit")}</button>
           </div>
         </div>
       </div>

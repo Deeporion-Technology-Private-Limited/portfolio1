@@ -10,31 +10,31 @@ import PenetrationTesting from "./PenetrationTesting";
 import WhyPenetration from "./WhyPenetration";
 import LatestBlogs from "./LatestBlogs";
 import PenetrationBenefits from "./PenetrationBenefits";
+import { useTranslation } from "react-i18next";
+
 const Homebanner = () => {
+  const { t } = useTranslation();
   const ideas_data = [
     {
       id: 1,
       icon: <TbBulbFilled />,
-      heading: "Ideas and Concepts",
-      description:
-        " Methodically hacking into the system and network to identify and expose as many vulnerabilities as you possibly can, from multiplevantage points.",
-      btn: " Read more ",
+      heading: t("ideas_and_concepts"),
+      description: t("desp1"),
+      btn: t("read_more"),
     },
     {
       id: 2,
       icon: <HiPresentationChartBar />,
-      heading: "Event Marketing",
-      description:
-        " You can protect customer data, reduce cyber risk, satisfy stakeholder requirements, and preserve the organization’s image and reputation.",
-      btn: " Read more ",
+      heading: t("event_marketing"),
+      description: t("desp2"),
+      btn: t("read_more"),
     },
     {
       id: 3,
       icon: <AiFillEye />,
-      heading: "Onsite",
-      description:
-        " Penetration testers use internal and external attacks on your servers, intranets, web applications, wireless networks, mobile devices, and other available points.",
-      btn: " Read more ",
+      heading: t("onsite"),
+      description: t("desp3"),
+      btn: t("read_more"),
     },
   ];
 
@@ -45,22 +45,19 @@ const Homebanner = () => {
           <div className="home_container">
             <div className="home_content">
               <div className="front_content">
-                <p className="bold_heading">
-                  Were here to Secure Your Privacy on Your Hands
-                </p>
+                <p className="bold_heading">{t("secure_privacy")}</p>
                 <h4 className="sub_heading_home">
-                  Friendly & Professional Service"Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud”
+                  {t("friendly_&_professional_service")}
                 </h4>
                 <div className="homebanner_btn">
                   <div>
-                    <button className="get_started_btn">Get started</button>
+                    <button className="get_started_btn">
+                      {t("get_started")}
+                    </button>
                   </div>
                   <div>
                     <button className="work_btn">
-                      See how it works <FaCirclePlay />
+                      {t("see_how_it_works")} <FaCirclePlay />
                     </button>
                   </div>
                 </div>

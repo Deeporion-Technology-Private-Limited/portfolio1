@@ -8,8 +8,10 @@ import img6 from "../images/Rectangle 34.png";
 import img7 from "../images/Rectangle 33.png";
 import img8 from "../images/Rectangle 32.png";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 const AboutTeam = () => {
+  const { t } = useTranslation();
   const triggerRef = useRef();
   const [isTriggered, setIsTriggered] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
@@ -37,66 +39,62 @@ const AboutTeam = () => {
   }, []);
   const items = [
     {
-      title: "Why to perform security testing on website?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud” Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod ",
+      title: t("perform"),
+      content: t("lorem_temper"),
     },
     {
-      title: "What should I test in web application?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eiusmod ",
+      title: t("test"),
+      content: t("lorem_temper"),
     },
     {
-      title: "Why to perform security testing on website?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Uteiusmod ",
+      title: t("perform"),
+      content: t("lorem_temper"),
     },
     {
-      title: "What should I test in web application?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eiusmod ",
+      title: t("test"),
+      content: t("lorem_temper"),
     },
   ];
   const team = [
     {
       image: img1,
-      name: "Martin",
-      post: "CEO",
+      name: t("martin"),
+      post: t("ceo"),
     },
     {
       image: img2,
-      name: "Martin",
-      post: "CEO",
+      name: t("martin"),
+      post: t("ceo"),
     },
     {
       image: img3,
-      name: "Martin",
-      post: "CEO",
+      name: t("martin"),
+      post: t("ceo"),
     },
     {
       image: img4,
-      name: "Martin",
-      post: "CEO",
+      name: t("martin"),
+      post: t("ceo"),
     },
     {
       image: img5,
-      name: "Martin",
-      post: "CEO",
+      name: t("martin"),
+      post: t("ceo"),
     },
     {
       image: img6,
-      name: "Martin",
-      post: "CEO",
+      name: t("martin"),
+      post: t("ceo"),
     },
     {
       image: img7,
-      name: "Martin",
-      post: "CEO",
+      name: t("martin"),
+      post: t("ceo"),
     },
     {
       image: img8,
-      name: "Martin",
-      post: "CEO",
+      name: t("martin"),
+      post: t("ceo"),
     },
   ];
 
@@ -108,19 +106,15 @@ const AboutTeam = () => {
         }`}
         ref={triggerRef}
       >
-        <h1>Our Team </h1>
+        <h1>{t("our_team")} </h1>
         <div className="supportive_text_container">
-          <p className="supportive_text">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud”
-          </p>
+          <p className="supportive_text">{t("lorem_ipsum")}</p>
         </div>
         <div className="about_choose_box">
           {team.map((data) => (
             <div className="box">
               <div className="thumbnail ">
-                <div>The hovered text!</div>
+                <div>{t("hovered_text")}</div>
                 <img src={data.image} alt="" />
               </div>
             </div>
@@ -128,13 +122,8 @@ const AboutTeam = () => {
         </div>
         <div className="about_questions_box">
           <div className="about_questions_container">
-            <h1>Frequently Asked Questions</h1>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud” "Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod
-            </p>
+            <h1>{t("frequently")}</h1>
+            <p>{t("lorem_temper")}</p>
           </div>
           <div>
             <div>

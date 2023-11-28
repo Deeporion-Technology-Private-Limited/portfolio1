@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./home.css";
 import image from "../images/image.png";
 import { FaCirclePlay } from "react-icons/fa6";
@@ -14,6 +14,28 @@ import { useTranslation } from "react-i18next";
 
 const Homebanner = () => {
   const { t } = useTranslation();
+
+  const triggerRef = useRef();
+  const [isTriggered, setIsTriggered] = useState(false);
+
+  const handleScroll = () => {
+    if (triggerRef.current) {
+      const elementTop = triggerRef.current.getBoundingClientRect().top;
+      const viewportHeight = window.innerHeight;
+
+      if (elementTop < viewportHeight) {
+        setIsTriggered(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const ideas_data = [
     {
       id: 1,
@@ -44,7 +66,12 @@ const Homebanner = () => {
         <div className="backdrop">
           <div className="home_container">
             <div className="home_content">
-              <div className="front_content">
+              <div
+                className={`front_content heading scroll-trigger ${
+                  isTriggered ? "animate" : ""
+                }`}
+                ref={triggerRef}
+              >
                 <p className="bold_heading">{t("secure_privacy")}</p>
                 <h4 className="sub_heading_home">
                   {t("friendly_&_professional_service")}

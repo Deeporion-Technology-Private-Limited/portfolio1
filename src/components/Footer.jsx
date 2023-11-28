@@ -1,22 +1,20 @@
-import React from "react";
+import React, { useTransition } from "react";
 import "./style.css";
 import vigilops from "../images/Vigilops.png";
 import { RiFacebookFill, RiTwitterFill, RiDribbbleFill } from "react-icons/ri";
 import { AiOutlineGithub } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="footer_wrapper">
       <div className="footer_container">
         <div>
           <img src={vigilops} alt="" />
           <div>
-            <p className="footer_text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <p className="footer_text">{t("lorem_ipsum_dolor_sit_amet")}</p>
           </div>
           <div>
             <RiFacebookFill className="footer_tags" />
@@ -27,44 +25,44 @@ const Footer = () => {
         </div>
         <div>
           <ul>
-            <li className="footer_heading">COMPANY</li>
-            <li className="footer_links">About</li>
-            <li className="footer_links">Premium</li>
-            <li className="footer_links">Blog</li>
-            <li className="footer_links">Affiliate Program</li>
-            <li className="footer_links">Get Coupon</li>
+            <li className="footer_heading">{t("company")}</li>
+            <li className="footer_links">{t("about")}</li>
+            <li className="footer_links">{t("premium")}</li>
+            <li className="footer_links">{t("blogs")}</li>
+            <li className="footer_links">{t("affilate")}</li>
+            <li className="footer_links">{t("get_coupon")}</li>
           </ul>
         </div>
         <div>
           <ul>
-            <li className="footer_heading">Help and support</li>
-            <li className="footer_links">Contact Us</li>
-            <li className="footer_links">Knowledge Center</li>
-            <li className="footer_links">Premium Support</li>
-            <li className="footer_links"> Sponsorships</li>
+            <li className="footer_heading">{t("help")}</li>
+            <li className="footer_links">{t("contact")}</li>
+            <li className="footer_links">{t("knowledge")}</li>
+            <li className="footer_links">{t("premium_support")}</li>
+            <li className="footer_links"> {t("sponsership")}</li>
           </ul>
         </div>
         <div>
           <ul>
-            <li className="footer_heading">RESOURCES</li>
-            <li className="footer_links">Third-Party Tools</li>
-            <li className="footer_links">Illustrationsr</li>
-            <li className="footer_links">Themesberg</li>
-            <li className="footer_links"> Bluehost</li>
-            <li className="footer_links"> Stock Photos</li>
+            <li className="footer_heading">{t("resources")}</li>
+            <li className="footer_links">{t("third_party")}</li>
+            <li className="footer_links">{t("illustrationsr")}</li>
+            <li className="footer_links">{t("themesberg")}</li>
+            <li className="footer_links"> {t("bluehost")}</li>
+            <li className="footer_links"> {t("stock")}</li>
           </ul>
         </div>
         <div>
           <ul>
-            <li className="footer_heading">LEGAL</li>
-            <li className="footer_links">Privacy Policy</li>
-            <li className="footer_links">Terms & Conditions</li>
-            <li className="footer_links">EULA</li>
+            <li className="footer_heading">{t("legal")}</li>
+            <li className="footer_links">{t("privacy_policy")}</li>
+            <li className="footer_links">{t("terms")}</li>
+            <li className="footer_links">{t("eula")}</li>
           </ul>
         </div>
       </div>
       <div className="footer_copyright">
-        <p>© 2021 Themesberg, Inc. All rights reserved.</p>
+        <p>{t("copyright")}</p>
       </div>
     </div>
   );

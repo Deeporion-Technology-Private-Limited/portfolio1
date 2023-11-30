@@ -60,13 +60,11 @@ const PenetrationTesting = () => {
   ];
 
   return (
-    <div>
-      <div
-        className={`penetration_container heading scroll-trigger ${
-          isTriggered ? "animate" : ""
-        }`}
-        ref={triggerRef}
-      >
+    <div
+      className={` heading scroll-trigger ${isTriggered ? "animate" : ""}`}
+      ref={triggerRef}
+    >
+      <div className="penetration_container">
         <h1>{t("penetration_testing_stages")}</h1>
         <div className="supportive_text_container">
           <p className="supportive_text">{t("lorem_ipsum")}</p>

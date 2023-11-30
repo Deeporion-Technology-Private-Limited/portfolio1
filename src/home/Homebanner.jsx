@@ -105,7 +105,6 @@ const Homebanner = () => {
                 <p className="ideas_heading">{data.heading}</p>
               </div>
               <div className="ideas_description">{data.description}</div>
-
               <div>
                 <button className="read_more_btn">
                   {data.btn} <BsFillArrowRightCircleFill />

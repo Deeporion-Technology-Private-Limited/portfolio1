@@ -29,13 +29,13 @@ h1 {
 
 .contact_content {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 30px;
   font-size: 16px;
   border-radius: 28px;
   background: #1c2330;
-  padding: 29px 181px 29px 29px;
+  width: 413px;
+  height: 122px;
   color: var(--white);
 }
 
@@ -51,10 +51,16 @@ h1 {
   border: 1px solid var(--Primary-color-2, #893e97);
   padding: 19px 17px;
   background: rgba(137, 62, 151, 0.15);
+  margin-left: 29px;
 }
 
 .contact_heading h4 {
   font-weight: 400;
+  margin: 0;
+}
+
+.contactUs_content {
+  color: var(--textGrey);
 }
 
 .contact_content:hover {
@@ -92,13 +98,15 @@ h1 {
   background: #111927;
   padding: 20px 413px 20px 30px;
   margin-bottom: 30px;
+  font-size: 16px;
 }
 
 .person_text textarea {
   border-radius: 18px;
   border: 1px solid var(--darkGrey);
   background: #111927;
-  height: 132px;
+  width: 290px;
+  height: 20px;
   padding: 20px 1017px 86px 30px;
 }
 
@@ -114,4 +122,5 @@ h1 {
   border: none;
   color: var(--white);
   margin-top: 30px;
+  font-size: 16px;
 }

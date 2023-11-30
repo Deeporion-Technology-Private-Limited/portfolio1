@@ -14,11 +14,22 @@ const AboutTeam = () => {
   const { t } = useTranslation();
   const triggerRef = useRef();
   const [isTriggered, setIsTriggered] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState([]);
 
   const handleClick = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
+    if (activeIndex.includes(index)) {
+      setActiveIndex((prev) => {
+        let out = prev.filter((ele) => ele !== index);
+        return out;
+      });
+    } else {
+      setActiveIndex([...activeIndex, index]);
+    }
   };
+
+  useEffect(() => {
+    console.log(activeIndex, "activeIndex");
+  }, [activeIndex]);
 
   const handleScroll = () => {
     if (triggerRef.current) {
@@ -52,6 +63,10 @@ const AboutTeam = () => {
     },
     {
       title: t("test"),
+      content: t("lorem_temper"),
+    },
+    {
+      title: t("perform"),
       content: t("lorem_temper"),
     },
   ];
@@ -121,26 +136,33 @@ const AboutTeam = () => {
           ))}
         </div>
         <div className="about_questions_box">
-          <div className="about_questions_container">
+          <div
+            className={`about_questions_container heading scroll-trigger ${
+              isTriggered ? "animate" : ""
+            }`}
+            ref={triggerRef}
+          >
             <h1>{t("frequently")}</h1>
             <p>{t("lorem_temper")}</p>
           </div>
-          <div>
+          <div className="about_accordion">
             <div>
               {items.map((item, index) => (
                 <div key={index}>
                   <div
                     onClick={() => handleClick(index)}
-                    className="about_titile"
+                    className={`about_title ${
+                      !activeIndex.includes(index) ? "with-border" : ""
+                    }`}
                   >
                     {item.title}
                     <IoIosArrowDown
                       className={`arrow ${
-                        activeIndex === index ? "down" : "up"
+                        activeIndex.includes(index) ? "down" : "up"
                       }`}
                     />
                   </div>
-                  {activeIndex === index && (
+                  {activeIndex.includes(index) && (
                     <div>
                       <p className="about_content">{item.content}</p>
                     </div>

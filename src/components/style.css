@@ -22,7 +22,6 @@
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
-  font-weight: 700;
   list-style-type: none;
   text-decoration: none;
   height: 59px;
@@ -40,6 +39,7 @@
   border-top: 5px solid red;
   border-radius: 6px;
   width: max-content;
+  font-weight: 700;
 }
 
 .header_btn {

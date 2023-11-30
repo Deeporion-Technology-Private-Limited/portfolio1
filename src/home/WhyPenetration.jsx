@@ -1,10 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AiFillPieChart } from "react-icons/ai";
 import { BiChip } from "react-icons/bi";
-import {
-  HiPresentationChartBar,
-  HiOutlineDocumentReport,
-} from "react-icons/hi";
+import { HiPresentationChartBar } from "react-icons/hi";
 import { HiMiniComputerDesktop } from "react-icons/hi2";
 import "./home.css";
 import { useTranslation } from "react-i18next";

@@ -11,46 +11,55 @@ const BlogContent = () => {
   const navigate = useNavigate();
   const data = [
     {
+      id: 1,
       img: img1,
       heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
+      id: 2,
       img: img2,
       heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
+      id: 3,
       img: img3,
       heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
+      id: 4,
       img: img1,
       heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
+      id: 5,
       img: img2,
       heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
+      id: 6,
       img: img3,
       heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
+      id: 7,
       img: img1,
       heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
+      id: 8,
       img: img2,
       heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
     },
     {
+      id: 9,
       img: img3,
       heading: t("4_cyber"),
       btn: <GoArrowDownRight />,
@@ -61,7 +70,7 @@ const BlogContent = () => {
       <div className="blog_box">
         <div className="blog_wrapper">
           {data.map((item) => (
-            <div className=" blog_container">
+            <div className=" blog_container" key={item.id}>
               <img src={item.img} alt="" />
               <div>
                 <div className="blog_heading">{item.heading}</div>

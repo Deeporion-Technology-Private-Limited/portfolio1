@@ -1,4 +1,4 @@
-import React, { useTransition } from "react";
+import React, { useRef, useState, useTransition } from "react";
 import "./blogs.css";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import img1 from "../images/img7.png";
@@ -8,6 +8,8 @@ import { useTranslation } from "react-i18next";
 
 const BlogDescription = () => {
   const { t } = useTranslation();
+  const triggerRef = useRef();
+  const [isTriggered, setIsTriggered] = useState(false);
 
   return (
     <div className="blog_description_wrapper">
@@ -20,7 +22,12 @@ const BlogDescription = () => {
           </div>
           <img src={img1} alt="" className="blog_desp_img" />
         </div>
-        <div>
+        <div
+          className={`heading scroll-trigger log_translat bion ${
+            isTriggered ? "animate" : ""
+          }`}
+          ref={triggerRef}
+        >
           <h1 className="blog_desp_heading">{t("cyber_security")}</h1>
           <p>{t("the_application")}</p>
           <p>{t("the_application")}</p>

@@ -1,5 +1,4 @@
 import React, { Suspense, useEffect, useRef, useState } from "react";
-// import React from "react";
 import "../home/home.css";
 import "./about.css";
 import ChooseUs from "./ChooseUs";

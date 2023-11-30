@@ -24,7 +24,7 @@
 }
 
 .home_content {
-  margin-top: 100px;
+  margin-top: 186px;
   display: flex;
   justify-content: center;
   width: 87vw;
@@ -67,6 +67,7 @@
   align-items: center;
   border-radius: 8px;
   color: var(--white);
+  font-size: 16px;
   background: var(
     --gradient,
     linear-gradient(89deg, #c9442d 0.55%, #893e97 91.24%)
@@ -116,11 +117,11 @@
   position: relative;
   bottom: 95px;
   transform: translateY(0px);
-  transition: 3s;
+  transition: 1s;
 }
 
 .idea_body:hover {
-  transition: 3s;
+  transition: 1s;
   transform: translateY(-60px);
 }
 
@@ -174,7 +175,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
 }
 
 .penetration_container h1 {
@@ -292,7 +292,7 @@
   background: linear-gradient(var(--black), var(--black)) padding-box,
     linear-gradient(to right, #c9442d, #893e97) border-box;
   border: 1px solid transparent;
-  border-radius: 12px;
+  border-radius: 28px;
   margin: 25px;
 }
 
@@ -570,11 +570,16 @@ p {
   margin: 90px 0;
 }
 
+.benefit_text {
+  position: relative;
+  top: 0;
+  transition: 3s;
+}
+
 .benefits_penetration_desp_container {
   width: 100vw;
   display: flex;
   justify-content: center;
-  margin: 90px 0;
 }
 
 .benefits_penetration_container h1 {
@@ -597,6 +602,10 @@ p {
   text-align: center;
   margin-top: -20px;
   width: 397px;
+}
+
+.penetration_flex {
+  margin-top: 100px;
 }
 
 .benefit_penetration_desp_box {

@@ -39,6 +39,29 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Installation
+
+1. Clone the repository:
+
+   git clone https://github.com/Deeporion-Technology-Private-Limited/react_portfolio_1.git
+
+2. cd react_portfolio_1
+
+## Usage
+
+Welcome to cd react_portfolio_1 ! This section will guide you through the basic steps to use and integrate cd react_portfolio_1 into your own projects.
+
+## Dependencies
+
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [react-dom](https://reactjs.org/docs/react-dom.html): React package for working with the DOM.
+- [Redux](https://redux.js.org/): A predictable state container for JavaScript apps. Useful for managing the state in large-scale applications.
+- [React Router](https://reactrouter.com/): Declarative routing for React.js. Enables navigation and routing in single-page applications.
+- [i18n](https://www.i18next.com/): A general-purpose internationalization library. Used in conjunction with react-i18next for managing translations.
+- [react-i18next](https://react.i18next.com/): Internationalization (i18n) library for React. Provides a powerful solution for managing translations in your application.
+- [react-icons](https://react-icons.github.io/react-icons/): A library for adding icons to your React project. Offers a collection of popular icon sets.
+- [react-scroller](https://www.npmjs.com/package/react-scroller): A React component for smooth scrolling. Enhances the scrolling experience in your application.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

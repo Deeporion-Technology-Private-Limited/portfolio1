@@ -7,7 +7,7 @@ import img5 from "../images/Rectangle 35.png";
 import img6 from "../images/Rectangle 34.png";
 import img7 from "../images/Rectangle 33.png";
 import img8 from "../images/Rectangle 32.png";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 
 const AboutTeam = () => {

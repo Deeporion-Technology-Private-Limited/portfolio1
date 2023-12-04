@@ -11,6 +11,7 @@ import Dashboard from "../pages/PrivatePages/Dashboard";
 import Page404 from "../components/NoPage";
 import Layout from "../components/Layout";
 import BlogDescription from "../Blogs/BlogDescription";
+import StyleGuide from "../StyleGuide";
 
 export const RouteLayout = () => {
   const unprotectedRoutes = [
@@ -60,6 +61,12 @@ export const RouteLayout = () => {
       path: "/login",
       component: Login,
       name: "login",
+    },
+
+    {
+      path: "/style-guide",
+      component: StyleGuide,
+      name: "styleGuide",
     },
   ];
 

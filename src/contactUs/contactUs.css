@@ -1,4 +1,18 @@
 /* ContactUs Content CSS */
+.contact_banner{
+  width: 100%;
+  height: 800px;
+  background-image: url(../images/Image\ \(10\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  object-fit: contain;
+  object-position: center;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .contact_wrapper {
   width: 100vw;
@@ -101,6 +115,14 @@ h1 {
   font-size: 16px;
 }
 
+.person_name input:hover {
+  border: 1px solid #893e97;
+}
+
+.person_detail input:hover {
+  border: 1px solid #893e97;
+}
+
 .person_text textarea {
   border-radius: 18px;
   border: 1px solid var(--darkGrey);
@@ -108,6 +130,11 @@ h1 {
   width: 290px;
   height: 20px;
   padding: 20px 1017px 86px 30px;
+  font-size: 16px;
+}
+
+.person_text textarea:hover {
+  border: 1px solid #893e97;
 }
 
 .submit_btn {
@@ -123,4 +150,8 @@ h1 {
   color: var(--white);
   margin-top: 30px;
   font-size: 16px;
+}
+
+.submit_btn:hover {
+  background: #893e97;
 }

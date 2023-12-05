@@ -28,7 +28,7 @@ const ContactBanner = () => {
   }, []);
   return (
     <div>
-      <div className="about_banner">
+      <div className="contact_banner">
         <div className="about_backdrop">
           <div className="home_container">
             <div className="home_content">

@@ -224,7 +224,7 @@
 }
 
 .about_title.with-border {
-  border-bottom: 1px solid var(--darkGrey);
+  border-bottom: 1px solid #414752;
 }
 
 .arrow {
@@ -244,5 +244,5 @@
   width: 504px;
   line-height: 28px;
   padding: 10px 10px;
-  border-bottom: 1px solid var(--darkGrey);
+  border-bottom: 1px solid #414752;
 }

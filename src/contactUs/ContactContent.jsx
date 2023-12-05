@@ -1,4 +1,4 @@
-import React, { useTransition } from "react";
+import React, { useEffect, useRef, useState, useTransition } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
 import { IoLocationSharp } from "react-icons/io5";
@@ -7,6 +7,25 @@ import { useTranslation } from "react-i18next";
 
 const ContactContent = () => {
   const { t } = useTranslation();
+  const triggerRef = useRef();
+  const [isTriggered, setIsTriggered] = useState(false);
+  const handleScroll = () => {
+    if (triggerRef.current) {
+      const elementTop = triggerRef.current.getBoundingClientRect().top;
+      const viewportHeight = window.innerHeight;
+
+      if (elementTop < viewportHeight) {
+        setIsTriggered(true);
+      }
+    }
+  };
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const data = [
     {
       icon: <FaPhone />,
@@ -26,7 +45,12 @@ const ContactContent = () => {
   ];
   return (
     <div className="contact_wrapper">
-      <div className="contact_container">
+      <div
+        className={`contact_container heading scroll-trigger ${
+          isTriggered ? "animate" : ""
+        }`}
+        ref={triggerRef}
+      >
         <div>
           <h1>{t("lets_get_in_touch")}</h1>
         </div>
@@ -46,14 +70,19 @@ const ContactContent = () => {
       </div>
 
       <div>
-        <div className="person_info_box">
+        <div
+          className={`person_info_box heading scroll-trigger ${
+            isTriggered ? "animate" : ""
+          }`}
+          ref={triggerRef}
+        >
           <div className="person_name">
             <input type="text" placeholder="Rupali" />
             <input type="text" placeholder="Last Name" />
           </div>
           <div className="person_detail">
             <input type="email" placeholder="Email" />
-            <input type="number" name="" id="" placeholder="Phone Number" />
+            <input type="text" name="" id="" placeholder="Phone Number" />
           </div>
           <div className="person_text">
             <textarea

@@ -1,34 +1,52 @@
-import React, { useRef, useState, useTransition } from "react";
+import React, { useEffect, useRef, useState, useTransition } from "react";
 import "./blogs.css";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import img1 from "../images/img7.png";
 import BlogComment from "./BlogComment";
 import BlogCarousel from "./BlogCarousel";
 import { useTranslation } from "react-i18next";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const BlogDescription = () => {
+  const nav = useNavigate();
   const { t } = useTranslation();
   const triggerRef = useRef();
   const [isTriggered, setIsTriggered] = useState(false);
+  const handleScroll = () => {
+    if (triggerRef.current) {
+      const elementTop = triggerRef.current.getBoundingClientRect().top;
+      const viewportHeight = window.innerHeight;
+
+      if (elementTop < viewportHeight) {
+        setIsTriggered(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="blog_description_wrapper">
       <div className="blog_description_container">
         <div>
           <div>
-            <button className="blog_back_btn">
+            <button className="blog_back_btn" onClick={() => nav("/blogs")}>
               <FaArrowLeftLong />
             </button>
           </div>
           <img src={img1} alt="" className="blog_desp_img" />
         </div>
         <div
-          className={`heading scroll-trigger log_translat bion ${
-            isTriggered ? "animate" : ""
-          }`}
+          className={`scroll-animate ${isTriggered ? "animate" : ""}`}
           ref={triggerRef}
         >
-          <h1 className="blog_desp_heading">{t("cyber_security")}</h1>
+          <h1 className="blog_desp_heading ">{t("cyber_security")}</h1>
           <p>{t("the_application")}</p>
           <p>{t("the_application")}</p>
           <ul className="blog_bullets">
@@ -40,7 +58,10 @@ const BlogDescription = () => {
         </div>
 
         <div>
-          <div>
+          <div
+            className={`scroll-animate ${isTriggered ? "animate" : ""}`}
+            ref={triggerRef}
+          >
             <h4>{t("embrace")}</h4>
             <ul>
               <li>{t("cyberSecurity")}</li>
@@ -49,7 +70,10 @@ const BlogDescription = () => {
               <li>{t("green")}</li>
             </ul>
           </div>
-          <div>
+          <div
+            className={`scroll-animate ${isTriggered ? "animate" : ""}`}
+            ref={triggerRef}
+          >
             <h4>{t("cultivate")}</h4>
             <ul>
               <li>{t("social_media")}</li>
@@ -57,7 +81,10 @@ const BlogDescription = () => {
               <li>{t("rouge")}</li>
             </ul>
           </div>
-          <div>
+          <div
+            className={`scroll-animate ${isTriggered ? "animate" : ""}`}
+            ref={triggerRef}
+          >
             <h4>{t("follow")}</h4>
             <ul>
               <li>{t("manage_it")}</li>
@@ -67,7 +94,10 @@ const BlogDescription = () => {
               <li>{t("framework")}</li>
             </ul>
           </div>
-          <div>
+          <div
+            className={`scroll-animate ${isTriggered ? "animate" : ""}`}
+            ref={triggerRef}
+          >
             <h4>{t("focus")}</h4>
             <ul>
               <li>{t("business")}</li>

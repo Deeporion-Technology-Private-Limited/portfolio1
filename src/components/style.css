@@ -109,12 +109,12 @@ ul {
 }
 
 .footer_copyright {
-  text-align: center;
   color: var(--grey);
   border-top: 1px solid var(--grey);
   margin-top: 39px;
 }
 
 .footer_copyright p {
+  text-align: center;
   margin: 32px 0;
 }

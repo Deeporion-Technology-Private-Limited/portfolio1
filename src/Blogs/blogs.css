@@ -105,6 +105,19 @@
   background: var(--primary-color-1, #c9442d);
 }
 
+.back {
+  position: absolute;
+  font-size: 22px;
+  left: 11rem;
+  opacity: 0;
+}
+
+.blog_back_btn:hover .back {
+  opacity: 1;
+  left: 13rem;
+  transition: 1s;
+}
+
 .blog_container:hover .blog_btn {
   transform: rotate(-45deg);
   background: var(--purple);

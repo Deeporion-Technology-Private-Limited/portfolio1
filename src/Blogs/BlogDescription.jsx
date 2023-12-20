@@ -38,6 +38,7 @@ const BlogDescription = () => {
           <div>
             <button className="blog_back_btn" onClick={() => nav("/blogs")}>
               <FaArrowLeftLong />
+              <span className="back">Back</span>
             </button>
           </div>
           <img src={img1} alt="" className="blog_desp_img" />

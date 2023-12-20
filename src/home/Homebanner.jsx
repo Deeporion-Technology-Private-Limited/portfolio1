@@ -107,7 +107,8 @@ const Homebanner = () => {
               <div className="ideas_description">{data.description}</div>
               <div>
                 <button className="read_more_btn">
-                  {data.btn} <BsFillArrowRightCircleFill />
+                  {data.btn}
+                  <BsFillArrowRightCircleFill className="read_more_icon" />
                 </button>
               </div>
             </div>

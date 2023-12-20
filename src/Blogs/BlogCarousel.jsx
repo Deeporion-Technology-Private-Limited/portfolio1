@@ -2,19 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import img1 from "../images/Rectangle40.png";
 import img2 from "../images/Rectangle44.png";
 import img3 from "../images/Rectangle45.png";
-import {
-  MdOutlineKeyboardArrowRight,
-  MdOutlineKeyboardArrowLeft,
-} from "react-icons/md";
 import "./blogs.css";
 import { useTranslation } from "react-i18next";
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 const BlogCarousel = () => {
   const { t } = useTranslation();
   const triggerRef = useRef();
   const [isTriggered, setIsTriggered] = useState(false);
-
-  const handleScrollElement = () => {
+  const handleScroll = () => {
     if (triggerRef.current) {
       const elementTop = triggerRef.current.getBoundingClientRect().top;
       const viewportHeight = window.innerHeight;
@@ -26,16 +22,29 @@ const BlogCarousel = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScrollElement);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScrollElement);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const sliderRef = useRef(null);
-  const scrollAmount = 400;
-  const [isLeftButtonDisabled, setIsLeftButtonDisabled] = useState(true);
-  const [isRightButtonDisabled, setIsRightButtonDisabled] = useState(false);
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+  };
 
   const images = [
     {
@@ -65,78 +74,59 @@ const BlogCarousel = () => {
     },
   ];
 
-  const handleScroll = () => {
-    const container = sliderRef.current;
-    const maxScrollPosition = container.scrollWidth - container.clientWidth;
-    const scrollThreshold = maxScrollPosition / images.length;
-
-    setIsLeftButtonDisabled(container.scrollLeft < scrollThreshold);
-    setIsRightButtonDisabled(
-      container.scrollLeft >= maxScrollPosition - scrollThreshold
-    );
-  };
-
-  useEffect(() => {
-    const container = sliderRef.current;
-    container.addEventListener("scroll", handleScroll);
-    return () => {
-      container.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <div>
-      <div
-        className={`scroll-trigger ${isTriggered ? "animate" : ""}`}
-        ref={triggerRef}
-      >
-        <div className="penetration_container">
-          <h1>{t("latest_posts")}</h1>
-        </div>
-        <div className="latest_App">
-          <button
-            className="nav-btn_desp nav_btn_left_desp"
-            onClick={() => {
-              const container = sliderRef.current;
-              container.scrollLeft -= scrollAmount;
-            }}
-          >
-            <MdOutlineKeyboardArrowLeft />
-          </button>
+    <div
+      className={` scroll-trigger ${isTriggered ? "animate" : ""}`}
+      ref={triggerRef}
+    >
+      <h1 className="carousel_h1">{t("latest_post")}</h1>
 
-          <div className="images-container_desp" ref={sliderRef}>
-            {images.map((image) => {
-              return (
-                <div className="latest_container_desp">
-                  <img
-                    className="image"
-                    alt="sliderImage"
-                    key={image?.id}
-                    src={image?.url}
-                  />
-                  <div>
-                    <div className="text_desp">{image.content}</div>
-                    <div className="avatar_container">
-                      <div className="avatar">
-                        <img src={image.avatar} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-          <button
-            className="nav-btn_desp nav_btn_right_desp"
-            onClick={() => {
-              const container = sliderRef.current;
-              container.scrollLeft += scrollAmount;
-            }}
-          >
-            <MdOutlineKeyboardArrowRight />
-          </button>
-        </div>
-      </div>
+      <Carousel
+        additionalTransfrom={0}
+        arrows
+        autoPlay
+        autoPlaySpeed={2000}
+        centerMode={false}
+        className=""
+        containerClass="container-with-dots"
+        dotListClass=""
+        draggable
+        focusOnSelect={false}
+        infinite
+        itemClass=""
+        keyBoardControl
+        minimumTouchDrag={80}
+        pauseOnHover
+        renderArrowsWhenDisabled={false}
+        renderButtonGroupOutside={false}
+        renderDotsOutside={false}
+        responsive={{
+          desktop: {
+            breakpoint: {
+              max: 3000,
+              min: 1024,
+            },
+            items: 3,
+            partialVisibilityGutter: 40,
+          },
+        }}
+      >
+        {images.map((image) => {
+          return (
+            <div className="latest_container_desp">
+              <img
+                className="image"
+                alt="sliderImage"
+                key={image?.id}
+                src={image?.url}
+              />
+              <div>
+                <div className="text_desp">{image.content}</div>
+              </div>
+            </div>
+          );
+        })}
+      </Carousel>
     </div>
   );
 };

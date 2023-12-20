@@ -154,5 +154,7 @@
   "default": "Default",
   "opened": "Opened",
   "cards": "Cards",
-  "phone": "Phone No."
+  "phone": "Phone No.",
+  "more_like_this": "More like this",
+  "latest_post": "Latest posts"
 }

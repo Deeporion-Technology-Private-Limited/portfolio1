@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet, Link, NavLink } from "react-router-dom";
-import vigilops from "../images/Vigilops.png";
+import logo from "../images/LOGO.png";
 import "./style.css";
 import GoToTop from "./GoToTop";
 
@@ -9,7 +9,7 @@ const Header = () => {
     <div>
       <div className="header_container">
         <div>
-          <img src={vigilops} alt="" />
+          <img src={logo} alt="" />
         </div>
         <div>
           <ul className="header_links">

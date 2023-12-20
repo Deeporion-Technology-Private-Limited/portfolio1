@@ -13,9 +13,10 @@
 }
 
 .backdrop {
-  background-color: rgba(0, 0, 0, 0.59);
+  background-color: #011631;
   height: 100%;
   width: 100%;
+  opacity: 80%;
 }
 
 .home_container {
@@ -48,7 +49,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 140% */
+  line-height: 28px; 
   color: var(--lightGrey);
 }
 
@@ -59,6 +60,7 @@
 }
 
 .get_started_btn {
+  font-weight: 600;
   display: flex;
   width: 128px;
   height: 48px;
@@ -118,6 +120,7 @@
   bottom: 95px;
   transform: translateY(0px);
   transition: 1s;
+  border: 1px solid #374151;
 }
 
 .idea_body:hover {
@@ -158,6 +161,15 @@
   gap: 8px;
 }
 
+.read_more_icon {
+  font-size: 4px;
+}
+
+.idea_body:hover .read_more_icon {
+  font-size: 16px;
+  transition: 1s;
+}
+
 /* PenetrationTesting CSS */
 
 .heading {
@@ -173,6 +185,7 @@
 
 .penetration_container {
   display: flex;
+  margin-top: 50px;
   flex-direction: column;
   align-items: center;
 }
@@ -294,6 +307,7 @@
   border: 1px solid transparent;
   border-radius: 28px;
   margin: 25px;
+  gap: 10px;
 }
 
 .why_penetration_content_h1 {
@@ -380,24 +394,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(var(--black), var(--black)) padding-box,
-    linear-gradient(to right, #c9442d, #893e97) border-box;
   border: 1px solid transparent;
-  border-radius: 12px;
+  border-radius: 28px;
   margin: 25px;
+  background: linear-gradient(180deg, #c9442d -28.1%, #893e97 118.25%);
 }
 
-.why_penetration_content_back {
-  background: linear-gradient(180deg, #c9442d -28.1%, #893e97 118.25%);
-  width: 345px;
-  height: 137px;
+.why_penetration_content_back p {
+  margin: 0 20px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-  margin: 25px;
 }
 
 .card__face--back {
@@ -452,7 +457,7 @@
 
 .nav_btn_left {
   position: absolute;
-  left: 14%;
+  left: 12%;
   z-index: 9;
   transition: opacity 0.5s ease;
   opacity: 1;
@@ -460,7 +465,7 @@
 
 .nav_btn_right {
   position: absolute;
-  right: 14%;
+  right: 12%;
   z-index: 9;
 }
 
@@ -483,6 +488,7 @@
 
 .overlay {
   position: absolute;
+  bottom: 0;
   background-color: black;
   opacity: 0.8;
   overflow: hidden;
@@ -519,7 +525,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  bottom: 0px;
   align-items: center;
 }
 
@@ -548,11 +553,16 @@
 .avatar {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .avatar_info h2,
 p {
-  margin: 0;
+  margin-bottom: 5px;
+}
+
+.avatar_info h2 {
+  font-size: 16px;
 }
 
 .avatar_info p {
@@ -567,7 +577,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
-  margin: 90px 0;
+  margin: 200px 0;
 }
 
 .benefit_text {
@@ -625,6 +635,7 @@ p {
   font-size: 16px;
   line-height: 24px;
   width: 347px;
+  margin-bottom: 0;
 }
 
 .benefit_penetration_desp_content h2 {
@@ -636,11 +647,13 @@ p {
 
 .benefit_desp_icon {
   display: flex;
+  align-items: center;
   gap: 29px;
   margin-bottom: 20px;
 }
 
 .scroll-trigger {
+  margin-bottom: 70px;
   transform: translateY(80px);
   opacity: 0;
   transition: transform 3s ease, opacity 0.5s ease;

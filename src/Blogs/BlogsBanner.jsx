@@ -28,7 +28,7 @@ const BlogsBanner = () => {
   }, []);
   return (
     <div>
-      <div className="about_banner ">
+      <div className="blog_banner ">
         <div className="about_backdrop">
           <div className="home_container">
             <div className="home_content">

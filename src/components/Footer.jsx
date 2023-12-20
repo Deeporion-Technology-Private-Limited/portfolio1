@@ -1,6 +1,6 @@
 import React, { useTransition } from "react";
 import "./style.css";
-import vigilops from "../images/Vigilops.png";
+import logo from "../images/LOGO.png";
 import { RiFacebookFill, RiTwitterFill, RiDribbbleFill } from "react-icons/ri";
 import { AiOutlineGithub } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="footer_wrapper">
       <div className="footer_container">
         <div>
-          <img src={vigilops} alt="" />
+          <img src={logo} alt="" />
           <div>
             <p className="footer_text">{t("lorem_ipsum_dolor_sit_amet")}</p>
           </div>

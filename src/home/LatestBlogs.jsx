@@ -121,7 +121,7 @@ const LatestBlogs = () => {
               container.scrollLeft -= scrollAmount;
             }}
           >
-            <MdOutlineKeyboardArrowLeft />
+            <MdOutlineKeyboardArrowLeft className="blog_arrow" />
           </button>
         )}
         <div className="images-container" ref={sliderRef}>
@@ -160,7 +160,7 @@ const LatestBlogs = () => {
               container.scrollLeft += scrollAmount;
             }}
           >
-            <MdOutlineKeyboardArrowRight />
+            <MdOutlineKeyboardArrowRight className="blog_arrow" />
           </button>
         )}
       </div>

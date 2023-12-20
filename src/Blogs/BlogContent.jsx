@@ -71,7 +71,9 @@ const BlogContent = () => {
         <div className="blog_wrapper">
           {data.map((item) => (
             <div className=" blog_container" key={item.id}>
-              <img src={item.img} alt="" />
+              <div className="blog_img">
+                <img src={item.img} alt="" />
+              </div>
               <div>
                 <div className="blog_heading">{item.heading}</div>
               </div>

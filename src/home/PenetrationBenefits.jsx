@@ -1,5 +1,5 @@
 import React from "react";
-import { HiOutlineDocumentReport } from "react-icons/hi";
+import { HiDocumentReport } from "react-icons/hi";
 import "./home.css";
 import { useTranslation } from "react-i18next";
 
@@ -8,31 +8,31 @@ const PenetrationBenefits = () => {
   const data = [
     {
       id: 1,
-      icon: <HiOutlineDocumentReport />,
+      icon: <HiDocumentReport />,
       heading: t("infrastructure"),
       desp: t("endpoints"),
     },
     {
       id: 2,
-      icon: <HiOutlineDocumentReport />,
+      icon: <HiDocumentReport />,
       heading: t("partnership"),
       desp: t("security_breach"),
     },
     {
       id: 3,
-      icon: <HiOutlineDocumentReport />,
+      icon: <HiDocumentReport />,
       heading: t("damage"),
       desp: t("single_breach"),
     },
     {
       id: 4,
-      icon: <HiOutlineDocumentReport />,
+      icon: <HiDocumentReport />,
       heading: t("reputation"),
       desp: t("build"),
     },
     {
       id: 5,
-      icon: <HiOutlineDocumentReport />,
+      icon: <HiDocumentReport />,
       heading: t("compliance"),
       desp: t("penalties"),
     },

@@ -61,6 +61,11 @@ Welcome to cd react_portfolio_1 ! This section will guide you through the basic 
 - [react-i18next](https://react.i18next.com/): Internationalization (i18n) library for React. Provides a powerful solution for managing translations in your application.
 - [react-icons](https://react-icons.github.io/react-icons/): A library for adding icons to your React project. Offers a collection of popular icon sets.
 - [react-scroller](https://www.npmjs.com/package/react-scroller): A React component for smooth scrolling. Enhances the scrolling experience in your application.
+- [react-magic-slider-dots](https://www.npmjs.com/package/react-magic-slider-dots): A package for adding magical slider dots to your React project.
+- [react-multi-carousel](https://www.npmjs.com/package/react-multi-carousel): A carousel component for React that supports multiple items and responsive layouts.
+- [react-slick](https://www.npmjs.com/package/react-slick): A responsive carousel component for React.
+- [slick-carousel](https://www.npmjs.com/package/slick-carousel): The official Slick carousel package for creating responsive carousels in React.
+
 
 ## Learn More
 

@@ -2,10 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import frame from "../images/Frame.png";
 import { AiFillPieChart } from "react-icons/ai";
 import { BiChip } from "react-icons/bi";
-import {
-  HiPresentationChartBar,
-  HiOutlineDocumentReport,
-} from "react-icons/hi";
+import { HiPresentationChartBar, HiDocumentReport } from "react-icons/hi";
 import { HiMiniComputerDesktop } from "react-icons/hi2";
 import { useTranslation } from "react-i18next";
 const PenetrationTesting = () => {
@@ -53,7 +50,7 @@ const PenetrationTesting = () => {
       desp: t("the_goal_of_this_stage"),
     },
     {
-      icon: <HiOutlineDocumentReport />,
+      icon: <HiDocumentReport />,
       heading: t("analysis"),
       desp: t("security_personnel"),
     },

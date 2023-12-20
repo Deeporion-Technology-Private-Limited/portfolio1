@@ -13,9 +13,10 @@
 }
 
 .backdrop {
-  background-color: rgba(0, 0, 0, 0.59);
+  background-color: #011631;
   height: 100%;
   width: 100%;
+  opacity: 80%;
 }
 
 .home_container {
@@ -48,7 +49,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 140% */
+  line-height: 28px; 
   color: var(--lightGrey);
 }
 
@@ -59,6 +60,7 @@
 }
 
 .get_started_btn {
+  font-weight: 600;
   display: flex;
   width: 128px;
   height: 48px;
@@ -118,6 +120,7 @@
   bottom: 95px;
   transform: translateY(0px);
   transition: 1s;
+  border: 1px solid #374151;
 }
 
 .idea_body:hover {
@@ -156,6 +159,15 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.read_more_icon {
+  font-size: 4px;
+}
+
+.idea_body:hover .read_more_icon {
+  font-size: 16px;
+  transition: 1s;
 }
 
 /* PenetrationTesting CSS */
@@ -295,6 +307,7 @@
   border: 1px solid transparent;
   border-radius: 28px;
   margin: 25px;
+  gap: 10px;
 }
 
 .why_penetration_content_h1 {
@@ -382,13 +395,15 @@
   justify-content: center;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 12px;
+  border-radius: 28px;
   margin: 25px;
   background: linear-gradient(180deg, #c9442d -28.1%, #893e97 118.25%);
-
 }
 
-.why_penetration_content_back p{text-align: center;}
+.why_penetration_content_back p {
+  margin: 0 20px;
+  text-align: center;
+}
 
 .card__face--back {
   transform: rotateY(0.5turn);
@@ -510,7 +525,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  top: 0px;
   align-items: center;
 }
 
@@ -539,11 +553,16 @@
 .avatar {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .avatar_info h2,
 p {
-  margin: 0;
+  margin-bottom: 5px;
+}
+
+.avatar_info h2 {
+  font-size: 16px;
 }
 
 .avatar_info p {
@@ -616,6 +635,7 @@ p {
   font-size: 16px;
   line-height: 24px;
   width: 347px;
+  margin-bottom: 0;
 }
 
 .benefit_penetration_desp_content h2 {
@@ -627,6 +647,7 @@ p {
 
 .benefit_desp_icon {
   display: flex;
+  align-items: center;
   gap: 29px;
   margin-bottom: 20px;
 }

@@ -3,7 +3,7 @@
 .blog_banner {
   width: 100%;
   height: 800px;
-  background-image: url(../images/Image\ \(8\).png);
+  background-image: url(../images/Image8.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -177,6 +177,14 @@ ul li {
 }
 
 /* blog Carousel Css */
+.carousel_h1 {
+  margin-top: 119px;
+  margin-bottom: 100px;
+}
+
+.blog_carousel_wrapper {
+  margin-top: 110rem;
+}
 
 .images-container_desp {
   display: flex;
@@ -192,14 +200,26 @@ ul li {
   border: 1px solid #6a6a6a;
   height: 350px;
   margin-left: 25px;
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 373px;
+  background: #1c2330;
+}
+
+.latest_container_desp .image {
+  width: 366px;
 }
 
 .text_desp {
   font-size: 18px;
   width: 321px;
   line-height: 28px;
-  font-weight: 400;
+  font-weight: 600;
   margin: 22px 0;
+  color: var(--white);
 }
 
 .nav-btn_desp {
@@ -222,15 +242,19 @@ ul li {
 
 .nav_btn_left_desp {
   position: absolute;
-  left: 10.5%;
+  left: 9%;
   z-index: 9;
   transition: opacity 0.5s ease;
   opacity: 1;
 }
 .nav_btn_right_desp {
   position: absolute;
-  right: 10.5%;
+  right: 9%;
   z-index: 9;
+}
+
+.blog_arrow {
+  font-size: 45px;
 }
 
 .scroll-animate {
@@ -241,4 +265,27 @@ ul li {
 .scroll-animate.animate {
   transform: translateY(0px);
   opacity: 1;
+}
+
+@keyframes moveImage {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(0% + 1px) !important;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(2% + -5px) !important;
+}
+
+.react-multiple-carousel__arrow {
+  background: var(--purple) !important;
+  max-width: 46px !important;
+  max-width: 46px !important;
 }

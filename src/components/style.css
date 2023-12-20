@@ -36,8 +36,8 @@
 }
 
 .active {
-  border-top: 5px solid red;
-  border-radius: 6px;
+  border-top: 5px solid #c9442d;
+  border-radius: 4px;
   width: max-content;
   font-weight: 700;
 }
@@ -58,6 +58,8 @@
     linear-gradient(89deg, #c9442d 0.55%, #893e97 91.24%)
   );
   border: 1px solid transparent;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .header_btn:hover {
@@ -83,6 +85,7 @@
   width: 290px;
   line-height: 24px;
   color: var(--grey);
+  margin: 19px 0;
 }
 
 ul {
@@ -110,7 +113,7 @@ ul {
 
 .footer_copyright {
   color: var(--grey);
-  border-top: 1px solid var(--grey);
+  border-top: 1px solid #374151;
   margin-top: 39px;
 }
 

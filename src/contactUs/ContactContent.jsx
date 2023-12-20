@@ -52,17 +52,20 @@ const ContactContent = () => {
         ref={triggerRef}
       >
         <div>
-          <h1>{t("lets_get_in_touch")}</h1>
+          <h1 className="contact_h1">{t("lets_get_in_touch")}</h1>
         </div>
         <div className="contact_content_wrapper">
           {data.map((item) => (
-            <div className="contact_content">
-              <div className="contact_icon">{item.icon}</div>
-              <div>
-                <div className="contact_heading">
-                  <h4>{item.heading}</h4>
+            <div>
+              <div className="contact_content">
+                <div className="contact_icon">{item.icon}</div>
+                <div className="contact_icon_container">
+                  <div className="contact_heading">
+                    <h4>{item.heading}</h4>
+                  </div>
+                  <div className="contactUs_content">{item.content}</div>
                 </div>
-                <div className="contactUs_content">{item.content}</div>
+                <div className="stroke"></div>
               </div>
             </div>
           ))}

@@ -73,64 +73,65 @@ const AboutTeam = () => {
   const team = [
     {
       image: img1,
-      name: t("martin"),
-      post: t("ceo"),
+      name: t("Bryan O'conner"),
+      post: t("Cloud Expertise"),
     },
     {
       image: img2,
-      name: t("martin"),
+      name: t("Bob martin"),
       post: t("ceo"),
     },
     {
       image: img3,
-      name: t("martin"),
+      name: t("Bob martin"),
       post: t("ceo"),
     },
     {
       image: img4,
-      name: t("martin"),
-      post: t("ceo"),
+      name: t(" Maria Kearo"),
+      post: t("Sales Manager"),
     },
     {
       image: img5,
-      name: t("martin"),
-      post: t("ceo"),
+      name: t("Dwayn Joe"),
+      post: t("Cyber Expertise"),
     },
     {
       image: img6,
-      name: t("martin"),
-      post: t("ceo"),
+      name: t("Pikoo"),
+      post: t("System Manger"),
     },
     {
       image: img7,
-      name: t("martin"),
-      post: t("ceo"),
+      name: t("Ciar Sebastian"),
+      post: t("Cyber Expert"),
     },
     {
       image: img8,
-      name: t("martin"),
-      post: t("ceo"),
+      name: t("Eliza Sebastian"),
+      post: t("Cyber Expert"),
     },
   ];
 
   return (
-    <div>
-      <div
-        className={`penetration_container heading scroll-trigger ${
-          isTriggered ? "animate" : ""
-        }`}
-        ref={triggerRef}
-      >
+    <div
+      className={`scroll-animate ${isTriggered ? "animate" : ""}`}
+      ref={triggerRef}
+    >
+      <div className="penetration_container ">
         <h1>{t("our_team")} </h1>
         <div className="supportive_text_container">
           <p className="supportive_text">{t("lorem_ipsum")}</p>
         </div>
-        <div className="about_choose_box">
+        <div className="text_container">
           {team.map((data) => (
-            <div className="box">
-              <div className="thumbnail ">
-                <div>{t("hovered_text")}</div>
-                <img src={data.image} alt="" />
+            <div className="container ">
+              <img src={data.image} alt="" />
+              <div className="team_overlay">
+                <div className="team_text">
+                  <div>{data.name}</div>
+                  <div>{data.post}</div>
+                </div>
               </div>
             </div>
           ))}
@@ -158,7 +159,7 @@ const AboutTeam = () => {
                     {item.title}
                     <IoIosArrowDown
                       className={`arrow ${
-                        activeIndex.includes(index) ? "down" : "up"
+                        activeIndex.includes(index) ? "up" : "down"
                       }`}
                     />
                   </div>

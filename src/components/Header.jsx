@@ -4,6 +4,7 @@ import logo from "../images/LOGO.png";
 import "./style.css";
 import GoToTop from "./GoToTop";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { RxCross2 } from "react-icons/rx";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,12 +16,12 @@ const Header = () => {
   return (
     <div>
       <div className="header_container">
-        <div>
+        <div className="logo">
           <img src={logo} alt="" />
         </div>
         {/* Hamburger menu button */}
         <div className="hamburger_menu" onClick={toggleMenu}>
-          <HiMenuAlt3 />
+          {isMenuOpen ? <RxCross2 /> : <HiMenuAlt3 />}
         </div>
         <div className={`header_links ${isMenuOpen ? "show" : ""}`}>
           <ul className="header_links_ul">

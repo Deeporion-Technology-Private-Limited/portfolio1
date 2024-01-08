@@ -485,7 +485,7 @@
 
 .nav_btn_right {
   position: absolute;
-  right: 12%;
+  right: 11%;
   z-index: 9;
 }
 
@@ -701,7 +701,7 @@ p {
 
   .home_content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .sub_heading_home {

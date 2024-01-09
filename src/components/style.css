@@ -122,8 +122,6 @@ ul {
   margin: 32px 0;
 }
 
-/* style.css */
-
 /* Add styles for the hamburger menu */
 .hamburger_menu {
   font-size: 24px;
@@ -142,12 +140,15 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
   .header_links_ul {
     flex-direction: column;
     text-align: center;
     margin-top: 5.625rem;
     gap: inherit;
+    padding: 0;
   }
+
   .header_links_li {
     height: auto;
     padding: 0.88rem 4.625rem;
@@ -155,6 +156,7 @@ ul {
     color: rgba(168, 168, 168, 0.5);
     font-weight: 700;
   }
+
   .header_links_li:hover {
     color: #fff;
   }
@@ -173,6 +175,7 @@ ul {
     width: 34vw;
     text-align: end;
   }
+
   .header_btn {
     display: none;
   }
@@ -184,6 +187,7 @@ ul {
     background-color: var(--black);
     height: 100vh;
   }
+
   .logo {
     width: 50vw;
     margin-left: 1.375rem;

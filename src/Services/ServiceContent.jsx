@@ -20,9 +20,6 @@ import "react-magic-slider-dots/dist/magic-dots.css";
 const ServiceContent = () => {
   const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  console.log(currentIndex, "");
-
   const handleScroll = (event) => {
     const scrollDelta = event.deltaY;
     const scrollDirection = scrollDelta > 0 ? "down" : "up";
@@ -63,7 +60,6 @@ const ServiceContent = () => {
       img: img4,
       btn: t("read_more"),
     },
-
     {
       id: 3,
       icon: img8,
@@ -72,7 +68,6 @@ const ServiceContent = () => {
       img: img3,
       btn: t("read_more"),
     },
-
     {
       id: 4,
       icon: img7,
@@ -89,8 +84,6 @@ const ServiceContent = () => {
       img: img1,
       btn: "Read more",
     },
-
-    // Add more items as needed
   ];
 
   const settings = {
@@ -100,8 +93,8 @@ const ServiceContent = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    vertical: true,
-    verticalSwiping: true,
+    vertical: window.innerWidth > 500 ? true : false,
+    verticalSwiping: window.innerWidth > 500 ? true : false,
     autoplay: true,
     autoplaySpeed: 2000,
     beforeChange: (current, next) => {
@@ -111,6 +104,9 @@ const ServiceContent = () => {
       return <MagicSliderDots dots={dots} numDotsToShow={5} dotWidth={30} />;
     },
   };
+  const [buttontext, setButtontext] = useState("Read More");
+
+  const descriptionLength = window.innerWidth > 500 ? 600 / 1 : 300 / 3;
   return (
     <div>
       <h1 className="service_h1">{t("service_we_offer")}</h1>
@@ -121,8 +117,26 @@ const ServiceContent = () => {
               <div>
                 <img src={item.icon} alt="" />
                 <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                <button>{item.btn}</button>
+                <p>
+                  {item.description.length > descriptionLength ? (
+                    <>
+                      {buttontext === "Read More"
+                        ? `${item.description.slice(0, descriptionLength)}...`
+                        : item.description}
+                      <button
+                        onClick={() =>
+                          buttontext === "Read More"
+                            ? setButtontext("Read Less")
+                            : setButtontext("Read More")
+                        }
+                      >
+                        {buttontext}
+                      </button>
+                    </>
+                  ) : (
+                    item.description
+                  )}
+                </p>
               </div>
               <div>
                 <img className="service_image" src={item.img} alt="" />

@@ -523,6 +523,10 @@
   align-items: center;
 }
 
+.latest_container{
+  height: auto;
+}
+
 .latest_container:hover .overlay {
   bottom: 0;
   height: 429px;
@@ -688,6 +692,13 @@ p {
 @media screen and (max-width: 500px) {
   /*  landing page */
 
+  .home_banner{
+    height: auto;
+  }
+  .backdrop{
+    height: auto;
+  }
+  
   .home_banner_img {
     display: none;
   }
@@ -764,14 +775,14 @@ p {
   .images-container {
     max-width: 100vw;
     margin-right: 1.875rem;
-    margin-left: 1.875rem;
+    margin-left: 1.2rem;
   }
 
   .latest_container .image {
     width: 13.313rem;
     height: 17.063rem;
   }
-  .overlay {
+  .overlay , .overlay_bottom{
     position: absolute;
     opacity: 0.8;
     width: 13.313rem;
@@ -797,7 +808,7 @@ p {
   .nav_btn_right {
     position: absolute;
     right: 0;
-    top: 42%;
+    top: 53%;
     z-index: 9;
     width: 3.125rem;
     height: 3.125rem;
@@ -806,7 +817,7 @@ p {
   .nav_btn_left {
     position: absolute;
     left: 0;
-    top: 42%;
+    top: 53%;
     z-index: 9;
     width: 3.125rem;
     height: 3.125rem;
@@ -905,4 +916,13 @@ p {
     width: 12.5rem;
     line-height: 1.75rem;
   }
+
+  .home_ideas{
+    margin-top: 10.625rem;
+  }
+
+  .latest_container:hover .overlay_bottom {
+    height: -webkit-fill-available;
+  }
+
 }

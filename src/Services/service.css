@@ -155,3 +155,18 @@
   opacity: 1;
   color: #c9442d !important;
 }
+
+@media screen and (max-width: 500px) {
+  .service_wrapper {
+    flex-wrap: wrap-reverse;
+  }
+
+  .service_image {
+    width: 285.026px;
+    height: 279.438px;
+  }
+
+  .service_wrapper p {
+    width: 18.75rem;
+  }
+}

@@ -316,3 +316,41 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
+@media screen and (max-width: 500px) {
+  .scroll-trigger {
+    margin: 1.25rem;
+  }
+
+  .about_banner {
+    height: 31.25rem;
+  }
+
+  .about_choose_container {
+    width: 18.75rem;
+  }
+  .about_choose_desp {
+    width: 16rem;
+  }
+
+  .about_questions_box {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .about_questions_container h1 {
+    width: auto;
+    text-align: center;
+  }
+  .about_questions_container p {
+    width: 18.75rem;
+  }
+  .about_accordion {
+    width: 18.75rem;
+    height: 20.8rem;
+  }
+
+  .about_title {
+    width: auto;
+  }
+}

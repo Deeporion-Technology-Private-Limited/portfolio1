@@ -24,7 +24,6 @@
 }
 
 .service_info_box {
-  max-height: 532px;
   overflow-y: scroll;
 }
 
@@ -156,7 +155,20 @@
   color: #c9442d !important;
 }
 
+.slick-dots li button:before {
+  color: #c9442d !important;
+  font-size: 0.8rem !important;
+}
+
 @media screen and (max-width: 500px) {
+  .service_banner {
+    height: 37.5rem;
+  }
+
+  .service_banner .home_content {
+    margin-top: 0;
+  }
+
   .service_wrapper {
     flex-wrap: wrap-reverse;
   }
@@ -168,5 +180,18 @@
 
   .service_wrapper p {
     width: 18.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service_wrapper {
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .service_wrapper {
+    flex-direction: column-reverse;
   }
 }

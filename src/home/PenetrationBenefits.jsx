@@ -2,7 +2,6 @@ import React from "react";
 import { HiDocumentReport } from "react-icons/hi";
 import "./home.css";
 import { useTranslation } from "react-i18next";
-import { IoIosArrowRoundForward } from "react-icons/io";
 
 const PenetrationBenefits = () => {
   const { t } = useTranslation();
@@ -81,11 +80,6 @@ const PenetrationBenefits = () => {
                     <h2>{obj.heading}</h2>
                   </div>
                   <p>{obj.desp}</p>
-                  <div className="benefit_detail">
-                    <span>
-                      <IoIosArrowRoundForward />
-                    </span>
-                  </div>
                 </div>
               </div>
             ))}

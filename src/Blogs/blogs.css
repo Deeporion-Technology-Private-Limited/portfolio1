@@ -44,10 +44,12 @@
 }
 
 .blog_wrapper {
+  max-width: 100%;
   width: 67vw;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  justify-content: center;
 }
 
 .blog_container {
@@ -190,6 +192,36 @@ ul li {
   background: var(--black);
 }
 
+.blog_form_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem;
+}
+
+.full_name,
+.email {
+  border-radius: 18px;
+  border: 1px solid #717171;
+  /* padding: 20px 419px 20px 30px; */
+  height: 50px;
+  background: #111927;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.text_area {
+  grid-column: span 2;
+  background: #111927;
+  border-radius: 18px;
+  padding: 0.7rem;
+  color: #fff;
+}
+
+.full_name:hover,
+.email:hover {
+  border: 1px solid #893e97;
+}
+
 /* blog Carousel Css */
 .carousel_h1 {
   margin-top: 119px;
@@ -229,7 +261,8 @@ ul li {
 
 .text_desp {
   font-size: 18px;
-  width: 321px;
+  width: 100%;
+  max-width: 20.063rem;
   line-height: 28px;
   font-weight: 600;
   margin: 22px 0;
@@ -305,13 +338,25 @@ ul li {
 }
 
 @media screen and (max-width: 500px) {
+  .blog_banner {
+    height: 37.5rem;
+  }
+
+  .blog_banner .home_content {
+    margin-top: 0;
+  }
+
   .header_links {
-    display: none; /* Hide the nav links by default on small screens */
+    display: none;
   }
 
   .bold_heading_blog {
     font-size: 1.5rem;
     line-height: 1.8rem;
+  }
+
+  .bold_heading {
+    line-height: 2rem;
   }
 
   .front_content {
@@ -341,7 +386,7 @@ ul li {
   }
 
   .latest_container_desp {
-    width: 13.313rem;
+    width: 13.313rem !important;
     height: 14.313rem;
   }
   .latest_container_desp .image {
@@ -351,9 +396,100 @@ ul li {
   .text_desp {
     width: 10.813rem;
     line-height: 1.125rem;
+    font-size: 0.8rem;
   }
 
   .blog_description_wrapper ul {
-    gap: 7rem;
+    gap: 9rem;
+  }
+
+  .react-multiple-carousel__arrow--left {
+    display: none;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    display: none;
+  }
+
+  .blog_container:hover .blog_img img {
+    transform: none;
+  }
+
+  .blog_form_container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.8rem;
+  }
+
+  .full_name,
+  .email {
+    padding: 0.4rem;
+    height: auto;
+  }
+
+  .text_area {
+    grid-column: span 1;
+    padding: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .person_info_box {
+    width: auto;
+  }
+
+  .person_name,
+  .person_detail {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .person_name input,
+  .person_detail input {
+    width: 28rem !important;
+    padding: 1.25rem !important;
+  }
+
+  .person_text textarea {
+    width: 25rem !important;
+    padding: 1rem 3.99rem 4rem 1rem !important;
+  }
+
+  .bold_heading {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .person_name,
+  .person_detail {
+    flex-direction: column;
+    gap: 0 !important;
+  }
+
+  .person_text textarea {
+    width: auto !important;
+    padding-right: 26rem !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .blog_wrapper {
+    width: auto;
+    max-width: 90vw;
+    justify-content: center;
+  }
+
+  .latest_container_desp {
+    width: auto;
+    margin-right: 1.7rem;
+  }
+
+  .latest_container_desp .image {
+    width: -webkit-fill-available;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    right: calc(2% + -12px) !important;
   }
 }

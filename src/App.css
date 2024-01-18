@@ -4,6 +4,10 @@ body {
   box-sizing: border-box;
 }
 
+.App {
+  overflow-x: hidden;
+}
+
 :root {
   --black: #111927;
   --white: #ffffff;
@@ -16,10 +20,4 @@ body {
   --lightBlack: #1e2834;
   --orange: #c9442d;
   --purple: #893e97;
-}
-
-@media screen and (max-width: 500px) {
-  .App {
-    overflow-x: hidden;
-  }
 }

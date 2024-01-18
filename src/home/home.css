@@ -32,7 +32,8 @@
 }
 
 .front_content {
-  width: 50%;
+  max-width: 50rem;
+  width: 100%;
 }
 
 .bold_heading {
@@ -41,7 +42,7 @@
   font-size: 60px;
   font-style: normal;
   font-weight: bolder;
-  line-height: 70.5px; /* 117.5% */
+  line-height: 70.5px;
 }
 
 .sub_heading_home {
@@ -106,7 +107,8 @@
 }
 
 .idea_body {
-  width: 411px;
+  width: 100%;
+  max-width: 25.688rem;
   background-color: var(--lightBlack);
   display: flex;
   padding: 24px;
@@ -147,7 +149,8 @@
 .ideas_description {
   font-weight: 400;
   line-height: 24px;
-  width: 300px;
+  width: 100%;
+  max-width: 18.75rem;
   color: var(--lightGrey);
 }
 
@@ -211,7 +214,6 @@
 }
 
 .penetration_desp_info {
-  width: 100vw;
   display: flex;
   justify-content: center;
   margin: 80px 0;
@@ -283,19 +285,6 @@
   display: flex;
   justify-content: flex-end;
   display: none;
-}
-
-.benefit_detail span {
-  font-size: 1.375rem;
-  padding: 0.25rem;
-  border-radius: 50%;
-  color: #893e97;
-  box-shadow: 0px 0px 10px 0px rgba(137, 62, 151, 0.2) inset;
-  width: 1rem;
-  height: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  display: flex;
-  align-items: center;
 }
 
 /* why Penetration CSS  */
@@ -523,7 +512,7 @@
   align-items: center;
 }
 
-.latest_container{
+.latest_container {
   height: auto;
 }
 
@@ -690,18 +679,57 @@ p {
 }
 
 @media screen and (max-width: 500px) {
-  /*  landing page */
+  .homebanner_btn {
+    flex-direction: column;
+    gap: 0.875rem;
+  }
 
-  .home_banner{
-    height: auto;
+  .benefit_detail {
+    display: flex;
   }
-  .backdrop{
-    height: auto;
+
+  .scene,
+  .scene2 {
+    width: auto;
+    flex-wrap: wrap !important;
   }
-  
+
+  .scene :nth-child(1) {
+    order: 1;
+  }
+
+  .why_penetration_content_h1 {
+    font-size: 1.5rem;
+    text-wrap: wrap;
+    width: 12.5rem;
+    line-height: 3.75rem;
+    bottom: 1.25rem;
+  }
+
+  .home_ideas {
+    margin-top: 10.625rem;
+  }
+
+  .latest_container:hover .overlay_bottom {
+    height: -webkit-fill-available;
+  }
+
+  .card_cover {
+    width: auto;
+  }
+
+  .card_cover2 {
+    width: auto;
+  }
+
+  .home_banner {
+    height: 37.5rem;
+  }
+
   .home_banner_img {
     display: none;
   }
+
   .bold_heading {
     text-align: center;
     font-size: 1.5rem;
@@ -743,9 +771,11 @@ p {
     flex-wrap: wrap;
     gap: 1.25rem;
   }
+
   .read_more_icon {
     font-size: 1.25rem;
   }
+
   .penetration_container {
     gap: 0.625rem;
   }
@@ -768,7 +798,7 @@ p {
   }
 
   .penetration_desp_content p {
-    width: 16.25rem;
+    width: 16.25rem !important;
     font-size: 0.875rem;
   }
 
@@ -782,13 +812,16 @@ p {
     width: 13.313rem;
     height: 17.063rem;
   }
-  .overlay , .overlay_bottom{
+
+  .overlay,
+  .overlay_bottom {
     position: absolute;
     opacity: 0.8;
     width: 13.313rem;
     height: 17.06rem;
     top: 0;
   }
+
   .overlay .text,
   .overlay_bottom .text {
     font-size: 0.875rem;
@@ -807,7 +840,7 @@ p {
 
   .nav_btn_right {
     position: absolute;
-    right: 0;
+    right: 0 !important;
     top: 53%;
     z-index: 9;
     width: 3.125rem;
@@ -816,7 +849,7 @@ p {
 
   .nav_btn_left {
     position: absolute;
-    left: 0;
+    left: 0 !important;
     top: 53%;
     z-index: 9;
     width: 3.125rem;
@@ -849,80 +882,180 @@ p {
     display: flex;
   }
 
-  .benefit_penetration_desp_box {
-    width: 8.75rem;
-    height: 8.75rem;
+  .benefits_penetration_desp_container {
+    flex-direction: column;
+  }
+
+  .benefits_penetration_desp_container .penetration_flex {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    overflow-x: scroll;
+    gap: 1.25rem;
+    margin-left: 1.875rem;
+    margin-bottom: 4.375rem;
+  }
+
+  .benefit_penetration_desp_box {
+    width: 15.438rem;
+    height: 14.188rem;
+  }
+
+  .benefit_penetration_desp_content p {
+    width: 13.688rem;
+    font-size: 0.875rem;
+    line-height: normal;
+  }
+  .benefit_penetration_desp_content h2 {
+    width: 11.313rem;
+    margin: 0.625rem 0;
+  }
+
+  .benefit_desp_icon {
+    gap: 0.625rem;
+    margin-bottom: 0;
+  }
+
+  .penetration_icon {
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    width: auto;
+    height: auto;
   }
 
   .benefits_penetration_container h1 {
     font-size: 1.5rem;
-    width: 8.75rem;
-  }
-  .benefit_penetration_desp_content h2 {
-    width: 7.313rem;
-    font-size: 0.675rem;
     text-align: center;
-    font-weight: 400;
   }
 
-  .benefit_penetration_desp_content p {
-    display: none;
-  }
-
-  .benefit_supportive_text {
-    width: 8.75rem;
-    font-size: 0.875rem;
-    text-align: left;
-    margin-top: 0;
-  }
   .benefit_text {
-    position: relative;
-    top: 5.625rem;
-    right: 1.75rem;
-  }
-
-  .benefit_desp_icon {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0;
-    gap: 0.5rem;
-  }
-  .penetration_icon {
-    width: 1.75rem;
-    height: 1.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.375rem;
+    position: sticky;
+    margin-top: 6.25rem;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .benefit_detail {
+@media screen and (max-width: 768px) {
+  .home_ideas {
+    width: auto !important;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .home_banner_img {
+    width: 22rem;
+  }
+
+  .idea_body {
+    width: auto;
+    padding: 0.8rem;
+    top: 4rem;
+  }
+
+  .idea_body:hover {
+    transform: none;
+  }
+
+  .read_more_icon {
+    font-size: 1.3rem;
+  }
+
+  .penetration_container {
+    margin-top: 6rem;
+  }
+
+  .penetration_desp_container {
+    flex-direction: column;
+  }
+
+  .penetration_desp_content p {
+    width: 21.3rem;
+  }
+
+  .scroll-trigger {
+    margin-bottom: 1.2rem;
+  }
+
+  .scene :nth-child(1) {
+    order: 1;
+  }
+  .why_penetration_content_h1 {
+    font-size: 3rem;
+    width: auto !important;
+  }
+
+  .card_cover2 {
+    width: auto;
+  }
+
+  .scene {
+    flex-wrap: wrap !important;
+  }
+
+  .scene2 {
+    flex-wrap: nowrap;
+  }
+
+  .nav_btn_right {
+    right: 8%;
+  }
+
+  .nav_btn_left {
+    left: 9%;
+  }
+
+  .benefit_text {
+    position: sticky;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benefits_penetration_desp_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits_penetration_container h1 {
+    text-align: center;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bold_heading {
+    line-height: 3.5rem;
+  }
+
+  .footer_container {
+    width: auto !important;
+  }
+
+  .why_penetration_content_h1 {
+    width: 18rem;
+    font-size: 3rem;
+  }
+  
+  .scene {
+    flex-wrap: nowrap;
+  }
+
+  .benefits_penetration_desp_container {
+    width: 90vw !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .home_ideas {
+    width: 78vw;
+    gap: 1.5rem;
   }
 
   .scene,
   .scene2 {
     width: auto;
   }
-
-  .scene :nth-child(1) {
-    order: 1;
-  }
-
-  .why_penetration_content_h1 {
-    font-size: 1.5rem;
-    text-wrap: wrap;
-    width: 12.5rem;
-    line-height: 1.75rem;
-  }
-
-  .home_ideas{
-    margin-top: 10.625rem;
-  }
-
-  .latest_container:hover .overlay_bottom {
-    height: -webkit-fill-available;
-  }
-
 }

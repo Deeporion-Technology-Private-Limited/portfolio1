@@ -72,30 +72,24 @@ const ContactContent = () => {
         </div>
       </div>
 
-      <div>
+      <div className="contact_us_form">
         <div
-          className={`person_info_box heading scroll-trigger ${
+          className={`person_info_box  heading scroll-trigger ${
             isTriggered ? "animate" : ""
           }`}
           ref={triggerRef}
         >
-          <div className="person_name">
-            <input type="text" placeholder="Rupali" />
-            <input type="text" placeholder="Last Name" />
-          </div>
-          <div className="person_detail">
-            <input type="email" placeholder="Email" />
-            <input type="text" name="" id="" placeholder="Phone Number" />
-          </div>
-          <div className="person_text">
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Your Message"
-            ></textarea>
-          </div>
+          <input type="text" placeholder="Rupali" className="" />
+          <input type="text" placeholder="Last Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" name="" id="" placeholder="Phone Number" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
           <div>
             <button className="submit_btn">{t("submit")}</button>
           </div>

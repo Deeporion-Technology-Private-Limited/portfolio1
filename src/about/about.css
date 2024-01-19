@@ -206,15 +206,13 @@
 
 .about_questions_container p {
   color: #d1d5db;
-  width: 504px;
-}
-
-.about_questions_container {
-  width: 60%;
+  width: 100%;
+  max-width: 38.375rem;
 }
 
 .about_questions_container h1 {
-  width: 70%;
+  width: 100%;
+  max-width: 38.375rem;
   text-align: start;
   margin: 0;
   margin-bottom: 20px;
@@ -233,6 +231,15 @@
   margin: 10px 0;
 }
 
+.slide_title {
+  transform: translateY(-10px);
+  transition: transform 2s ease-in-out;
+}
+
+.slide_content {
+  transform: translateY(-35px);
+  transition: transform 2s ease-in-out;
+}
 .about_title.with-border {
   border-bottom: 1px solid #414752;
 }
@@ -318,12 +325,12 @@
 }
 
 @media screen and (max-width: 500px) {
-  .scroll-trigger {
-    margin: 1.25rem;
-  }
-
   .about_banner {
     height: 31.25rem;
+  }
+
+  .about_banner .home_content {
+    margin-top: 0;
   }
 
   .about_choose_container {
@@ -338,12 +345,16 @@
     height: auto;
   }
 
+  .about_questions_container {
+    width: auto !important;
+  }
+
   .about_questions_container h1 {
     width: auto;
     text-align: center;
   }
   .about_questions_container p {
-    width: 18.75rem;
+    text-align: center;
   }
   .about_accordion {
     width: 18.75rem;
@@ -351,6 +362,66 @@
   }
 
   .about_title {
+    width: auto;
+  }
+
+  .team_overlay {
+    opacity: 0.5;
+  }
+
+  .about_detail_body:hover {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about_detail_body {
+    padding: 3.8rem 1rem;
+    top: 4rem;
+  }
+
+  .about_detail_body:hover {
+    transform: none;
+  }
+
+  .text_container {
+    width: auto;
+    justify-content: center;
+  }
+
+  .about_questions_box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 3.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about_detail_body {
+    padding: 4.5rem 0.3rem !important ;
+  }
+
+  .text_container {
+    width: 94vw;
+  }
+  .about_questions_container h1 {
+    font-size: 1.8rem;
+  }
+
+  .about_questions_container p {
+    width: auto;
+    line-height: 1.5rem;
+  }
+  .about_questions_container {
+    max-width: 26.2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .about_choose_box {
     width: auto;
   }
 }

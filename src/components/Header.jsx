@@ -4,11 +4,11 @@ import logo from "../images/LOGO.png";
 import "./style.css";
 import GoToTop from "./GoToTop";
 import { HiMenuAlt3 } from "react-icons/hi";
-import { RxCross2 } from "react-icons/rx";
+import Hamburger from "./Hamburger";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -19,11 +19,20 @@ const Header = () => {
         <div className="logo">
           <img src={logo} alt="" />
         </div>
-        {/* Hamburger menu button */}
-        <div className="hamburger_menu" onClick={toggleMenu}>
-          {isMenuOpen ? <RxCross2 /> : <HiMenuAlt3 />}
+        <div
+          className={isMenuOpen ? "hamburger_menu" : "navlink"}
+          onClick={toggleMenu}
+        >
+          {isMenuOpen ? "" : <HiMenuAlt3 />}
+          {isMenuOpen && (
+            <Hamburger
+              isMenuOpen={isMenuOpen}
+              setIsMenuOpen={setIsMenuOpen}
+              toggleMenu={toggleMenu}
+            />
+          )}
         </div>
-        <div className={`header_links ${isMenuOpen ? "show" : ""}`}>
+        <div className={`header_links`}>
           <ul className="header_links_ul">
             <li>
               <NavLink to="/" className="header_links_li">
@@ -36,13 +45,13 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/blogs" className="header_links_li">
-                Blogs
+              <NavLink to="/services" className="header_links_li">
+                Our Service
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services" className="header_links_li">
-                Our Service
+              <NavLink to="/blogs" className="header_links_li">
+                Blogs
               </NavLink>
             </li>
             <li>

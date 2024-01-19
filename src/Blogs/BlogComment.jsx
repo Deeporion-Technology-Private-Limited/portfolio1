@@ -31,17 +31,16 @@ const BlogComment = () => {
     >
       <div className="person_info_box">
         <h4>{t("leave_a_comment")}</h4>
-        <div className="person_name">
-          <input type="text" placeholder="Full Name" />
-          <input type="text" placeholder="Email" />
-        </div>
-        <div className="person_text">
+        <div className="blog_form_container">
+          <input type="text" placeholder="Full Name" className="full_name" />
+          <input type="text" placeholder="Email" className="email" />
           <textarea
             name=""
             id=""
             cols="30"
             rows="10"
             placeholder="Your Message"
+            className="text_area"
           ></textarea>
         </div>
         <div>

@@ -86,6 +86,20 @@ const ServiceContent = () => {
     },
   ];
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const settings = {
     dots: true,
     arrows: true,
@@ -93,8 +107,8 @@ const ServiceContent = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    vertical: window.innerWidth > 500 ? true : false,
-    verticalSwiping: window.innerWidth > 500 ? true : false,
+    vertical: true,
+    verticalSwiping: true,
     autoplay: true,
     autoplaySpeed: 2000,
     beforeChange: (current, next) => {
@@ -104,13 +118,25 @@ const ServiceContent = () => {
       return <MagicSliderDots dots={dots} numDotsToShow={5} dotWidth={30} />;
     },
   };
+
+  const horizontalSettings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+  };
+
   const [buttontext, setButtontext] = useState("Read More");
 
   const descriptionLength = window.innerWidth > 500 ? 600 / 1 : 300 / 3;
   return (
     <div>
       <h1 className="service_h1">{t("service_we_offer")}</h1>
-      <Slider {...settings}>
+      <Slider {...(isMobile ? horizontalSettings : settings)}>
         {carouselItems.map((item) => (
           <div key={item.id} className="service_info_box">
             <div className={`service_wrapper`}>

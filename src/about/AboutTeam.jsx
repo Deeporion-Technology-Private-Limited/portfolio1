@@ -9,6 +9,7 @@ import img7 from "../images/Rectangle 33.png";
 import img8 from "../images/Rectangle 32.png";
 import { IoIosArrowDown } from "react-icons/io";
 import { useTranslation } from "react-i18next";
+import "./about.css";
 
 const AboutTeam = () => {
   const { t } = useTranslation();
@@ -113,6 +114,21 @@ const AboutTeam = () => {
     },
   ];
 
+  useEffect(() => {
+    document.querySelector(".about_main").style.transform = `translateY(-${
+      35 * activeIndex.length
+    }px)`;
+    document.querySelector(".about_main").style.transition =
+      "transform 2s ease-in-out";
+    document
+      .querySelector(".about_accordion")
+      .addEventListener("scroll", () => {
+        document.querySelector(
+          ".about_main"
+        ).style.transform = `translateY(0px)`;
+      });
+  }, [activeIndex]);
+
   return (
     <div
       className={`scroll-animate ${isTriggered ? "animate" : ""}`}
@@ -147,7 +163,7 @@ const AboutTeam = () => {
             <p>{t("lorem_temper")}</p>
           </div>
           <div className="about_accordion">
-            <div>
+            <div className="about_main">
               {items.map((item, index) => (
                 <div key={index}>
                   <div

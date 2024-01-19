@@ -231,6 +231,15 @@
   margin: 10px 0;
 }
 
+.slide_title {
+  transform: translateY(-10px);
+  transition: transform 2s ease-in-out;
+}
+
+.slide_content {
+  transform: translateY(-35px);
+  transition: transform 2s ease-in-out;
+}
 .about_title.with-border {
   border-bottom: 1px solid #414752;
 }
@@ -345,7 +354,7 @@
     text-align: center;
   }
   .about_questions_container p {
-    width: 18.75rem;
+    text-align: center;
   }
   .about_accordion {
     width: 18.75rem;

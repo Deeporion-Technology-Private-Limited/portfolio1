@@ -1038,13 +1038,21 @@ p {
     width: 18rem;
     font-size: 3rem;
   }
-  
+
   .scene {
     flex-wrap: nowrap;
   }
 
   .benefits_penetration_desp_container {
     width: 90vw !important;
+  }
+
+  .read_more_icon {
+    font-size: 1rem;
+  }
+
+  .nav_btn_left {
+    left: 10%;
   }
 }
 

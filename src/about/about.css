@@ -1,7 +1,7 @@
 .about_banner {
   width: 100%;
   height: 800px;
-  background-image: url(../images/Image6.png);
+  background-image: url(../images/img2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -14,8 +14,6 @@
 }
 
 .about_backdrop {
-  background-color: #011631;
-  opacity: 80%;
   height: 100%;
   width: 100%;
   display: flex;
@@ -45,7 +43,7 @@
 
 .supporting_about_banner_text {
   font-family: Inter;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 140% */
@@ -82,7 +80,7 @@
   line-height: 24px;
   width: 300px;
   color: var(--lightGrey);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .about_detail_body:hover {
@@ -200,8 +198,9 @@
   height: 322px;
   margin-top: 199px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   color: var(--white);
+  width: 70vw;
 }
 
 .about_questions_container p {
@@ -215,7 +214,7 @@
   max-width: 38.375rem;
   text-align: start;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .about_accordion {
@@ -281,6 +280,12 @@
   border-radius: 8px;
 }
 
+.container_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .team_image {
   display: block;
   width: 100%;
@@ -289,19 +294,17 @@
 
 .team_overlay {
   position: absolute;
-  top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
-  background-color: #000;
+  background-color: #0c0a0a;
   transition: 1s ease;
 }
 
 .container:hover .team_overlay {
-  opacity: 60%;
+  opacity: 90%;
 }
 
 .container:hover img {
@@ -311,67 +314,16 @@
 
 .team_text {
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   position: absolute;
-  top: 88%;
-  left: 30%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  bottom: 1rem;
+  left: 1.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-@media screen and (max-width: 500px) {
-  .about_banner {
-    height: 31.25rem;
-  }
-
-  .about_banner .home_content {
-    margin-top: 0;
-  }
-
-  .about_choose_container {
-    width: 18.75rem;
-  }
-  .about_choose_desp {
-    width: 16rem;
-  }
-
-  .about_questions_box {
-    flex-wrap: wrap;
-    height: auto;
-  }
-
-  .about_questions_container {
-    width: auto !important;
-  }
-
-  .about_questions_container h1 {
-    width: auto;
-    text-align: center;
-  }
-  .about_questions_container p {
-    text-align: center;
-  }
-  .about_accordion {
-    width: 18.75rem;
-    height: 20.8rem;
-  }
-
-  .about_title {
-    width: auto;
-  }
-
-  .team_overlay {
-    opacity: 0.5;
-  }
-
-  .about_detail_body:hover {
-    transform: none;
-  }
+  width: 100%;
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 768px) {
@@ -396,18 +348,93 @@
     height: auto;
     margin-top: 3.8rem;
   }
+  .about_questions_container h1 {
+    text-align: center;
+  }
+
+  .about_questions_container p {
+    width: 34rem !important;
+    text-align: center;
+  }
+  .about_questions_container {
+    max-width: 34.2rem !important;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about_banner {
+    height: 31.25rem;
+  }
+
+  .about_banner .home_content {
+    margin-top: 0;
+  }
+
+  .about_choose_container {
+    width: 18.75rem;
+  }
+  .about_choose_desp {
+    width: 18.8rem;
+  }
+
+  .about_choose_desp p {
+    width: auto;
+    text-align-last: justify;
+  }
+
+  .about_questions_box {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .about_questions_container {
+    width: auto !important;
+  }
+
+  .about_questions_container h1 {
+    width: auto;
+    text-align: center;
+  }
+  .about_questions_container p {
+    text-align: center;
+    width: auto !important;
+  }
+
+  .about_accordion {
+    width: 22.75rem;
+    height: 20.8rem;
+  }
+
+  .about_title {
+    width: auto;
+  }
+
+  .team_overlay {
+    opacity: 90%;
+  }
+
+  .about_detail_body:hover {
+    transform: none;
+  }
+
+  .about_choose_box {
+    margin: 3.12rem 0;
+  }
+
+  .about_chooseUs_wrapper .penetration_container {
+    margin-top: 8rem !important;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .about_detail_body {
     padding: 4.5rem 0.3rem !important ;
+    width: 16.25rem;
   }
 
   .text_container {
     width: 94vw;
-  }
-  .about_questions_container h1 {
-    font-size: 1.8rem;
   }
 
   .about_questions_container p {
@@ -418,10 +445,18 @@
     max-width: 26.2rem;
     width: 100%;
   }
+
+  .about_questions_box {
+    width: 93vw !important;
+  }
 }
 
 @media screen and (max-width: 1440px) {
   .about_choose_box {
     width: auto;
+  }
+
+  .about_questions_box {
+    width: 82vw;
   }
 }

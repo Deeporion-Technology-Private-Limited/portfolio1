@@ -235,6 +235,16 @@ ul {
     display: none;
     margin-top: 2.5rem;
   }
+
+  .footer_text {
+    width: 20rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer_wrapper {
+    margin-top: 13rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -248,5 +258,11 @@ ul {
 
   .footer_text {
     width: 12rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer_text {
+    width: 11.688rem;
   }
 }

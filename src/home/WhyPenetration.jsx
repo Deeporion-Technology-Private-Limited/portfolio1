@@ -40,7 +40,7 @@ const WhyPenetration = () => {
             <div className="card__face card__face--front">
               <div className="why_penetration_content">
                 <AiFillPieChart className="penetration_icon" />
-                <p>{t("lorem_amet")}</p>
+                <p className="penetration_p">{t("lorem_amet")}</p>
               </div>
             </div>
             <div className="card__face card__face--back">
@@ -58,7 +58,7 @@ const WhyPenetration = () => {
             <div className="card__face card__face--front">
               <div className="why_penetration_content">
                 <HiMiniComputerDesktop className="penetration_icon" />
-                <p>{t("lorem_ipsum_dolor")}</p>
+                <p className="penetration_p">{t("lorem_ipsum_dolor")}</p>
               </div>
             </div>
             <div className="card__face card__face--back">

@@ -3,7 +3,7 @@
 .home_banner {
   width: 100%;
   height: 800px;
-  background-image: url(../images/Image4.png);
+  background-image: url(../images/homeBanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -13,10 +13,8 @@
 }
 
 .backdrop {
-  background-color: #011631;
   height: 100%;
   width: 100%;
-  opacity: 80%;
 }
 
 .home_container {
@@ -43,11 +41,12 @@
   font-style: normal;
   font-weight: bolder;
   line-height: 70.5px;
+  text-transform: capitalize;
 }
 
 .sub_heading_home {
   font-family: Inter;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -87,7 +86,7 @@
 .work_btn {
   background-color: transparent;
   border: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--white);
   display: flex;
   align-items: center;
@@ -142,7 +141,7 @@
 }
 
 .ideas_heading {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
@@ -166,6 +165,9 @@
 
 .read_more_icon {
   font-size: 4px;
+  background-color: var(--white);
+  border-radius: 50%;
+  color: var(--black);
 }
 
 .idea_body:hover .read_more_icon {
@@ -197,6 +199,7 @@
   text-align: center;
   color: var(--white);
   font-size: 60px;
+  text-transform: capitalize;
 }
 
 .supportive_text_container {
@@ -209,8 +212,8 @@
   color: var(--lightGrey);
   width: 60%;
   text-align: center;
-  margin-top: -20px;
-  font-size: 20px;
+  margin-top: -1.25rem;
+  font-size: 1.25rem;
 }
 
 .penetration_desp_info {
@@ -249,7 +252,7 @@
 }
 
 .penetration_desp_content h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--white);
   margin: 0;
 }
@@ -269,6 +272,7 @@
 }
 
 /*  penetration Benefit CSS */
+
 .benefits_box {
   width: 100%;
   height: 1685px;
@@ -329,6 +333,7 @@
   margin: 0;
   position: relative;
   bottom: 60px;
+  text-transform: capitalize;
 }
 
 .card_container {
@@ -410,7 +415,7 @@
 }
 
 .why_penetration_content_back p {
-  margin: 0 20px;
+  margin: 0 1.25rem;
   text-align: center;
 }
 
@@ -548,7 +553,7 @@
 }
 
 .text {
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 300px;
   line-height: 28px;
   font-weight: 600;
@@ -560,7 +565,7 @@
   align-items: center;
   width: 245px;
   margin-right: 85px;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   margin-bottom: 65px;
 }
 
@@ -611,6 +616,7 @@ p {
   font-size: 60px;
   width: 72%;
   text-align: left;
+  text-transform: capitalize;
 }
 
 .benefits_penetration_container h1 {
@@ -623,8 +629,7 @@ p {
 .benefit_supportive_text {
   color: var(--lightGrey);
   width: 60%;
-  text-align: center;
-  margin-top: -20px;
+  margin-top: -1.25rem;
   width: 397px;
 }
 
@@ -637,7 +642,7 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   gap: 10px;
   background-color: var(--lightBlack);
   width: 407px;
@@ -657,13 +662,14 @@ p {
   color: var(--white);
   width: 245px;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 .benefit_desp_icon {
   display: flex;
   align-items: center;
   gap: 29px;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .scroll-trigger {
@@ -681,7 +687,7 @@ p {
 @media screen and (max-width: 500px) {
   .homebanner_btn {
     flex-direction: column;
-    gap: 0.875rem;
+    gap: 1.25rem;
   }
 
   .benefit_detail {
@@ -706,10 +712,6 @@ p {
     bottom: 1.25rem;
   }
 
-  .home_ideas {
-    margin-top: 10.625rem;
-  }
-
   .latest_container:hover .overlay_bottom {
     height: -webkit-fill-available;
   }
@@ -732,9 +734,8 @@ p {
 
   .bold_heading {
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.75rem;
+    font-size: 1.5rem !important;
+    line-height: 1.75rem !important;
     width: 18.75rem;
   }
 
@@ -774,10 +775,13 @@ p {
 
   .read_more_icon {
     font-size: 1.25rem;
+    background: none;
+    color: var(--white);
   }
 
   .penetration_container {
     gap: 0.625rem;
+    margin-top: 4rem !important;
   }
 
   .penetration_container h1 {
@@ -800,6 +804,7 @@ p {
   .penetration_desp_content p {
     width: 16.25rem !important;
     font-size: 0.875rem;
+    margin-left: 0.875rem;
   }
 
   .images-container {
@@ -817,17 +822,22 @@ p {
   .overlay_bottom {
     position: absolute;
     opacity: 0.8;
-    width: 13.313rem;
-    height: 17.06rem;
+    width: 18.313rem;
+    height: 21.06rem;
     top: 0;
   }
 
   .overlay .text,
   .overlay_bottom .text {
     font-size: 0.875rem;
-    width: 11.93rem;
+    width: 12rem;
     line-height: 1.18rem;
-    height: 3.56;
+    margin-right: 87px;
+    text-wrap: wrap;
+  }
+
+  .avatar_container {
+    width: 13.25rem;
   }
 
   .avatar_info h2 {
@@ -839,21 +849,11 @@ p {
   }
 
   .nav_btn_right {
-    position: absolute;
-    right: 0 !important;
-    top: 53%;
-    z-index: 9;
-    width: 3.125rem;
-    height: 3.125rem;
+    display: none;
   }
 
   .nav_btn_left {
-    position: absolute;
-    left: 0 !important;
-    top: 53%;
-    z-index: 9;
-    width: 3.125rem;
-    height: 3.125rem;
+    display: none;
   }
 
   .footer_container {
@@ -861,11 +861,13 @@ p {
     flex-direction: column;
     align-items: center;
   }
+
   .footer_container :first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 0;
   }
 
   .footer_heading {
@@ -892,11 +894,14 @@ p {
     gap: 1.25rem;
     margin-left: 1.875rem;
     margin-bottom: 4.375rem;
+    width: 44rem;
   }
 
   .benefit_penetration_desp_box {
     width: 15.438rem;
     height: 14.188rem;
+    border-radius: 0.875rem;
+    padding-bottom: 0.95rem;
   }
 
   .benefit_penetration_desp_content p {
@@ -935,13 +940,29 @@ p {
     position: sticky;
     margin-top: 6.25rem;
   }
+
+  .penetration_desp_info {
+    margin: 55px 0;
+  }
+
+  .penetration_img img {
+    width: 300px;
+  }
+
+  .penetration_flex {
+    margin-bottom: 0 !important;
+  }
+
+  .latest_App {
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .home_ideas {
-    width: auto !important;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 77vw !important;
   }
 
   .home_banner_img {
@@ -949,7 +970,7 @@ p {
   }
 
   .idea_body {
-    width: auto;
+    width: 18.25rem !important;
     padding: 0.8rem;
     top: 4rem;
   }
@@ -1003,7 +1024,7 @@ p {
   }
 
   .nav_btn_left {
-    left: 9%;
+    left: 9% !important;
   }
 
   .benefit_text {
@@ -1023,11 +1044,37 @@ p {
     text-align: center;
     width: 85%;
   }
+
+  .supportive_text {
+    width: 83%;
+  }
+
+  .penetration_desp_content h2 {
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .penetration_p {
+    order: 1;
+  }
+
+  .penetration_flex {
+    margin-bottom: 100px;
+  }
+
+  .sub_heading_home {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .bold_heading {
     line-height: 3.5rem;
+  }
+
+  .idea_body {
+    bottom: 60px;
+    width: 16.25rem;
   }
 
   .footer_container {
@@ -1051,19 +1098,39 @@ p {
     font-size: 1rem;
   }
 
+  .nav_btn_right {
+    right: 9%;
+  }
+
   .nav_btn_left {
-    left: 10%;
+    left: 9%;
+  }
+
+  .card {
+    width: 325px;
+  }
+
+  .home_ideas_container {
+    margin-top: 2rem;
   }
 }
 
 @media screen and (max-width: 1440px) {
   .home_ideas {
-    width: 78vw;
+    width: 88vw;
     gap: 1.5rem;
   }
 
   .scene,
   .scene2 {
     width: auto;
+  }
+
+  .penetration_desp_content p {
+    width: 38rem;
+  }
+
+  .nav_btn_left {
+    left: 11%;
   }
 }

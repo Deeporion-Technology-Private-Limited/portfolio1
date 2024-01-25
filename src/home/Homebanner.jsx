@@ -5,12 +5,12 @@ import { FaCirclePlay } from "react-icons/fa6";
 import { TbBulbFilled } from "react-icons/tb";
 import { HiPresentationChartBar } from "react-icons/hi";
 import { AiFillEye } from "react-icons/ai";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import PenetrationTesting from "./PenetrationTesting";
 import WhyPenetration from "./WhyPenetration";
 import LatestBlogs from "./LatestBlogs";
 import PenetrationBenefits from "./PenetrationBenefits";
 import { useTranslation } from "react-i18next";
+import { FiArrowRight } from "react-icons/fi";
 
 const Homebanner = () => {
   const { t } = useTranslation();
@@ -84,7 +84,8 @@ const Homebanner = () => {
                   </div>
                   <div>
                     <button className="work_btn">
-                      {t("see_how_it_works")} <FaCirclePlay />
+                      {t("see_how_it_works")}
+                      <FaCirclePlay />
                     </button>
                   </div>
                 </div>
@@ -108,7 +109,7 @@ const Homebanner = () => {
               <div>
                 <button className="read_more_btn">
                   {data.btn}
-                  <BsFillArrowRightCircleFill className="read_more_icon" />
+                  <FiArrowRight className="read_more_icon" />
                 </button>
               </div>
             </div>

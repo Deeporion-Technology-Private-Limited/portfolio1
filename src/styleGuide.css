@@ -13,18 +13,18 @@
 
 .style_guide_container h3 {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .style_guide_container h4 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 /* color codes */
 
 .color_palette {
   display: flex;
-  gap: 70px;
+  gap: 4.375rem;
 }
 
 .colors {
@@ -55,7 +55,7 @@
 
 .text_styles {
   display: flex;
-  gap: 70px;
+  gap: 4.375rem;
   font-family: Inter;
 }
 
@@ -74,7 +74,7 @@ p {
 }
 
 .text_guide p:nth-child(3) {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   text-transform: uppercase;
 }
 
@@ -82,40 +82,40 @@ p {
 
 .btn_wrapper {
   display: flex;
-  gap: 70px;
+  gap: 4.375rem;
   align-items: center;
 }
 .btn_wrapper .btn {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 2.188rem;
   text-transform: uppercase;
 }
 
 .btn_state {
   display: flex;
-  gap: 70px;
+  gap: 4.375rem;
 }
 
 .btn_border {
   border: 1px dashed #893e97;
-  padding: 40px 36px;
+  padding: 2.5rem 36px;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  border-radius: 15px;
+  border-radius: 0.938rem;
 }
 
 .get_btn {
   display: flex;
-  width: 128px;
-  height: 48px;
-  padding: 8px 12px;
+  width: 8rem;
+  height: 3rem;
+  padding: 0.5rem 0.75rem;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: var(--white);
-  font-size: 16px;
+  font-size: 1rem;
   background: var(
     --gradient,
     linear-gradient(89deg, #c9442d 0.55%, #893e97 91.24%)
@@ -126,22 +126,22 @@ p {
 .get_btn:hover {
   background: linear-gradient(var(--black), var(--black)) padding-box,
     linear-gradient(to right, #c9442d, #893e97) border-box;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 /* input styling */
 
 .input_wrapper {
   display: flex;
-  gap: 70px;
+  gap: 4.375rem;
 }
 
 .input_fileds {
   display: flex;
   flex-direction: column;
   border: 1px dashed #893e97;
-  padding: 40px 36px;
-  border-radius: 15px;
+  padding: 2.5rem 36px;
+  border-radius: 0.938rem;
 }
 
 .input_states {
@@ -153,12 +153,12 @@ p {
 
 .input_fileds input {
   width: 524px;
-  border-radius: 18px;
+  border-radius: 1.125rem;
   border: 1px solid var(--darkGrey);
   background: #111927;
-  padding: 1.25rem 30px;
-  margin-bottom: 30px;
-  font-size: 16px;
+  padding: 1.25rem 1.875rem;
+  margin-bottom: 1.875rem;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -168,16 +168,16 @@ p {
 
 .purple_btn {
   display: flex;
-  width: 128px;
-  height: 48px;
-  padding: 12px 37px;
+  width: 8rem;
+  height: 3rem;
+  padding: 0.75rem 2.313rem;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background: rgba(137, 62, 151, 0.6);
   border: none;
   color: var(--white);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .purple_btn:hover {
@@ -188,7 +188,7 @@ p {
 
 .dropdown_wrapper {
   display: flex;
-  gap: 70px;
+  gap: 4.375rem;
 }
 
 .dropdown_state {
@@ -201,35 +201,35 @@ p {
 .que_container {
   border: 1px dashed #893e97;
   padding: 1.25rem;
-  border-radius: 15px;
+  border-radius: 0.938rem;
 }
 
 .about_que {
-  font-size: 16px;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 214px;
   padding: 1.25rem;
   border-bottom: 1px solid var(--darkerGrey);
   width: 550px;
-  margin-bottom: 15px;
+  margin-bottom: 0.938rem;
 }
 
 .about_ques_down {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .dropdown_content {
   width: 595px;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 
 .card_container {
   border: 1px dashed #893e97;
-  margin-top: 70px;
-  padding: 85px;
-  border-radius: 15px;
-  width: 400px;
+  margin-top: 4.375rem;
+  padding: 5.313rem;
+  border-radius: 0.938rem;
+  width: 25rem;
 }
 
 /* card 1 styling */
@@ -240,18 +240,18 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 66px 23px 98px 23px;
-  gap: 16px;
+  padding: 4.125rem 1.438rem 6.125rem 1.438rem;
+  gap: 1rem;
   align-self: stretch;
   color: var(--white);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   transform: translateY(0px);
   transition: 3s;
   width: 358px;
 }
 
 .card1_heading {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 600;
   color: var(--white);
 }
@@ -259,8 +259,8 @@ p {
 .card1_desp {
   text-align: center;
   font-weight: 400;
-  line-height: 24px;
-  width: 300px;
+  line-height: 1.5rem;
+  width: 18.75rem;
   color: var(--lightGrey);
   font-size: 1.25rem;
 }
@@ -268,10 +268,10 @@ p {
 .card1_body:hover {
   transition: 3s;
   transform: translateY(-60px);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: 1px solid var(--Primary-color-2, #893e97);
   background: #1d2833;
-  box-shadow: 0px 0px 25px 0px rgba(137, 62, 151, 0.2);
+  box-shadow: 0px 0px 1.563rem 0px rgba(137, 62, 151, 0.2);
 }
 
 .card1_body:hover .card1_desp {
@@ -285,23 +285,23 @@ p {
 /* card 2 */
 
 .card2 {
-  margin: 80px 0;
+  margin: 5rem 0;
 }
 
 .card2_container {
-  width: 360px;
+  width: 22.5rem;
   border: 2px solid var(--darkGrey);
-  border-radius: 28px;
+  border-radius: 1.75rem;
   display: flex;
   flex-direction: column;
   color: var(--white);
-  padding: 30px;
+  padding: 1.875rem;
 }
 
 .card2_container:hover {
   border: 2px solid var(--Primary-color-2, #893e97);
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15),
-    0px 0px 200px 0px rgba(137, 62, 151, 0.15) inset;
+  box-shadow: 0px 0px 1.875rem 0px rgba(0, 0, 0, 0.15),
+    0px 0px 12.5rem 0px rgba(137, 62, 151, 0.15) inset;
 }
 
 .card2_container:hover .card2_icon {
@@ -312,20 +312,20 @@ p {
 .card2_box {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .card2_icon {
-  font-size: 24px;
+  font-size: 1.5rem;
   background: var(--purple);
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: 50%;
   display: flex;
 }
 
 .card2_desp {
-  width: 342px;
-  line-height: 24px;
+  width: 21.375rem;
+  line-height: 1.5rem;
   word-spacing: 5px;
 }
 
@@ -334,9 +334,9 @@ p {
 .card3_body {
   display: flex;
   align-items: center;
-  gap: 30px;
-  font-size: 16px;
-  border-radius: 28px;
+  gap: 1.875rem;
+  font-size: 1rem;
+  border-radius: 1.75rem;
   background: #1c2330;
   width: 413px;
   height: 122px;
@@ -348,10 +348,10 @@ p {
   justify-content: center;
   align-items: center;
   color: var(--purple);
-  font-size: 26px;
-  height: 26px;
-  width: 26px;
-  border-radius: 16px;
+  font-size: 1.625rem;
+  height: 1.625rem;
+  width: 1.625rem;
+  border-radius: 1rem;
   border: 1px solid var(--Primary-color-2, #893e97);
   padding: 19px 17px;
   background: rgba(137, 62, 151, 0.15);
@@ -359,7 +359,7 @@ p {
 }
 
 .card3_heading h4 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   margin: 0;
 }
@@ -370,7 +370,7 @@ p {
 
 .card3_body:hover {
   background-color: var(--purple);
-  transform: translateY(-50px);
+  transform: translateY(-3.125rem);
   transition: 3s;
 }
 
@@ -386,7 +386,7 @@ p {
   justify-content: center;
   align-items: center;
   height: 528px;
-  border-radius: 28px;
+  border-radius: 1.75rem;
   border: 1px solid #6a6a6a;
 }
 
@@ -395,14 +395,14 @@ p {
 }
 
 .card5_container img {
-  width: 366px;
-  height: 331px;
+  width: 22.875rem;
+  height: 20.688rem;
 }
 
 .card5_heading {
-  width: 366px;
+  width: 22.875rem;
   font-size: 1.25rem;
-  line-height: 32px;
+  line-height: 2rem;
   font-weight: 600;
 }
 
@@ -413,15 +413,15 @@ p {
 }
 
 .card5_btn {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: end;
   display: flex;
-  width: 25px;
-  height: 25px;
-  padding: 13.001px 13.001px 12.999px 12.999px;
+  width: 1.563rem;
+  height: 1.563rem;
+  padding: 0.813rem 0.813rem 0.812rem 0.812rem;
   justify-content: center;
   align-items: center;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   background: var(--primary-color-1, #c9442d);
 }
 
@@ -436,13 +436,13 @@ p {
 .card6_body {
   background-color: var(--lightBlack);
   display: flex;
-  padding: 24px;
+  padding: 1.5rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 1rem;
   align-self: stretch;
   color: var(--white);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   transform: translateY(0px);
   transition: 1s;
 }
@@ -453,13 +453,13 @@ p {
 }
 
 .card6_icon {
-  font-size: 32px;
+  font-size: 2rem;
   color: #893e97;
   background: white;
   border-radius: 50%;
-  padding: 8px;
-  width: 32px;
-  height: 32px;
+  padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
 }
 
@@ -470,26 +470,26 @@ p {
 
 .card6_description {
   font-weight: 400;
-  line-height: 24px;
-  width: 300px;
+  line-height: 1.5rem;
+  width: 18.75rem;
   color: var(--lightGrey);
 }
 
 .card6_read_more_btn {
   background-color: transparent;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--white);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 /* card7 */
 
 .card7_card {
   position: relative;
-  height: 200px;
+  height: 12.5rem;
   color: white;
   cursor: pointer;
   transition: 1s ease-in-out;
@@ -513,9 +513,9 @@ p {
 }
 
 .card7_content {
-  max-width: 400px;
-  min-width: 200px;
-  height: 137px;
+  max-width: 25rem;
+  min-width: 12.5rem;
+  height: 8.563rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -523,21 +523,21 @@ p {
   background: linear-gradient(var(--black), var(--black)) padding-box,
     linear-gradient(to right, #c9442d, #893e97) border-box;
   border: 1px solid transparent;
-  border-radius: 28px;
-  margin: 25px;
+  border-radius: 1.75rem;
+  margin: 1.563rem;
 }
 
 .card7_content_back {
-  max-width: 374px;
-  min-width: 200px;
-  height: 137px;
+  max-width: 23.375rem;
+  min-width: 12.5rem;
+  height: 8.563rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 12px;
-  margin: 25px;
+  border-radius: 0.75rem;
+  margin: 1.563rem;
   background: linear-gradient(180deg, #c9442d -28.1%, #893e97 118.25%);
 }
 

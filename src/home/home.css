@@ -2,7 +2,7 @@
 
 .home_banner {
   width: 100%;
-  height: 800px;
+  height: 50rem;
   background-image: url(../images/homeBanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@
 }
 
 .home_content {
-  margin-top: 186px;
+  margin-top: 11.625rem;
   display: flex;
   justify-content: center;
   width: 87vw;
@@ -37,10 +37,10 @@
 .bold_heading {
   color: var(--white);
   font-family: Inter;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-style: normal;
   font-weight: bolder;
-  line-height: 70.5px;
+  line-height: 4.406rem;
   text-transform: capitalize;
 }
 
@@ -49,27 +49,27 @@
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
   color: var(--lightGrey);
 }
 
 .homebanner_btn {
   display: flex;
   align-items: center;
-  gap: 41px;
+  gap: 2.563rem;
 }
 
 .get_started_btn {
   font-weight: 600;
   display: flex;
-  width: 128px;
-  height: 48px;
-  padding: 8px 12px;
+  width: 8rem;
+  height: 3rem;
+  padding: 0.5rem 0.75rem;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: var(--white);
-  font-size: 16px;
+  font-size: 1rem;
   background: var(
     --gradient,
     linear-gradient(89deg, #c9442d 0.55%, #893e97 91.24%)
@@ -80,7 +80,7 @@
 .get_started_btn:hover {
   background: linear-gradient(var(--black), var(--black)) padding-box,
     linear-gradient(to right, #c9442d, #893e97) border-box;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .work_btn {
@@ -90,7 +90,7 @@
   color: var(--white);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .home_ideas_container {
@@ -110,15 +110,15 @@
   max-width: 25.688rem;
   background-color: var(--lightBlack);
   display: flex;
-  padding: 24px;
+  padding: 1.5rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 1rem;
   align-self: stretch;
   color: var(--white);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   position: relative;
-  bottom: 95px;
+  bottom: 5.938rem;
   transform: translateY(0px);
   transition: 1s;
   border: 1px solid #374151;
@@ -126,17 +126,17 @@
 
 .idea_body:hover {
   transition: 1s;
-  transform: translateY(-60px);
+  transform: translateY(-3.75rem);
 }
 
 .ideas_icon {
-  font-size: 32px;
+  font-size: 2rem;
   color: #893e97;
   background: white;
   border-radius: 50%;
-  padding: 8px;
-  width: 32px;
-  height: 32px;
+  padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
 }
 
@@ -147,7 +147,7 @@
 
 .ideas_description {
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   width: 100%;
   max-width: 18.75rem;
   color: var(--lightGrey);
@@ -156,11 +156,11 @@
 .read_more_btn {
   background-color: transparent;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--white);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .read_more_icon {
@@ -171,7 +171,7 @@
 }
 
 .idea_body:hover .read_more_icon {
-  font-size: 16px;
+  font-size: 1rem;
   transition: 1s;
 }
 
@@ -190,7 +190,7 @@
 
 .penetration_container {
   display: flex;
-  margin-top: 50px;
+  margin-top: 3.125rem;
   flex-direction: column;
   align-items: center;
 }
@@ -198,7 +198,7 @@
 .penetration_container h1 {
   text-align: center;
   color: var(--white);
-  font-size: 60px;
+  font-size: 3.75rem;
   text-transform: capitalize;
 }
 
@@ -219,7 +219,7 @@
 .penetration_desp_info {
   display: flex;
   justify-content: center;
-  margin: 80px 0;
+  margin: 5rem 0;
 }
 
 .penetration_desp_container {
@@ -237,13 +237,13 @@
 }
 
 .penetration_icon {
-  width: 32px;
-  height: 32px;
-  font-size: 32px;
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
   color: #893e97;
   background: white;
   border-radius: 50%;
-  padding: 8px;
+  padding: 0.5rem;
   display: flex;
 }
 
@@ -259,23 +259,23 @@
 
 .penetration_desp_content p {
   color: var(--grey);
-  font-size: 16px;
-  line-height: 24px;
-  width: 745px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 46.563rem;
 }
 
 .penetration_desp_box {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 40px;
-  gap: 10px;
+  margin-bottom: 2.5rem;
+  gap: 0.625rem;
 }
 
 /*  penetration Benefit CSS */
 
 .benefits_box {
   width: 100%;
-  height: 1685px;
+  height: 105.313rem;
   background-image: url(../images/Image5.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -308,9 +308,9 @@
 }
 
 .why_penetration_content {
-  max-width: 400px;
-  min-width: 200px;
-  height: 137px;
+  max-width: 25rem;
+  min-width: 12.5rem;
+  height: 8.563rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -318,21 +318,21 @@
   background: linear-gradient(var(--black), var(--black)) padding-box,
     linear-gradient(to right, #c9442d, #893e97) border-box;
   border: 1px solid transparent;
-  border-radius: 28px;
-  margin: 25px;
-  gap: 10px;
+  border-radius: 1.75rem;
+  margin: 1.563rem;
+  gap: 0.625rem;
 }
 
 .why_penetration_content_h1 {
   color: var(--white);
-  width: 374px;
-  font-size: 60px;
-  line-height: 60px;
+  width: 23.375rem;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
   white-space: wrap;
   text-align: center;
   margin: 0;
   position: relative;
-  bottom: 60px;
+  bottom: 3.75rem;
   text-transform: capitalize;
 }
 
@@ -376,8 +376,8 @@
 
 .card {
   position: relative;
-  width: 374px;
-  height: 200px;
+  width: 23.375rem;
+  height: 12.5rem;
   color: white;
   cursor: pointer;
   transition: 1s ease-in-out;
@@ -401,16 +401,16 @@
 }
 
 .why_penetration_content_back {
-  max-width: 374px;
-  min-width: 200px;
-  height: 137px;
+  max-width: 23.375rem;
+  min-width: 12.5rem;
+  height: 8.563rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 1px solid transparent;
-  border-radius: 28px;
-  margin: 25px;
+  border-radius: 1.75rem;
+  margin: 1.563rem;
   background: linear-gradient(180deg, #c9442d -28.1%, #893e97 118.25%);
 }
 
@@ -430,7 +430,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 4.375rem;
 }
 
 .images-container {
@@ -446,9 +446,9 @@
 }
 
 .image {
-  width: 337px;
-  height: 429px;
-  border-radius: 28px;
+  width: 21.063rem;
+  height: 26.813rem;
+  border-radius: 1.75rem;
 }
 
 .nav-btn {
@@ -458,12 +458,12 @@
   outline: inherit;
   background-color: var(--orange);
   border-radius: 50%;
-  height: 70px;
-  width: 70px;
+  height: 4.375rem;
+  width: 4.375rem;
   margin: 5px;
   color: var(--white);
-  font-size: 30px;
-  margin-top: 60px;
+  font-size: 1.875rem;
+  margin-top: 3.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,10 +489,10 @@
   overflow-y: clip;
   overflow-x: visible;
   position: relative;
-  width: 337px;
-  height: 429px;
-  margin: 35px;
-  border-radius: 28px;
+  width: 21.063rem;
+  height: 26.813rem;
+  margin: 2.188rem;
+  border-radius: 1.75rem;
 }
 
 .image {
@@ -506,10 +506,10 @@
   background-color: black;
   opacity: 0.8;
   overflow: hidden;
-  width: 337px;
+  width: 21.063rem;
   height: 0;
   transition: 1s ease;
-  border-radius: 28px;
+  border-radius: 1.75rem;
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -523,7 +523,7 @@
 
 .latest_container:hover .overlay {
   bottom: 0;
-  height: 429px;
+  height: 26.813rem;
 }
 
 .latest_container:hover .overlay {
@@ -536,10 +536,10 @@
   background-color: black;
   opacity: 0.8;
   overflow: hidden;
-  width: 337px;
+  width: 21.063rem;
   height: 0;
   transition: 1s ease;
-  border-radius: 28px;
+  border-radius: 1.75rem;
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -549,13 +549,13 @@
 
 .latest_container:hover .overlay_bottom {
   top: 0;
-  height: 429px;
+  height: 26.813rem;
 }
 
 .text {
   font-size: 1.25rem;
-  width: 300px;
-  line-height: 28px;
+  width: 18.75rem;
+  line-height: 1.75rem;
   font-weight: 600;
 }
 
@@ -563,16 +563,16 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 245px;
-  margin-right: 85px;
+  width: 15.313rem;
+  margin-right: 5.313rem;
   margin-top: 1.25rem;
-  margin-bottom: 65px;
+  margin-bottom: 4.063rem;
 }
 
 .avatar {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 0.938rem;
 }
 
 .avatar_info h2,
@@ -581,12 +581,12 @@ p {
 }
 
 .avatar_info h2 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .avatar_info p {
   color: var(--grey);
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* Penetration Benefit CSS */
@@ -596,7 +596,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
-  margin: 200px 0;
+  margin: 12.5rem 0;
 }
 
 .benefit_text {
@@ -613,7 +613,7 @@ p {
 
 .benefits_penetration_container h1 {
   color: var(--white);
-  font-size: 60px;
+  font-size: 3.75rem;
   width: 72%;
   text-align: left;
   text-transform: capitalize;
@@ -621,7 +621,7 @@ p {
 
 .benefits_penetration_container h1 {
   color: var(--white);
-  font-size: 60px;
+  font-size: 3.75rem;
   width: 72%;
   text-align: left;
 }
@@ -630,37 +630,37 @@ p {
   color: var(--lightGrey);
   width: 60%;
   margin-top: -1.25rem;
-  width: 397px;
+  width: 24.813rem;
 }
 
 .penetration_flex {
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 
 .benefit_penetration_desp_box {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 28px;
+  border-radius: 1.75rem;
   margin-bottom: 1.25rem;
-  gap: 10px;
+  gap: 0.625rem;
   background-color: var(--lightBlack);
-  width: 407px;
-  height: 285px;
+  width: 25.438rem;
+  height: 17.813rem;
 }
 
 .benefit_penetration_desp_content p {
   color: var(--grey);
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   width: 347px;
   margin-bottom: 0;
 }
 
 .benefit_penetration_desp_content h2 {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--white);
-  width: 245px;
+  width: 15.313rem;
   font-weight: 600;
   margin-bottom: 0;
 }
@@ -668,13 +668,13 @@ p {
 .benefit_desp_icon {
   display: flex;
   align-items: center;
-  gap: 29px;
+  gap: 1.813rem;
   margin-bottom: 1.25rem;
 }
 
 .scroll-trigger {
-  margin-bottom: 70px;
-  transform: translateY(80px);
+  margin-bottom: 4.375rem;
+  transform: translateY(5rem);
   opacity: 0;
   transition: transform 3s ease, opacity 0.5s ease;
 }
@@ -942,11 +942,11 @@ p {
   }
 
   .penetration_desp_info {
-    margin: 55px 0;
+    margin: 3.438rem 0;
   }
 
   .penetration_img img {
-    width: 300px;
+    width: 18.75rem;
   }
 
   .penetration_flex {
@@ -959,6 +959,10 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .home_container .sub_heading_home {
+    text-align: left;
+  }
+
   .home_ideas {
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -970,7 +974,7 @@ p {
   }
 
   .idea_body {
-    width: 18.25rem !important;
+    width: 15.25rem !important;
     padding: 0.8rem;
     top: 4rem;
   }
@@ -1059,7 +1063,7 @@ p {
   }
 
   .penetration_flex {
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
   }
 
   .sub_heading_home {
@@ -1073,7 +1077,7 @@ p {
   }
 
   .idea_body {
-    bottom: 60px;
+    bottom: 3.75rem;
     width: 16.25rem;
   }
 
@@ -1107,7 +1111,7 @@ p {
   }
 
   .card {
-    width: 325px;
+    width: 20.313rem;
   }
 
   .home_ideas_container {

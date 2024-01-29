@@ -47,7 +47,7 @@ const ChooseUs = () => {
     },
     {
       icon: <BsCheckCircle />,
-      heading: t('A++'),
+      heading: t("A++"),
       desp: t("lorem_consectetur"),
     },
     {
@@ -63,7 +63,7 @@ const ChooseUs = () => {
   ];
 
   return (
-    <div>
+    <div className="about_chooseUs_wrapper">
       <div
         className={`penetration_container heading scroll-trigger ${
           isTriggered ? "animate" : ""

@@ -13,18 +13,18 @@
 
 .header_links_ul {
   display: flex;
-  gap: 99px;
+  gap: 6.188rem;
 }
 
 .header_links_li {
   color: var(--white);
   text-align: center;
   font-family: Inter;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   list-style-type: none;
   text-decoration: none;
-  height: 59px;
+  height: 3.688rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,27 +46,27 @@
 .hamburger_join_now {
   color: var(--white);
   display: flex;
-  width: 128px;
-  height: 48px;
-  padding: 8px 12px;
+  width: 8rem;
+  height: 3rem;
+  padding: 0.5rem 0.75rem;
   justify-content: center;
   align-items: center;
   background: linear-gradient(var(--black), var(--black)) padding-box,
     linear-gradient(to right, #c9442d, #893e97) border-box;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background: var(
     --gradient,
     linear-gradient(89deg, #c9442d 0.55%, #893e97 91.24%)
   );
   border: 1px solid transparent;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .header_btn:hover {
   background: linear-gradient(var(--black), var(--black)) padding-box,
     linear-gradient(to right, #c9442d, #893e97) border-box;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   transition: 3s;
 }
 
@@ -88,10 +88,10 @@
 }
 
 .footer_text {
-  width: 290px;
-  line-height: 24px;
+  width: 18.125rem;
+  line-height: 1.5rem;
   color: var(--grey);
-  margin: 19px 0;
+  margin: 1.188rem 0;
 }
 
 ul {
@@ -99,38 +99,38 @@ ul {
 }
 
 .footer_tags {
-  margin-top: 15px;
-  margin-right: 22px;
+  margin-top: 0.938rem;
+  margin-right: 1.375rem;
   color: var(--white);
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .footer_heading {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   color: var(--white);
 }
 
 .footer_links {
   color: var(--grey);
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .footer_copyright {
   color: var(--grey);
   border-top: 1px solid #374151;
-  margin-top: 39px;
+  margin-top: 2.438rem;
 }
 
 .footer_copyright p {
   text-align: center;
-  margin: 32px 0;
+  margin: 2rem 0;
 }
 
 /* Add styles for the hamburger menu */
 .hamburger_menu {
-  font-size: 24px;
+  font-size: 1.5rem;
   cursor: pointer;
   display: none;
 }
@@ -146,7 +146,7 @@ ul {
 @media screen and (max-width: 600px) {
   .navlink {
     color: white;
-    font-size: 24px;
+    font-size: 1.5rem;
     width: 9rem;
     text-align: end;
     display: block;
@@ -235,6 +235,16 @@ ul {
     display: none;
     margin-top: 2.5rem;
   }
+
+  .footer_text {
+    width: 20rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer_wrapper {
+    margin-top: 13rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -248,5 +258,11 @@ ul {
 
   .footer_text {
     width: 12rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer_text {
+    width: 11.688rem;
   }
 }

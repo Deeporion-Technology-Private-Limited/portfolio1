@@ -2,8 +2,8 @@
 
 .blog_banner {
   width: 100%;
-  height: 800px;
-  background-image: url(../images/Image8.png);
+  height: 50rem;
+  background-image: url(../images/img3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -18,11 +18,12 @@
 .bold_heading_blog {
   color: var(--white);
   font-family: Inter;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-style: normal;
   font-weight: bolder;
-  line-height: 70.5px;
+  line-height: 4.406rem;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .blog_get_started_btn {
@@ -33,14 +34,14 @@
 /* Blog Content CSS  */
 
 .blog_box {
-  margin-top: 125px;
+  margin-top: 7.813rem;
   color: var(--white);
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 1.563rem;
 }
 
 .blog_wrapper {
@@ -48,18 +49,17 @@
   width: 67vw;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 1.563rem;
   justify-content: center;
 }
 
 .blog_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 408px;
-  height: 528px;
-  border-radius: 28px;
+  width: 25.5rem;
+  height: 33rem;
+  border-radius: 1.75rem;
   border: 2px solid #6a6a6a;
 }
 
@@ -69,22 +69,24 @@
 
 .blog_img {
   overflow: hidden;
+  border-radius: 1.8rem;
 }
 
 .blog_img img {
-  border-radius: 28px 28px 0 0;
-  width: 366px;
-  height: 331px;
+  border-radius: 1.75rem 1.75rem 0 0;
+  width: 22.875rem;
+  height: 20.688rem;
   transition: 2s all ease-in-out;
+  padding: 1.375rem;
 }
 
 .blog_container:hover .blog_img img {
   transform: scale(1.5);
 }
 .blog_heading {
-  width: 366px;
-  font-size: 20px;
-  line-height: 32px;
+  width: 23.188rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
   font-weight: 600;
 }
 
@@ -95,21 +97,21 @@
 }
 
 .blog_btn {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: end;
   display: flex;
-  width: 25px;
-  height: 25px;
-  padding: 13.001px 13.001px 12.999px 12.999px;
+  width: 1.563rem;
+  height: 1.563rem;
+  padding: 0.813rem 0.813rem 0.812rem 0.812rem;
   justify-content: center;
   align-items: center;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   background: var(--primary-color-1, #c9442d);
 }
 
 .back {
   position: absolute;
-  font-size: 22px;
+  font-size: 1.375rem;
   left: 11rem;
   opacity: 0;
   transition: 1s;
@@ -130,7 +132,7 @@
 /*  Blog Description CSS */
 
 .blog_description_wrapper {
-  margin-top: 85px;
+  margin-top: 5.313rem;
   color: var(--white);
   display: flex;
   justify-content: center;
@@ -140,11 +142,11 @@
 .blog_description_wrapper p,
 ul li {
   color: var(--textGrey);
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 
 .blog_description_wrapper h4 {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 500;
 }
 
@@ -160,8 +162,8 @@ ul li {
   border: none;
   background: transparent;
   color: var(--orange);
-  font-size: 26px;
-  margin-bottom: 30px;
+  font-size: 1.625rem;
+  margin-bottom: 1.875rem;
 }
 
 .blog_desp_img {
@@ -169,12 +171,13 @@ ul li {
 }
 
 .blog_desp_heading {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: left;
 }
 
 .blog_bullets {
   list-style: disc;
+  margin-left: 2rem;
 }
 
 /* Blog Comment CSS */
@@ -186,8 +189,8 @@ ul li {
 }
 
 .blog_comment_box input {
-  border-radius: 18px;
-  padding: 20px 419px 20px 30px;
+  border-radius: 1.125rem;
+  padding: 1.25rem 26.188rem 1.25rem 1.875rem;
   border: 1px solid #717171;
   background: var(--black);
 }
@@ -200,19 +203,19 @@ ul li {
 
 .full_name,
 .email {
-  border-radius: 18px;
+  border-radius: 1.125rem;
   border: 1px solid #717171;
-  /* padding: 20px 419px 20px 30px; */
-  height: 50px;
+  height: 3.125rem;
   background: #111927;
-  padding: 0.5rem;
+  padding: 0.8rem;
   color: #fff;
+  font-size: 1rem;
 }
 
 .text_area {
   grid-column: span 2;
   background: #111927;
-  border-radius: 18px;
+  border-radius: 1.125rem;
   padding: 0.7rem;
   color: #fff;
 }
@@ -223,9 +226,12 @@ ul li {
 }
 
 /* blog Carousel Css */
+
 .carousel_h1 {
-  margin-top: 119px;
-  margin-bottom: 100px;
+  margin-top: 7.438rem;
+  margin-bottom: 6.25rem;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .blog_carousel_wrapper {
@@ -241,31 +247,31 @@ ul li {
 }
 
 .latest_container_desp {
-  padding: 22px 22px 20px 22px;
-  border-radius: 28px;
+  padding: 1.375rem 1.375rem 1.25rem 1.375rem;
+  border-radius: 1.75rem;
   border: 1px solid #6a6a6a;
-  height: 350px;
-  margin-left: 25px;
-  width: 410px;
+  height: 21.875rem;
+  margin-left: 1.563rem;
+  width: 25.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 373px;
+  height: 23.313rem;
   background: #1c2330;
 }
 
 .latest_container_desp .image {
-  width: 366px;
+  width: 22.875rem;
 }
 
 .text_desp {
-  font-size: 18px;
+  font-size: 1.125rem;
   width: 100%;
   max-width: 20.063rem;
-  line-height: 28px;
+  line-height: 1.75rem;
   font-weight: 600;
-  margin: 22px 0;
+  margin: 1.375rem 0;
   color: var(--white);
 }
 
@@ -276,12 +282,12 @@ ul li {
   outline: inherit;
   background-color: var(--purple);
   border-radius: 50%;
-  height: 46px;
-  width: 46px;
+  height: 2.875rem;
+  width: 2.875rem;
   margin: 5px;
   color: var(--white);
-  font-size: 22px;
-  margin-top: 60px;
+  font-size: 1.375rem;
+  margin-top: 3.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,11 +307,11 @@ ul li {
 }
 
 .blog_arrow {
-  font-size: 45px;
+  font-size: 2.813rem;
 }
 
 .scroll-animate {
-  transform: translateY(80px);
+  transform: translateY(5rem);
   transition: transform 3s ease, opacity 0.5s ease;
 }
 
@@ -319,7 +325,7 @@ ul li {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-300px);
+    transform: translateX(-18.75rem);
   }
 }
 
@@ -333,8 +339,8 @@ ul li {
 
 .react-multiple-carousel__arrow {
   background: var(--purple) !important;
-  max-width: 46px !important;
-  max-width: 46px !important;
+  max-width: 2.875rem !important;
+  max-width: 2.875rem !important;
 }
 
 @media screen and (max-width: 500px) {
@@ -382,7 +388,7 @@ ul li {
 
   .blog_btn {
     padding: 0.5rem;
-    transform: translateY(-22px) rotateZ(-46deg);
+    transform: translateY(-1.375rem) rotateZ(-46deg);
   }
 
   .latest_container_desp {
@@ -424,11 +430,65 @@ ul li {
   .email {
     padding: 0.4rem;
     height: auto;
+    border-radius: 0.5rem;
   }
 
   .text_area {
     grid-column: span 1;
     padding: 0.6rem;
+    border-radius: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .blog_wrapper {
+    width: auto;
+    max-width: 90vw;
+    justify-content: center;
+  }
+
+  .blog_banner .sub_heading_home {
+    text-align: center;
+  }
+
+  .latest_container_desp {
+    width: 18.75rem;
+    margin-right: 1.7rem;
+    padding: 1.25rem 1.25rem 0 1.25rem;
+  }
+
+  .latest_container_desp .image {
+    width: -webkit-fill-available;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    right: calc(2% + -0.75rem) !important;
+  }
+
+  .full_name,
+  .email {
+    border-radius: 0.5rem;
+  }
+
+  .text_area {
+    border-radius: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .person_name,
+  .person_detail {
+    flex-direction: column;
+    gap: 0 !important;
+  }
+
+  .person_text textarea {
+    width: auto !important;
+    padding-right: 26rem !important;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    right: calc(2% + 0.625rem) !important;
   }
 }
 
@@ -458,38 +518,17 @@ ul li {
     font-size: 2.4rem;
     line-height: 2.6rem;
   }
-}
-
-@media screen and (max-width: 1024px) {
-  .person_name,
-  .person_detail {
-    flex-direction: column;
-    gap: 0 !important;
-  }
-
-  .person_text textarea {
-    width: auto !important;
-    padding-right: 26rem !important;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .blog_wrapper {
-    width: auto;
-    max-width: 90vw;
-    justify-content: center;
-  }
 
   .latest_container_desp {
-    width: auto;
-    margin-right: 1.7rem;
+    width: 15rem !important;
+    height: auto;
   }
 
-  .latest_container_desp .image {
-    width: -webkit-fill-available;
+  .react-multi-carousel-list {
+    width: 85vw !important;
   }
 
   .react-multiple-carousel__arrow--right {
-    right: calc(2% + -12px) !important;
+    right: calc(2% + -0.625rem) !important;
   }
 }

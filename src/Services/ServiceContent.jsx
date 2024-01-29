@@ -140,7 +140,7 @@ const ServiceContent = () => {
         {carouselItems.map((item) => (
           <div key={item.id} className="service_info_box">
             <div className={`service_wrapper`}>
-              <div>
+              <div className={isMobile ? "service_horizontal_wrapper" : ""}>
                 <img src={item.icon} alt="" />
                 <h3>{item.title}</h3>
                 <p>

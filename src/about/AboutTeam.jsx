@@ -15,16 +15,13 @@ const AboutTeam = () => {
   const { t } = useTranslation();
   const triggerRef = useRef();
   const [isTriggered, setIsTriggered] = useState(false);
-  const [activeIndex, setActiveIndex] = useState([]);
+  const [activeIndex, setActiveIndex] = useState(null);
 
   const handleClick = (index) => {
-    if (activeIndex.includes(index)) {
-      setActiveIndex((prev) => {
-        let out = prev.filter((ele) => ele !== index);
-        return out;
-      });
+    if (index === activeIndex) {
+      setActiveIndex(null);
     } else {
-      setActiveIndex([...activeIndex, index]);
+      setActiveIndex(index);
     }
   };
 
@@ -116,7 +113,7 @@ const AboutTeam = () => {
 
   useEffect(() => {
     document.querySelector(".about_main").style.transform = `translateY(-${
-      35 * activeIndex.length
+      35 * activeIndex
     }px)`;
     document.querySelector(".about_main").style.transition =
       "transform 2s ease-in-out";
@@ -142,7 +139,7 @@ const AboutTeam = () => {
         <div className="text_container">
           {team.map((data) => (
             <div className="container ">
-              <img src={data.image} alt="" />
+              <img className="container_img" src={data.image} alt="" />
               <div className="team_overlay">
                 <div className="team_text">
                   <div>{data.name}</div>
@@ -169,17 +166,19 @@ const AboutTeam = () => {
                   <div
                     onClick={() => handleClick(index)}
                     className={`about_title ${
-                      !activeIndex.includes(index) ? "with-border" : ""
+                      !activeIndex === index || activeIndex === null
+                        ? "with-border"
+                        : ""
                     }`}
                   >
                     {item.title}
                     <IoIosArrowDown
                       className={`arrow ${
-                        activeIndex.includes(index) ? "up" : "down"
+                        activeIndex === index ? "up" : "down"
                       }`}
                     />
                   </div>
-                  {activeIndex.includes(index) && (
+                  {activeIndex === index && (
                     <div>
                       <p className="about_content">{item.content}</p>
                     </div>

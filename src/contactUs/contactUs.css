@@ -1,8 +1,8 @@
 /* ContactUs Content CSS */
 .contact_banner {
   width: 100%;
-  height: 800px;
-  background-image: url(../images/Image\ \(10\).png);
+  height: 50rem;
+  background-image: url(../images/img5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -31,10 +31,10 @@
 
 .contact_h1 {
   text-align: center;
-  font-size: 60px;
+  font-size: 3.75rem;
   color: var(--white);
-  margin-top: 116px;
-  margin-bottom: 97px;
+  margin-top: 7.25rem;
+  margin-bottom: 6.063rem;
 }
 
 .contact_content_wrapper {
@@ -46,12 +46,12 @@
 .contact_content {
   display: flex;
   align-items: center;
-  gap: 30px;
-  font-size: 16px;
-  border-radius: 28px;
+  gap: 1.875rem;
+  font-size: 1rem;
+  border-radius: 1.75rem;
   background: #1c2330;
-  width: 413px;
-  height: 122px;
+  width: 25.813rem;
+  height: 7.625rem;
   color: var(--white);
 }
 
@@ -60,14 +60,14 @@
   justify-content: center;
   align-items: center;
   color: var(--purple);
-  font-size: 26px;
-  height: 26px;
-  width: 26px;
-  border-radius: 16px;
+  font-size: 1.625rem;
+  height: 1.625rem;
+  width: 1.625rem;
+  border-radius: 1rem;
   border: 1px solid var(--Primary-color-2, #893e97);
-  padding: 19px 17px;
+  padding: 1.188rem 1.063rem;
   background: rgba(137, 62, 151, 0.15);
-  margin-left: 29px;
+  margin-left: 1.813rem;
 }
 
 .contact_icon_container {
@@ -78,10 +78,10 @@
 
 .stroke {
   position: fixed;
-  bottom: -40px;
-  left: 55px;
+  bottom: -2.5rem;
+  left: 3.438rem;
   background: transparent;
-  width: 302px;
+  width: 18.875rem;
   height: 3px;
   border-radius: 4px;
   opacity: 0.4;
@@ -98,7 +98,7 @@
 
 .contact_content:hover {
   background-color: var(--purple);
-  transform: translateY(-50px);
+  transform: translateY(-3.125rem);
   transition: 3s;
 }
 
@@ -117,13 +117,13 @@
 .contact_us_form .person_info_box {
   max-width: 72.8rem;
   width: 100%;
-  padding: 88px;
+  padding: 5.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
-  margin-top: 110px;
-  border-radius: 28px;
-  box-shadow: 0px 0px 25px 0px rgba(151, 71, 255, 0.12);
+  margin-top: 6.875rem;
+  border-radius: 1.75rem;
+  box-shadow: 0px 0px 1.563rem 0px rgba(151, 71, 255, 0.12);
 }
 
 .contact_us_form {
@@ -135,19 +135,19 @@
 
 .contact_us_form textarea {
   grid-column: span 2;
-  border-radius: 18px;
+  border-radius: 1.125rem;
   border: 1px solid var(--darkGrey);
   background: #111927;
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
   padding: 1rem;
 }
 
 .contact_us_form input {
-  border-radius: 18px;
+  border-radius: 1.125rem;
   border: 1px solid var(--darkGrey);
   background: #111927;
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
   max-width: 32.75rem;
   height: 2rem;
@@ -169,17 +169,17 @@ textarea:focus::-webkit-input-placeholder {
 
 .submit_btn {
   display: flex;
-  width: 128px;
-  height: 48px;
-  padding: 12px 37px;
+  width: 8rem;
+  height: 3rem;
+  padding: 0.75rem 2.313rem;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background: rgba(137, 62, 151, 0.6);
   border: none;
   color: var(--white);
-  margin-top: 30px;
-  font-size: 16px;
+  margin-top: 1.875rem;
+  font-size: 1rem;
 }
 
 .submit_btn:hover {
@@ -189,7 +189,7 @@ textarea:focus::-webkit-input-placeholder {
 @media screen and (max-width: 500px) {
   .contact_content_wrapper {
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .contact_banner {
@@ -227,10 +227,15 @@ textarea:focus::-webkit-input-placeholder {
 
   .contact_us_form input {
     height: auto;
+    border-radius: 0.5rem;
   }
 
   .contact_us_form textarea {
     grid-column: span 1;
+  }
+
+  .contact_banner .sub_heading_home {
+    width: auto;
   }
 }
 
@@ -253,16 +258,26 @@ textarea:focus::-webkit-input-placeholder {
     width: 75% !important;
     gap: 1.5rem;
   }
+
+  .contact_banner .sub_heading_home {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  .contact_content {
-    width: 20rem;
+  .contact_content_wrapper {
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    width: 84vw !important;
   }
 }
 
 @media screen and (max-width: 1440px) {
   .contact_content_wrapper {
     width: 100vw;
+  }
+
+  .contact_us_form input {
+    border-radius: 0.5rem;
   }
 }

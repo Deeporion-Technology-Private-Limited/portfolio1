@@ -76,7 +76,9 @@ const BlogCarousel = () => {
 
   return (
     <div
-      className={` scroll-trigger ${isTriggered ? "animate" : ""}`}
+      className={` blog_carousel_contaier scroll-trigger ${
+        isTriggered ? "animate" : ""
+      }`}
       ref={triggerRef}
     >
       <h1 className="carousel_h1">{t("latest_post")}</h1>
@@ -85,15 +87,12 @@ const BlogCarousel = () => {
         additionalTransfrom={0}
         arrows
         autoPlay
-        autoPlaySpeed={2000}
+        autoPlaySpeed={3000}
         centerMode={false}
-        className=""
         containerClass="container-with-dots"
-        dotListClass=""
         draggable
         focusOnSelect={false}
         infinite
-        itemClass=""
         keyBoardControl
         minimumTouchDrag={80}
         pauseOnHover

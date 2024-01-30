@@ -58,7 +58,9 @@ const Aboutbanner = () => {
               ref={triggerRef}
             >
               <p className="bold_heading align_center">{t("best_soluction")}</p>
-              <h4 className="sub_heading_home align_center">{t("lorem_vero")}</h4>
+              <h4 className="sub_heading_home align_center">
+                {t("lorem_vero")}
+              </h4>
             </div>
           </div>
         </div>

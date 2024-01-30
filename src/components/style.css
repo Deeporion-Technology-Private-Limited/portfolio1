@@ -113,8 +113,12 @@ ul {
 }
 
 .footer_links {
-  color: var(--grey);
   margin-bottom: 1rem;
+}
+
+.footer_links a {
+  color: var(--grey);
+  text-decoration: none;
 }
 
 .footer_copyright {

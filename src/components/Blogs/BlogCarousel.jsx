@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import img1 from "../images/Rectangle40.png";
-import img2 from "../images/Rectangle44.png";
-import img3 from "../images/Rectangle45.png";
+import img1 from "../../assets/images/Rectangle40.png";
+import img2 from "../../assets/images/Rectangle44.png";
+import img3 from "../../assets/images/Rectangle45.png";
 import "./blogs.css";
 import { useTranslation } from "react-i18next";
 import Carousel from "react-multi-carousel";

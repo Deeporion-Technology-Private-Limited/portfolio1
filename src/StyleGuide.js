@@ -4,7 +4,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { TbBulbFilled } from "react-icons/tb";
 import { BsCheckCircle, BsFillArrowRightCircleFill } from "react-icons/bs";
 import { FaPhone } from "react-icons/fa6";
-import img1 from "./images/Rectangle41.png";
+import img1 from "./assets/images/Rectangle41.png";
 import { GoArrowDownRight } from "react-icons/go";
 import { useTranslation } from "react-i18next";
 import { AiFillPieChart } from "react-icons/ai";

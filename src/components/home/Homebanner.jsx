@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./home.css";
-import image from "../images/image.png";
+import image from "../../assets/images/image.png";
 import { FaCirclePlay } from "react-icons/fa6";
 import { TbBulbFilled } from "react-icons/tb";
 import { HiPresentationChartBar } from "react-icons/hi";

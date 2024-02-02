@@ -1,5 +1,5 @@
 import React from "react";
-import BlogsBanner from "../Blogs/BlogsBanner";
+import BlogsBanner from "../components/Blogs/BlogsBanner";
 
 const Blogs = () => {
   return (

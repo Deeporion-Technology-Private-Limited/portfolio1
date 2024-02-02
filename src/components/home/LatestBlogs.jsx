@@ -4,12 +4,12 @@ import {
   MdOutlineKeyboardArrowRight,
   MdOutlineKeyboardArrowLeft,
 } from "react-icons/md";
-import img1 from "../images/Frame 161.png";
-import img2 from "../images/Frame 162.png";
-import img3 from "../images/Frame 163.png";
-import img4 from "../images/Frame 160.png";
-import img5 from "../images/Frame 159.png";
-import Avatar from "../images/Avatar.png";
+import img1 from "../../assets/images/Frame 161.png";
+import img2 from "../../assets/images/Frame 162.png";
+import img3 from "../../assets/images/Frame 163.png";
+import img4 from "../../assets/images/Frame 160.png";
+import img5 from "../../assets/images/Frame 159.png";
+import Avatar from "../../assets/images/Avatar.png";
 import { useTranslation } from "react-i18next";
 const LatestBlogs = () => {
   const { t } = useTranslation();

@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceBanner from "../Services/ServiceBanner";
+import ServiceBanner from "../components/Services/ServiceBanner";
 
 const OurServices = () => {
   return (

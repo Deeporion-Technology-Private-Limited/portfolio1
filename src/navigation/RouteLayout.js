@@ -8,10 +8,10 @@ import Contact from "../pages/Contactus";
 import Login from "../pages/authantication/Login";
 import AuthGuard from "../pages/authantication/AuthGuard";
 import Dashboard from "../pages/PrivatePages/Dashboard";
-import Page404 from "../components/NoPage";
-import Layout from "../components/Layout";
-import BlogDescription from "../Blogs/BlogDescription";
+import NoPage from "../components/common/NoPage";
 import StyleGuide from "../StyleGuide";
+import Layout from "../components/common/Layout";
+import BlogDescription from "../components/Blogs/BlogDescription";
 
 export const RouteLayout = () => {
   const unprotectedRoutes = [
@@ -53,7 +53,7 @@ export const RouteLayout = () => {
 
     {
       path: "*",
-      component: Page404, // Add 404 component
+      component: NoPage, // Add 404 component
       name: "404Page",
     },
 
@@ -75,9 +75,9 @@ export const RouteLayout = () => {
       path: "/dashboard",
       name: "dashboard",
       component: {
-        admin: Page404,
+        admin: NoPage,
         employee: Dashboard,
-        client: Page404,
+        client: NoPage,
       },
       role: ["employee", "admin", "client"],
     },

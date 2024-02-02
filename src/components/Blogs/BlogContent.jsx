@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../images/Rectangle 42.png";
-import img2 from "../images/Rectangle 43.png";
-import img3 from "../images/Rectangle41.png";
+import img1 from "../../assets/images/Rectangle 42.png";
+import img2 from "../../assets/images/Rectangle 43.png";
+import img3 from "../../assets/images/Rectangle41.png";
 import { GoArrowDownRight } from "react-icons/go";
 import "./blogs.css";
 import { useNavigate } from "react-router-dom";

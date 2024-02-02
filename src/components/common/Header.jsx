@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Outlet, NavLink } from "react-router-dom";
-import logo from "../images/LOGO.png";
-import "./style.css";
+import logo from "../../assets/images/LOGO.png";
+import "../style.css";
 import GoToTop from "./GoToTop";
 import { HiMenuAlt3 } from "react-icons/hi";
 import Hamburger from "./Hamburger";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };

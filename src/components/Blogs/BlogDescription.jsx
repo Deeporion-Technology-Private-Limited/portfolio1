@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState, useTransition } from "react";
 import "./blogs.css";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import img1 from "../images/img7.png";
+import img1 from "../../assets/images/img7.png";
 import BlogComment from "./BlogComment";
 import BlogCarousel from "./BlogCarousel";
 import { useTranslation } from "react-i18next";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const BlogDescription = () => {
   const nav = useNavigate();

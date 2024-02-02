@@ -1,5 +1,5 @@
 import React from "react";
-import Homebanner from "../home/Homebanner";
+import Homebanner from "../components/home/Homebanner";
 
 const Home = () => {
   return (

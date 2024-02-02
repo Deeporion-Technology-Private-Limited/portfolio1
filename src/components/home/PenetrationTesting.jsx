@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import frame from "../images/Frame.png";
+import frame from "../../assets/images/Frame.png";
 import { AiFillPieChart } from "react-icons/ai";
 import { BiChip } from "react-icons/bi";
 import { HiPresentationChartBar, HiDocumentReport } from "react-icons/hi";

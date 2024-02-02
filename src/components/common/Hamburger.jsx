@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet, NavLink } from "react-router-dom";
-import logo from "../images/LOGO.png";
-import "./style.css";
+import logo from "../../assets/images/LOGO.png";
+import "../style.css";
 import GoToTop from "./GoToTop";
 import { RxCross2 } from "react-icons/rx";
 

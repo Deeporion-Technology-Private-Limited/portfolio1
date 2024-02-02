@@ -43,6 +43,53 @@ const ContactContent = () => {
       content: "121 King Street Melbourne, 3000, Australia",
     },
   ];
+
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    phonenumber: "",
+    message: "",
+  });
+
+  // State to manage validation errors
+  const [errors, setErrors] = useState({});
+
+  // Validation function
+  const validateForm = () => {
+    let newErrors = {};
+
+    // Validate username
+    if (formData.username.trim() === "") {
+      newErrors = { ...newErrors, username: "Username is required" };
+    }
+
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      newErrors = { ...newErrors, email: "Invalid email address" };
+    }
+    // Set errors state
+    setErrors(newErrors);
+  };
+
+  // Event handler for form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted successfully!", formData);
+  };
+
+  // Event handler for input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+
+    // Update the form data state
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   return (
     <div className="contact_wrapper">
       <div
@@ -72,29 +119,59 @@ const ContactContent = () => {
         </div>
       </div>
 
-      <div className="contact_us_form">
+      <form className="contact_us_form" onSubmit={handleSubmit}>
         <div
           className={`person_info_box  heading scroll-trigger ${
             isTriggered ? "animate" : ""
           }`}
           ref={triggerRef}
         >
-          <input type="text" placeholder="Rupali" className="" />
-          <input type="text" placeholder="Last Name" />
-          <input type="email" placeholder="Email" />
-          <input type="text" name="" id="" placeholder="Phone Number" />
+          <input
+            type="text"
+            placeholder="Rupali"
+            id="firstname"
+            name="firstname"
+            value={formData.firstname}
+            onChange={handleInputChange}
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            id="lastname"
+            name="lastname"
+            value={formData.lastname}
+            onChange={handleInputChange}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+          />
+          <input
+            type="text"
+            placeholder="Phone Number"
+            id="phonenumber"
+            name="phonenumber"
+            value={formData.phonenumber}
+            onChange={handleInputChange}
+          />
           <textarea
-            name=""
-            id=""
+            name="message"
+            id="message"
             cols="30"
             rows="10"
             placeholder="Your Message"
+            value={formData.message}
+            onChange={handleInputChange}
           ></textarea>
           <div>
             <button className="submit_btn">{t("submit")}</button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

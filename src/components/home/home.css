@@ -3,7 +3,7 @@
 .home_banner {
   width: 100%;
   height: 50rem;
-  background-image: url(../images/homeBanner.jpg);
+  background-image: url(../../assets/images/homeBanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -276,7 +276,7 @@
 .benefits_box {
   width: 100%;
   height: 105.313rem;
-  background-image: url(../images/Image5.png);
+  background-image: url("../../assets/images/Image5.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -592,7 +592,7 @@ p {
 /* Penetration Benefit CSS */
 
 .benefits {
-  background-image: url("../images/Image5.png");
+  background-image: url("../../assets/images/Image5.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -781,7 +781,7 @@ p {
 
   .penetration_container {
     gap: 0.625rem;
-    margin-top: 4rem !important;
+    margin-top: 8rem !important;
   }
 
   .penetration_container h1 {

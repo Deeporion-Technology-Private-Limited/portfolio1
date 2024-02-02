@@ -1,7 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import AboutBanner from "../about/AboutBanner";
+import AboutBanner from "../components/about/AboutBanner";
 
 const AboutUs = () => {
   return (

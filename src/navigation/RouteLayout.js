@@ -7,7 +7,7 @@ import AboutUs from "../pages/AboutUs";
 import Contact from "../pages/Contactus";
 import StyleGuide from "../StyleGuide";
 import Layout from "../components/common/Layout";
-import BlogDescription from "../components/Blogs/BlogDescription";
+import BlogDescription from "../components/blogs/BlogDescription";
 import Page404 from "../components/common/Page404";
 
 export const RouteLayout = () => {

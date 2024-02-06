@@ -140,9 +140,9 @@ const AboutTeam = () => {
           {team.map((data) => (
             <div className="container ">
               <img className="container_img" src={data.image} alt="" />
-              <div className="team_overlay">
+              <div className={window.innerWidth > 500 ? "team_overlay" : ""}>
                 <div className="team_text">
-                  <div>{data.name}</div>
+                  <div className="name_bold">{data.name}</div>
                   <div>{data.post}</div>
                 </div>
               </div>
@@ -162,7 +162,7 @@ const AboutTeam = () => {
           <div className="about_accordion">
             <div className="about_main">
               {items.map((item, index) => (
-                <div key={index}>
+                <div key={index} className="about_container_border">
                   <div
                     onClick={() => handleClick(index)}
                     className={`about_title ${

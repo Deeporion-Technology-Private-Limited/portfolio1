@@ -42,9 +42,6 @@ const ContactBanner = () => {
                   {t("we_are_here_to_support")}
                 </p>
                 <h4 className="sub_heading_home">{t("lorem_ipsum")}</h4>
-                <div className="blog_get_started_btn">
-                  <button className="get_started_btn">{t("contact")}</button>
-                </div>
               </div>
             </div>
           </div>

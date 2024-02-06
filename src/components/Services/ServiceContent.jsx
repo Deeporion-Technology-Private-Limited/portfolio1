@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import img6 from "../../assets/images/Frame 216.png";
 import img7 from "../../assets/images/Frame 217.png";
 import img8 from "../../assets/images/Frame 223.png";
@@ -16,10 +16,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import MagicSliderDots from "react-magic-slider-dots";
 import "react-magic-slider-dots/dist/magic-dots.css";
+import "../home/home.css";
 
 const ServiceContent = () => {
   const { t } = useTranslation();
+  const triggerRef = useRef();
+
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTriggered, setIsTriggered] = useState(false);
+
   const handleScroll = (event) => {
     const scrollDelta = event.deltaY;
     const scrollDirection = scrollDelta > 0 ? "down" : "up";
@@ -33,6 +38,24 @@ const ServiceContent = () => {
       setCurrentIndex(currentIndex + 1);
     }
   };
+
+  const handleScrollScreen = () => {
+    if (triggerRef.current) {
+      const elementTop = triggerRef.current.getBoundingClientRect().top;
+      const viewportHeight = window.innerHeight;
+
+      if (elementTop < viewportHeight) {
+        setIsTriggered(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollScreen);
+    return () => {
+      window.removeEventListener("scroll", handleScrollScreen);
+    };
+  }, []);
 
   useEffect(() => {
     window.addEventListener("wheel", handleScroll);
@@ -124,7 +147,7 @@ const ServiceContent = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     speed: 2000,
     autoplaySpeed: 3000,
     cssEase: "linear",
@@ -134,7 +157,10 @@ const ServiceContent = () => {
 
   const descriptionLength = window.innerWidth > 500 ? 600 / 1 : 300 / 3;
   return (
-    <div>
+    <div
+      className={`scroll-trigger ${isTriggered ? "animate" : ""}`}
+      ref={triggerRef}
+    >
       <h1 className="service_h1">{t("service_we_offer")}</h1>
       <Slider {...(isMobile ? horizontalSettings : settings)}>
         {carouselItems.map((item) => (

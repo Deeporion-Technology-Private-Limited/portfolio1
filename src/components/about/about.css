@@ -181,6 +181,7 @@
   background: var(--purple);
   padding: 0.5rem;
   border-radius: 50%;
+  border: 1px solid var(--purple);
   display: flex;
 }
 
@@ -192,6 +193,7 @@
 
 .about_choose_desp p {
   color: #9ca3af;
+  text-align: justify;
 }
 
 .about_questions_box {
@@ -239,7 +241,8 @@
   transform: translateY(-2.188rem);
   transition: transform 2s ease-in-out;
 }
-.about_title.with-border {
+
+.about_container_border {
   border-bottom: 1px solid #414752;
 }
 
@@ -260,7 +263,7 @@
   width: 31.5rem;
   line-height: 1.75rem;
   padding: 0.625rem 0.625rem;
-  border-bottom: 1px solid #414752;
+  text-align: justify;
 }
 
 .text_container {
@@ -290,6 +293,10 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+.name_bold {
+  font-weight: 700;
 }
 
 .team_overlay {
@@ -348,6 +355,7 @@
     height: auto;
     margin-top: 3.8rem;
   }
+
   .about_questions_container h1 {
     text-align: center;
   }
@@ -406,8 +414,14 @@
     height: 20.8rem;
   }
 
+  .about_content {
+    width: auto;
+    text-align: justify;
+  }
+
   .about_title {
     width: auto;
+    line-height: 1.5rem;
   }
 
   .team_overlay {

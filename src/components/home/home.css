@@ -655,6 +655,7 @@ p {
   line-height: 1.5rem;
   width: 347px;
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .benefit_penetration_desp_content h2 {

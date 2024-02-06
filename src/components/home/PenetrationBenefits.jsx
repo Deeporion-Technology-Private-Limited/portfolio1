@@ -58,6 +58,7 @@ const PenetrationBenefits = () => {
     <div
       onMouseMove={handleScroll}
       onMouseLeave={handleLeave}
+      onMouseOver={handleScroll}
       className="benefits"
     >
       <div className="penetration_desp_info">

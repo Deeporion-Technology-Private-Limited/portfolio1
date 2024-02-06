@@ -143,6 +143,7 @@
 ul li {
   color: var(--textGrey);
   line-height: 1.75rem;
+  text-align: justify;
 }
 
 .blog_description_wrapper h4 {

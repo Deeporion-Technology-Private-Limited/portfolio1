@@ -78,7 +78,7 @@ const Footer = () => {
               <a href="/illustrations">{t("illustrations")}</a>
             </li>
             <li className="footer_links">
-              <a href="/themesberg">{t("themesberg")}</a>
+              <a href="/deeporion">{t("deeporion")}</a>
             </li>
             <li className="footer_links">
               <a href="/bluehost">{t("bluehost")}</a>

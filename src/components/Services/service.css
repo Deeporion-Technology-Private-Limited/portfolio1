@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.8rem;
   gap: 1.563rem;
 }
 
@@ -53,6 +53,7 @@
   width: 39.25rem;
   color: var(--grey);
   line-height: 1.5rem;
+  text-align: justify;
 }
 
 .service_wrapper button {

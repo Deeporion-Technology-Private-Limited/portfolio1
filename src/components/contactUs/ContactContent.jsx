@@ -30,12 +30,12 @@ const ContactContent = () => {
     {
       icon: <FaPhone />,
       heading: "Phone No.",
-      content: "+91 1234567890",
+      content: <a href="tel:+918882192787">+91 8882192787</a>,
     },
     {
       icon: <IoMailSharp />,
       heading: "Email",
-      content: "abcd@gmail.com",
+      content: <a href="mailto:email@example.com">email@gmail.com</a>,
     },
     {
       icon: <IoLocationSharp />,

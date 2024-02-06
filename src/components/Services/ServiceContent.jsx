@@ -134,9 +134,6 @@ const ServiceContent = () => {
     verticalSwiping: true,
     autoplay: true,
     autoplaySpeed: 2000,
-    beforeChange: (current, next) => {
-      console.log(`Current: ${current}, Next: ${next}`);
-    },
     appendDots: (dots) => {
       return <MagicSliderDots dots={dots} numDotsToShow={5} dotWidth={30} />;
     },

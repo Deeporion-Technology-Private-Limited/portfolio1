@@ -74,7 +74,6 @@ const PenetrationBenefits = () => {
           <div className="penetration_flex">
             {data.map((obj) => (
               <div className="benefit_penetration_desp_box" key={obj.id}>
-                <div></div>
                 <div className="benefit_penetration_desp_content">
                   <div className="benefit_desp_icon">
                     <div className="penetration_icon">{obj.icon}</div>

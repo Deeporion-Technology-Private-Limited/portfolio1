@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import ServiceContent from "./ServiceContent";
 import { useTranslation } from "react-i18next";
 
 const ServiceBanner = () => {
@@ -46,9 +45,6 @@ const ServiceBanner = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <ServiceContent />
       </div>
     </div>
   );

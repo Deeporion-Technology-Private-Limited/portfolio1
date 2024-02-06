@@ -1,12 +1,12 @@
 import React from "react";
 import BlogsBanner from "../components/Blogs/BlogsBanner";
+import BlogContent from "../components/Blogs/BlogContent";
 
 const Blogs = () => {
   return (
     <div>
-      <div>
-        <BlogsBanner />
-      </div>
+      <BlogsBanner />
+      <BlogContent />
     </div>
   );
 };

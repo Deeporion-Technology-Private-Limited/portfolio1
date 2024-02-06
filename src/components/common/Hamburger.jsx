@@ -4,11 +4,15 @@ import logo from "../../assets/images/LOGO.png";
 import "../style.css";
 import GoToTop from "./GoToTop";
 import { RxCross2 } from "react-icons/rx";
+import { useTranslation } from "react-i18next";
 
 const Hamburger = ({ isMenuOpen, setIsMenuOpen, toggleMenu }) => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="mobile_container">
@@ -25,7 +29,7 @@ const Hamburger = ({ isMenuOpen, setIsMenuOpen, toggleMenu }) => {
             </div>
             <li>
               <NavLink to="/" className="header_links_li" onClick={closeMenu}>
-                Home
+                {t("home")}
               </NavLink>
             </li>
             <li>
@@ -34,7 +38,7 @@ const Hamburger = ({ isMenuOpen, setIsMenuOpen, toggleMenu }) => {
                 className="header_links_li"
                 onClick={closeMenu}
               >
-                About Us
+                {t("about_us")}
               </NavLink>
             </li>
             <li>
@@ -43,7 +47,7 @@ const Hamburger = ({ isMenuOpen, setIsMenuOpen, toggleMenu }) => {
                 className="header_links_li"
                 onClick={closeMenu}
               >
-                Our Service
+                {t("our_service")}
               </NavLink>
             </li>
             <li>
@@ -52,7 +56,7 @@ const Hamburger = ({ isMenuOpen, setIsMenuOpen, toggleMenu }) => {
                 className="header_links_li"
                 onClick={closeMenu}
               >
-                Blogs
+                {t("blogs")}
               </NavLink>
             </li>
             <li>
@@ -61,15 +65,14 @@ const Hamburger = ({ isMenuOpen, setIsMenuOpen, toggleMenu }) => {
                 className="header_links_li"
                 onClick={closeMenu}
               >
-                Contact Us
+                {t("contact_us")}
               </NavLink>
             </li>
             <li className="join_now_btn">
-              <button className=" hamburger_join_now">Join Now</button>
+              <button className=" hamburger_join_now">{t("join_now")}</button>
             </li>
           </ul>
         </div>
-        <div></div>
       </div>
       <Outlet />
       <GoToTop />

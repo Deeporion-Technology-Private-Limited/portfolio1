@@ -54,7 +54,6 @@ const BlogComment = () => {
   // Event handler for form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted successfully!", formData);
   };
 
   // Event handler for input changes

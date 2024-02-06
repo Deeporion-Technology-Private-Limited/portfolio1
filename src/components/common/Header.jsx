@@ -5,6 +5,7 @@ import "../style.css";
 import GoToTop from "./GoToTop";
 import { HiMenuAlt3 } from "react-icons/hi";
 import Hamburger from "./Hamburger";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +13,8 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -36,33 +39,33 @@ const Header = () => {
           <ul className="header_links_ul">
             <li>
               <NavLink to="/" className="header_links_li">
-                Home
+                {t("home")}
               </NavLink>
             </li>
             <li>
               <NavLink to="/about" className="header_links_li">
-                About Us
+                {t("about_us")}
               </NavLink>
             </li>
             <li>
               <NavLink to="/services" className="header_links_li">
-                Our Service
+                {t("our_service")}
               </NavLink>
             </li>
             <li>
               <NavLink to="/blogs" className="header_links_li">
-                Blogs
+                {t("blogs")}
               </NavLink>
             </li>
             <li>
               <NavLink to="/contact" className="header_links_li">
-                Contact Us
+                {t("contact_us")}
               </NavLink>
             </li>
           </ul>
         </div>
         <div>
-          <button className="header_btn">Join Now</button>
+          <button className="header_btn">{t('join_now')}</button>
         </div>
       </div>
       <Outlet />

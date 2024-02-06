@@ -57,55 +57,52 @@ const BlogDescription = () => {
             <li>{t("integration")}</li>
           </ul>
         </div>
-
-        <div>
-          <div
-            className={`scroll-animate ${isTriggered ? "animate" : ""}`}
-            ref={triggerRef}
-          >
-            <h4>{t("embrace")}</h4>
-            <ul>
-              <li>{t("cyberSecurity")}</li>
-              <li>{t("mfa")}</li>
-              <li>{t("simple_example")}</li>
-              <li>{t("green")}</li>
-            </ul>
-          </div>
-          <div
-            className={`scroll-animate ${isTriggered ? "animate" : ""}`}
-            ref={triggerRef}
-          >
-            <h4>{t("cultivate")}</h4>
-            <ul>
-              <li>{t("social_media")}</li>
-              <li>{t("open_source")}</li>
-              <li>{t("rouge")}</li>
-            </ul>
-          </div>
-          <div
-            className={`scroll-animate ${isTriggered ? "animate" : ""}`}
-            ref={triggerRef}
-          >
-            <h4>{t("follow")}</h4>
-            <ul>
-              <li>{t("manage_it")}</li>
-              <li>{t("investment")}</li>
-              <li>{t("experience")}</li>
-              <li>{t("msp")}</li>
-              <li>{t("framework")}</li>
-            </ul>
-          </div>
-          <div
-            className={`scroll-animate ${isTriggered ? "animate" : ""}`}
-            ref={triggerRef}
-          >
-            <h4>{t("focus")}</h4>
-            <ul>
-              <li>{t("business")}</li>
-              <li>{t("best_thing")}</li>
-              <li>{t("breach")}</li>
-            </ul>
-          </div>
+        <div
+          className={`scroll-animate ${isTriggered ? "animate" : ""}`}
+          ref={triggerRef}
+        >
+          <h4>{t("embrace")}</h4>
+          <ul>
+            <li>{t("cyberSecurity")}</li>
+            <li>{t("mfa")}</li>
+            <li>{t("simple_example")}</li>
+            <li>{t("green")}</li>
+          </ul>
+        </div>
+        <div
+          className={`scroll-animate ${isTriggered ? "animate" : ""}`}
+          ref={triggerRef}
+        >
+          <h4>{t("cultivate")}</h4>
+          <ul>
+            <li>{t("social_media")}</li>
+            <li>{t("open_source")}</li>
+            <li>{t("rouge")}</li>
+          </ul>
+        </div>
+        <div
+          className={`scroll-animate ${isTriggered ? "animate" : ""}`}
+          ref={triggerRef}
+        >
+          <h4>{t("follow")}</h4>
+          <ul>
+            <li>{t("manage_it")}</li>
+            <li>{t("investment")}</li>
+            <li>{t("experience")}</li>
+            <li>{t("msp")}</li>
+            <li>{t("framework")}</li>
+          </ul>
+        </div>
+        <div
+          className={`scroll-animate ${isTriggered ? "animate" : ""}`}
+          ref={triggerRef}
+        >
+          <h4>{t("focus")}</h4>
+          <ul>
+            <li>{t("business")}</li>
+            <li>{t("best_thing")}</li>
+            <li>{t("breach")}</li>
+          </ul>
         </div>
         <div>
           <BlogComment />

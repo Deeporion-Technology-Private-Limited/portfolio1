@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../home/home.css";
 import "./about.css";
-import ChooseUs from "./ChooseUs";
-import AboutTeam from "./AboutTeam";
 import { useTranslation } from "react-i18next";
 
 const Aboutbanner = () => {
@@ -76,12 +74,6 @@ const Aboutbanner = () => {
             </div>
           ))}
         </div>
-      </div>
-      <div>
-        <ChooseUs />
-      </div>
-      <div>
-        <AboutTeam />
       </div>
     </div>
   );

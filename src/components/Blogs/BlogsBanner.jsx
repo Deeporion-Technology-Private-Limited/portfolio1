@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./blogs.css";
-import BlogContent from "./BlogContent";
 import { useTranslation } from "react-i18next";
 
 const BlogsBanner = () => {
@@ -12,7 +11,6 @@ const BlogsBanner = () => {
     if (triggerRef.current) {
       const elementTop = triggerRef.current.getBoundingClientRect().top;
       const viewportHeight = window.innerHeight;
-
       if (elementTop < viewportHeight) {
         setIsTriggered(true);
       }
@@ -49,9 +47,6 @@ const BlogsBanner = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <BlogContent />
       </div>
     </div>
   );

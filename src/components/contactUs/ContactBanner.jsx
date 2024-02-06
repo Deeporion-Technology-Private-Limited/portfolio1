@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./contactUs.css";
-import ContactContent from "./ContactContent";
 import { useTranslation } from "react-i18next";
 const ContactBanner = () => {
   const { t } = useTranslation();
@@ -46,9 +45,6 @@ const ContactBanner = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <ContactContent />
       </div>
     </div>
   );

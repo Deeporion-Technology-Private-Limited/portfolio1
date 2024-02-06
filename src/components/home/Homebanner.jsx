@@ -5,10 +5,6 @@ import { FaCirclePlay } from "react-icons/fa6";
 import { TbBulbFilled } from "react-icons/tb";
 import { HiPresentationChartBar } from "react-icons/hi";
 import { AiFillEye } from "react-icons/ai";
-import PenetrationTesting from "./PenetrationTesting";
-import WhyPenetration from "./WhyPenetration";
-import LatestBlogs from "./LatestBlogs";
-import PenetrationBenefits from "./PenetrationBenefits";
 import { useTranslation } from "react-i18next";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -116,16 +112,6 @@ const Homebanner = () => {
           ))}
         </div>
       </div>
-      <div>
-        <PenetrationTesting />
-      </div>
-      <div>
-        <PenetrationBenefits />
-      </div>
-      <div>
-        <WhyPenetration />
-      </div>
-      <LatestBlogs />
     </div>
   );
 };

@@ -5,13 +5,10 @@ import Blogs from "../pages/Blogs";
 import OurServices from "../pages/OurServices";
 import AboutUs from "../pages/AboutUs";
 import Contact from "../pages/Contactus";
-import Login from "../pages/authantication/Login";
-import AuthGuard from "../pages/authantication/AuthGuard";
-import Dashboard from "../pages/PrivatePages/Dashboard";
-import NoPage from "../components/common/NoPage";
 import StyleGuide from "../StyleGuide";
 import Layout from "../components/common/Layout";
 import BlogDescription from "../components/Blogs/BlogDescription";
+import Page404 from "../components/common/Page404";
 
 export const RouteLayout = () => {
   const unprotectedRoutes = [
@@ -53,14 +50,8 @@ export const RouteLayout = () => {
 
     {
       path: "*",
-      component: NoPage, // Add 404 component
+      component: Page404,
       name: "404Page",
-    },
-
-    {
-      path: "/login",
-      component: Login,
-      name: "login",
     },
 
     {
@@ -70,18 +61,6 @@ export const RouteLayout = () => {
     },
   ];
 
-  const protectedRoutes = [
-    {
-      path: "/dashboard",
-      name: "dashboard",
-      component: {
-        admin: NoPage,
-        employee: Dashboard,
-        client: NoPage,
-      },
-      role: ["employee", "admin", "client"],
-    },
-  ];
   return (
     <BrowserRouter>
       <Routes>
@@ -92,16 +71,6 @@ export const RouteLayout = () => {
               path={obj.path}
               name={obj.name}
               Component={obj.component}
-            />
-          ))}
-          {protectedRoutes.map((obj, index) => (
-            <Route
-              key={index}
-              path={obj.path}
-              name={obj.name}
-              element={
-                <AuthGuard Component={obj.component} roleList={obj.role} />
-              }
             />
           ))}
         </Route>

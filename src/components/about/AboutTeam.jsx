@@ -25,10 +25,6 @@ const AboutTeam = () => {
     }
   };
 
-  useEffect(() => {
-    console.log(activeIndex, "activeIndex");
-  }, [activeIndex]);
-
   const handleScroll = () => {
     if (triggerRef.current) {
       const elementTop = triggerRef.current.getBoundingClientRect().top;

@@ -114,7 +114,7 @@
   background: #893e97;
 }
 
-.contact_content a{
+.contact_content a {
   text-decoration: none;
   color: inherit;
 }
@@ -284,5 +284,11 @@ textarea:focus::-webkit-input-placeholder {
 
   .contact_us_form input {
     border-radius: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contact_content_wrapper {
+    width: fit-content !important;
   }
 }

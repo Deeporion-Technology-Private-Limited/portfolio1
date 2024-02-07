@@ -893,16 +893,15 @@ p {
     display: flex;
     overflow-x: scroll;
     gap: 1.25rem;
-    margin-left: 1.875rem;
     margin-bottom: 4.375rem;
-    width: 44rem;
+    width: 22rem;
   }
 
   .benefit_penetration_desp_box {
     width: 15.438rem;
     height: 14.188rem;
     border-radius: 0.875rem;
-    padding-bottom: 0.95rem;
+    padding: 0 0.95rem 0.938rem 0.938rem;
   }
 
   .benefit_penetration_desp_content p {
@@ -1137,5 +1136,20 @@ p {
 
   .nav_btn_left {
     left: 11%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .benefit_supportive_text {
+    width: fit-content;
+    text-align: center;
+  }
+
+  .navlink {
+    width: 15rem !important;
+  }
+
+  .benefits_penetration_desp_container .penetration_flex {
+    width: 18rem !important;
   }
 }

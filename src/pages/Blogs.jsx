@@ -1,6 +1,6 @@
 import React from "react";
-import BlogBanner from "../components/blogs/BlogBanner";
-import BlogContent from "../components/blogs/BlogContent";
+import BlogBanner from "../components/Blogs/BlogBanner";
+import BlogContent from "../components/Blogs/BlogContent";
 
 const Blogs = () => {
   return (

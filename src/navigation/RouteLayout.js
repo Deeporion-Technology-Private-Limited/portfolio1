@@ -8,7 +8,7 @@ import Contact from "../pages/Contactus";
 import StyleGuide from "../StyleGuide";
 import Layout from "../components/common/Layout";
 import Page404 from "../components/common/Page404";
-import BlogDescription from "../components/blogs/BlogDescription";
+import BlogDescription from "../components/Blogs/BlogDescription";
 
 export const RouteLayout = () => {
   const unprotectedRoutes = [

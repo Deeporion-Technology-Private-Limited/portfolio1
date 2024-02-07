@@ -1,6 +1,6 @@
 import React from "react";
-import ServiceBanner from "../components/services/ServiceBanner";
-import ServiceContent from "../components/services/ServiceContent";
+import ServiceContent from "../components/Services/ServiceContent";
+import ServiceBanner from "../components/Services/ServiceBanner";
 
 const OurServices = () => {
   return (

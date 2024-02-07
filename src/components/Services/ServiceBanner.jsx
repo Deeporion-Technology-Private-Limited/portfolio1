@@ -24,6 +24,7 @@ const ServiceBanner = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div>
       <div className="service_banner">
@@ -39,7 +40,7 @@ const ServiceBanner = () => {
                 <p className="bold_heading_blog">{t("lorem")}</p>
                 <h4 className="sub_heading_home">{t("lorem_ipsum")}</h4>
                 <div className="blog_get_started_btn">
-                  <button className="get_started_btn">Get started</button>
+                  <button className="get_started_btn">{t("get_started")}</button>
                 </div>
               </div>
             </div>

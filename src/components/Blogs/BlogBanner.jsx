@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./blogs.css";
 import { useTranslation } from "react-i18next";
 
-const BlogsBanner = () => {
+const BlogBanner = () => {
   const { t } = useTranslation();
   const triggerRef = useRef();
   const [isTriggered, setIsTriggered] = useState(false);
@@ -52,4 +52,4 @@ const BlogsBanner = () => {
   );
 };
 
-export default BlogsBanner;
+export default BlogBanner;

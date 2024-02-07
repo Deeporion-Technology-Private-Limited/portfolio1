@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useTransition } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./blogs.css";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import img1 from "../../assets/images/img7.png";

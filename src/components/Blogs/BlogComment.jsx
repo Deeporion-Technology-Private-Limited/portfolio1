@@ -30,27 +30,6 @@ const BlogComment = () => {
     message: "",
   });
 
-  // State to manage validation errors
-  const [errors, setErrors] = useState({});
-
-  // Validation function
-  const validateForm = () => {
-    let newErrors = {};
-
-    // Validate username
-    if (formData.username.trim() === "") {
-      newErrors = { ...newErrors, username: "Username is required" };
-    }
-
-    // Validate email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      newErrors = { ...newErrors, email: "Invalid email address" };
-    }
-    // Set errors state
-    setErrors(newErrors);
-  };
-
   // Event handler for form submission
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useTransition } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
 import { IoLocationSharp } from "react-icons/io5";
@@ -51,27 +51,6 @@ const ContactContent = () => {
     phonenumber: "",
     message: "",
   });
-
-  // State to manage validation errors
-  const [errors, setErrors] = useState({});
-
-  // Validation function
-  const validateForm = () => {
-    let newErrors = {};
-
-    // Validate username
-    if (formData.username.trim() === "") {
-      newErrors = { ...newErrors, username: "Username is required" };
-    }
-
-    // Validate email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      newErrors = { ...newErrors, email: "Invalid email address" };
-    }
-    // Set errors state
-    setErrors(newErrors);
-  };
 
   // Event handler for form submission
   const handleSubmit = (e) => {
